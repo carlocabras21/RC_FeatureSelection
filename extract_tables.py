@@ -1,35 +1,22 @@
+from utils import *
 import os
-import math 
-from tabulate import tabulate
 
-def avg(lst): # returns the average of a list
-    return sum(lst) / len(lst) 
-   
-def print_cool(lst, name): # print the list like a tabular row
-	print 						name + '\t' + \
-		str(lst[0]).replace('.',',') + '\t' + \
-		str(lst[1]).replace('.',',') + '\t' + \
-		str(lst[2]).replace('.',',') + '\t' + \
-		str(lst[3]).replace('.',',') + '\t' + \
-		str(round(avg(lst),3)).replace('.',',')
-
-# check if there are all the test files
-def are_files_correct(files):
-	if len(files) < 44: # 4 runs for each of the 11 test
-		return False
-	return True
-		
-		
-		
 # initialize the lists
-specificity = [0,0,0,0]
-recall = [0,0,0,0]
-precision = [0,0,0,0]
-f_measure = [0,0,0,0]
-g_mean = [0,0,0,0]
+n_tests = 12
+specificity = [[0, 0, 0, 0, 0]] * n_tests
+recall      = [[0, 0, 0, 0, 0]] * n_tests
+precision   = [[0, 0, 0, 0, 0]] * n_tests
+f_measure   = [[0, 0, 0, 0, 0]] * n_tests
+g_mean      = [[0, 0, 0, 0, 0]] * n_tests
 
-# index used to knowing in which of the 4 files we are working on 
+# first of all, read the baseline
+specificity[0], recall[0], precision[0], f_measure[0], g_mean[0] = extract_baseline
+
+# index of the 4 test files  
 i = 0
+
+# index of tests, where 0 is baseline, 1 is FS,  ecc.
+i_test = 1
 
 fs_method = "ReliefF"
 folder = "raw_data_" + fs_method
@@ -37,66 +24,25 @@ folder = "raw_data_" + fs_method
 files = os.listdir(folder)
 
 if not are_files_correct(files):
-	exit("Exit: not enough files in folder. There are missing tests.")
+    exit("Exit: not enough files in folder. There are missing tests.")
 
 files.sort()
 
-is_fs_method_right = False;
+for file_name in files:
+    print file_name, i_test
+    specificity[i_test][i], recall[i_test][i], precision[i_test][i], f_measure[i_test][i], g_mean[i_test][i] = \
+        extract_data_from_file(folder + '/' + file_name, fs_method)
 
-for file_name in files: 
-	# print file_name
-	
-	with open(folder + '/' + file_name) as f:
-		
-		''' line example
-		=== Detailed Accuracy By Class ===
+    if i == 3:
+        # compute the average
+        specificity [i_test][4] = round( avg(specificity [i_test][0:4]), 3)
+        recall      [i_test][4] = round( avg(recall      [i_test][0:4]), 3)
+        precision   [i_test][4] = round( avg(precision   [i_test][0:4]), 3)
+        f_measure   [i_test][4] = round( avg(f_measure   [i_test][0:4]), 3)
+        g_mean      [i_test][4] = round( avg(g_mean      [i_test][0:4]), 3)
 
-			         TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-			         0,997    0,815    0,933      0,997    0,964      0,379    0,932     0,991     Other
-			         0,185    0,003    0,852      0,185    0,305      0,379    0,932     0,613     Uterus
-		'''
+        i_test += 1
 
-		line = f.readline()
-		while '=== Detailed Accuracy By Class ===' not in line: # find this line
-			line = f.readline()
-			if fs_method in line:
-				is_fs_method_right = True
-		
-		if not is_fs_method_right:
-			exit("File " + file_name + " refers to a different test then " + fs_method)
-		
-		# go to the first line with numbers
-		line = f.readline()
-		line = f.readline()
-		line = f.readline()
-		specificity[i] = float(line.split()[3].replace(',','.'))
-	
-		line = f.readline()
-		recall[i]    = float(line.split()[3].replace(',','.'))
-		precision[i] = float(line.split()[2].replace(',','.'))
-		f_measure[i] = float(line.split()[4].replace(',','.'))
-		g_mean[i] 	 = round (math.sqrt(specificity[i] * recall[i]), 3)
-	
+    i = (i + 1) % 4
 
-	if i == 3: # print the summary
-		print (file_name[0:2] + ') ' + file_name[3:-6].replace('_',' + '))
-
-		print '\t' + '#' + '\t' + ' 1' + '\t' + ' 2' + '\t' + ' 3' + '\t' + ' 4' + '\t' + 'Average'
-		print_cool(specificity, 'Specificity')
-		print_cool(recall, 		'Recall     ')
-		print_cool(precision, 	'Precision  ')
-		print_cool(f_measure, 	'F-measure  ')
-		print_cool(g_mean, 		'G-mean     ')
-		
-		print("\n\n")
-
-	i = (i + 1) % 4 
-	
-
-	
-
-
-
-
-
-	
+print_all_data(specificity, recall, precision, f_measure, g_mean)
