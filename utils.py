@@ -1,4 +1,5 @@
 import math
+import os
 
 
 def avg(lst):  # returns the average of a list
