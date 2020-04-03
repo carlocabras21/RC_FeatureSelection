@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     OVA_Uterus
+Instances:    1545
+Attributes:   10937
+              [list of attributes omitted]
+Test mode:    5-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 2.9 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1440               93.2039 %
+Incorrectly Classified Instances       105                6.7961 %
+Kappa statistic                          0.2841
+Mean absolute error                      0.1097
+Root mean squared error                  0.2206
+Relative absolute error                 74.0381 %
+Root relative squared error             81.2063 %
+Total Number of Instances             1545     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,997    0,815    0,933      0,997    0,964      0,379    0,932     0,991     Other
+                 0,185    0,003    0,852      0,185    0,305      0,379    0,932     0,613     Uterus
+Weighted Avg.    0,932    0,749    0,927      0,932    0,911      0,379    0,932     0,961     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1417    4 |    a = Other
+  101   23 |    b = Uterus
+
