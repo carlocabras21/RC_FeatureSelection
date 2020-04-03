@@ -14,7 +14,7 @@ def print_cool(lst, name): # print the list like a tabular row
 		str(round(avg(lst),3)).replace('.',',')
 
 # check if there are all the test files
-def check_if_all_files(files):
+def are_files_correct(files):
 	if len(files) < 44: # 4 runs for each of the 11 test
 		return False
 	return True
@@ -31,14 +31,17 @@ g_mean = [0,0,0,0]
 # index used to knowing in which of the 4 files we are working on 
 i = 0
 
-folder = "raw_data_ReliefF"
+fs_method = "ReliefF"
+folder = "raw_data_" + fs_method
 
 files = os.listdir(folder)
 
-if not check_if_all_files(files):
+if not are_files_correct(files):
 	exit("Exit: not enough files in folder. There are missing tests.")
 
 files.sort()
+
+is_fs_method_right = False;
 
 for file_name in files: 
 	# print file_name
@@ -56,7 +59,12 @@ for file_name in files:
 		line = f.readline()
 		while '=== Detailed Accuracy By Class ===' not in line: # find this line
 			line = f.readline()
-
+			if fs_method in line:
+				is_fs_method_right = True
+		
+		if not is_fs_method_right:
+			exit("File " + file_name + " refers to a different test then " + fs_method)
+		
 		# go to the first line with numbers
 		line = f.readline()
 		line = f.readline()
