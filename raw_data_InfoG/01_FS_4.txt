@@ -1,0 +1,290 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 110" -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     OVA_Uterus
+Instances:    1545
+Attributes:   10937
+              [list of attributes omitted]
+Test mode:    5-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 10937 Tissue):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.127        5774 213707_s_at
+ 0.124        3630 208070_s_at
+ 0.1153       3222 205932_s_at
+ 0.1122      10703 242940_x_at
+ 0.1117       7267 219993_at
+ 0.1104       9704 228415_at
+ 0.1082      10060 230943_at
+ 0.0987      10071 231063_at
+ 0.0983       2200 203221_at
+ 0.0944       2585 204086_at
+ 0.0936      10057 230882_at
+ 0.0928       9683 228284_at
+ 0.0925       6969 218763_at
+ 0.0917       2365 203604_at
+ 0.0905       4030 209035_at
+ 0.0898       2148 203087_s_at
+ 0.0893       7504 221675_s_at
+ 0.088       10020 230560_at
+ 0.088       10109 231729_s_at
+ 0.0872       4191 209309_at
+ 0.0857       9699 228377_at
+ 0.0855       9168 226424_at
+ 0.0839       9323 226851_at
+ 0.083        2075 202946_s_at
+ 0.0824      10108 231728_at
+ 0.0823       1102 201416_at
+ 0.0822       7170 219511_s_at
+ 0.0822       5754 213661_at
+ 0.0815       2354 203571_s_at
+ 0.0814       9395 227075_at
+ 0.0813       3154 205698_s_at
+ 0.0804       3238 205979_at
+ 0.0804       1482 201934_at
+ 0.0798       7376 220994_s_at
+ 0.0798       7388 221094_s_at
+ 0.079        1382 201787_at
+ 0.0785       1103 201417_at
+ 0.0777       3049 205358_at
+ 0.0774      10607 241291_at
+ 0.077       10538 238850_at
+ 0.0764       7805 222764_at
+ 0.0759       8789 225496_s_at
+ 0.0758       7600 221950_at
+ 0.0758       2577 204069_at
+ 0.0756       3070 205413_at
+ 0.0746       6998 218857_s_at
+ 0.0743       4376 209692_at
+ 0.0741       2494 203892_at
+ 0.0741       5147 212240_s_at
+ 0.074       10184 232524_x_at
+ 0.0735       5670 213410_at
+ 0.0733        111 1554679_a_at
+ 0.0729       9729 228554_at
+ 0.0727       3438 206893_at
+ 0.0725       3299 206191_at
+ 0.072        8349 224710_at
+ 0.0715       3842 208767_s_at
+ 0.0711       1128 201450_s_at
+ 0.071        9970 230174_at
+ 0.0705       2522 203961_at
+ 0.0704       4502 210074_at
+ 0.0703       3060 205382_s_at
+ 0.0703       4544 210220_at
+ 0.0702       5253 212454_x_at
+ 0.07         7113 219263_at
+ 0.0697       7547 221782_at
+ 0.0691       5740 213617_s_at
+ 0.069        4992 211987_at
+ 0.0688       9835 229273_at
+ 0.0687       6338 217014_s_at
+ 0.0686       4491 210024_s_at
+ 0.0686      10649 242172_at
+ 0.0685       3251 206018_at
+ 0.068        2523 203962_s_at
+ 0.0678       4122 209185_s_at
+ 0.0674        247 1559477_s_at
+ 0.067        2293 203423_at
+ 0.0667       6195 215692_s_at
+ 0.0664       1046 201343_at
+ 0.0663       5729 213578_at
+ 0.0661       7204 219683_at
+ 0.0658       2090 202965_s_at
+ 0.0658       7188 219602_s_at
+ 0.0653       7231 219806_s_at
+ 0.0652       7546 221781_s_at
+ 0.0652       7346 220761_s_at
+ 0.065        6717 218170_at
+ 0.0647       9746 228640_at
+ 0.0638       1842 202540_s_at
+ 0.0638       1523 201993_x_at
+ 0.0635       1104 201418_s_at
+ 0.0635      10359 235355_at
+ 0.0635        306 1568765_at
+ 0.0629      10211 232914_s_at
+ 0.0627       9838 229281_at
+ 0.0625       6878 218526_s_at
+ 0.0625       9344 226917_s_at
+ 0.0623       4121 209184_s_at
+ 0.0622       8429 224840_at
+ 0.0621       3626 208029_s_at
+ 0.0619       4425 209822_s_at
+ 0.0617       9159 226388_at
+ 0.0617       3067 205406_s_at
+ 0.0616       5756 213668_s_at
+ 0.0616       7772 222651_s_at
+ 0.0613      10440 236538_at
+ 0.0608       5885 214039_s_at
+ 0.0604       9665 228195_at
+ 0.0603      10496 238206_at
+ 0.0602       3252 206022_at
+
+Selected attributes: 5774,3630,3222,10703,7267,9704,10060,10071,2200,2585,10057,9683,6969,2365,4030,2148,7504,10020,10109,4191,9699,9168,9323,2075,10108,1102,7170,5754,2354,9395,3154,3238,1482,7376,7388,1382,1103,3049,10607,10538,7805,8789,7600,2577,3070,6998,4376,2494,5147,10184,5670,111,9729,3438,3299,8349,3842,1128,9970,2522,4502,3060,4544,5253,7113,7547,5740,4992,9835,6338,4491,10649,3251,2523,4122,247,2293,6195,1046,5729,7204,2090,7188,7231,7546,7346,6717,9746,1842,1523,1104,10359,306,10211,9838,6878,9344,4121,8429,3626,4425,9159,3067,5756,7772,10440,5885,9665,10496,3252 : 110
+
+
+Header of reduced data:
+@relation 'OVA_Uterus-weka.filters.unsupervised.attribute.Remove-V-R5774,3630,3222,10703,7267,9704,10060,10071,2200,2585,10057,9683,6969,2365,4030,2148,7504,10020,10109,4191,9699,9168,9323,2075,10108,1102,7170,5754,2354,9395,3154,3238,1482,7376,7388,1382,1103,3049,10607,10538,7805,8789,7600,2577,3070,6998,4376,2494,5147,10184,5670,111,9729,3438,3299,8349,3842,1128,9970,2522,4502,3060,4544,5253,7113,7547,5740,4992,9835,6338,4491,10649,3251,2523,4122,247,2293,6195,1046,5729,7204,2090,7188,7231,7546,7346,6717,9746,1842,1523,1104,10359,306,10211,9838,6878,9344,4121,8429,3626,4425,9159,3067,5756,7772,10440,5885,9665,10496,3252,10937'
+
+@attribute 213707_s_at numeric
+@attribute 208070_s_at numeric
+@attribute 205932_s_at numeric
+@attribute 242940_x_at numeric
+@attribute 219993_at numeric
+@attribute 228415_at numeric
+@attribute 230943_at numeric
+@attribute 231063_at numeric
+@attribute 203221_at numeric
+@attribute 204086_at numeric
+@attribute 230882_at numeric
+@attribute 228284_at numeric
+@attribute 218763_at numeric
+@attribute 203604_at numeric
+@attribute 209035_at numeric
+@attribute 203087_s_at numeric
+@attribute 221675_s_at numeric
+@attribute 230560_at numeric
+@attribute 231729_s_at numeric
+@attribute 209309_at numeric
+@attribute 228377_at numeric
+@attribute 226424_at numeric
+@attribute 226851_at numeric
+@attribute 202946_s_at numeric
+@attribute 231728_at numeric
+@attribute 201416_at numeric
+@attribute 219511_s_at numeric
+@attribute 213661_at numeric
+@attribute 203571_s_at numeric
+@attribute 227075_at numeric
+@attribute 205698_s_at numeric
+@attribute 205979_at numeric
+@attribute 201934_at numeric
+@attribute 220994_s_at numeric
+@attribute 221094_s_at numeric
+@attribute 201787_at numeric
+@attribute 201417_at numeric
+@attribute 205358_at numeric
+@attribute 241291_at numeric
+@attribute 238850_at numeric
+@attribute 222764_at numeric
+@attribute 225496_s_at numeric
+@attribute 221950_at numeric
+@attribute 204069_at numeric
+@attribute 205413_at numeric
+@attribute 218857_s_at numeric
+@attribute 209692_at numeric
+@attribute 203892_at numeric
+@attribute 212240_s_at numeric
+@attribute 232524_x_at numeric
+@attribute 213410_at numeric
+@attribute 1554679_a_at numeric
+@attribute 228554_at numeric
+@attribute 206893_at numeric
+@attribute 206191_at numeric
+@attribute 224710_at numeric
+@attribute 208767_s_at numeric
+@attribute 201450_s_at numeric
+@attribute 230174_at numeric
+@attribute 203961_at numeric
+@attribute 210074_at numeric
+@attribute 205382_s_at numeric
+@attribute 210220_at numeric
+@attribute 212454_x_at numeric
+@attribute 219263_at numeric
+@attribute 221782_at numeric
+@attribute 213617_s_at numeric
+@attribute 211987_at numeric
+@attribute 229273_at numeric
+@attribute 217014_s_at numeric
+@attribute 210024_s_at numeric
+@attribute 242172_at numeric
+@attribute 206018_at numeric
+@attribute 203962_s_at numeric
+@attribute 209185_s_at numeric
+@attribute 1559477_s_at numeric
+@attribute 203423_at numeric
+@attribute 215692_s_at numeric
+@attribute 201343_at numeric
+@attribute 213578_at numeric
+@attribute 219683_at numeric
+@attribute 202965_s_at numeric
+@attribute 219602_s_at numeric
+@attribute 219806_s_at numeric
+@attribute 221781_s_at numeric
+@attribute 220761_s_at numeric
+@attribute 218170_at numeric
+@attribute 228640_at numeric
+@attribute 202540_s_at numeric
+@attribute 201993_x_at numeric
+@attribute 201418_s_at numeric
+@attribute 235355_at numeric
+@attribute 1568765_at numeric
+@attribute 232914_s_at numeric
+@attribute 229281_at numeric
+@attribute 218526_s_at numeric
+@attribute 226917_s_at numeric
+@attribute 209184_s_at numeric
+@attribute 224840_at numeric
+@attribute 208029_s_at numeric
+@attribute 209822_s_at numeric
+@attribute 226388_at numeric
+@attribute 205406_s_at numeric
+@attribute 213668_s_at numeric
+@attribute 222651_s_at numeric
+@attribute 236538_at numeric
+@attribute 214039_s_at numeric
+@attribute 228195_at numeric
+@attribute 238206_at numeric
+@attribute 206022_at numeric
+@attribute Tissue {Other,Uterus}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 8.42 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1451               93.9159 %
+Incorrectly Classified Instances        94                6.0841 %
+Kappa statistic                          0.4904
+Mean absolute error                      0.0911
+Root mean squared error                  0.2097
+Relative absolute error                 61.4561 %
+Root relative squared error             77.1886 %
+Total Number of Instances             1545     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,985    0,589    0,950      0,985    0,968      0,511    0,939     0,993     Other
+                 0,411    0,015    0,708      0,411    0,520      0,511    0,939     0,633     Uterus
+Weighted Avg.    0,939    0,543    0,931      0,939    0,932      0,511    0,939     0,964     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1400   21 |    a = Other
+   73   51 |    b = Uterus
+
