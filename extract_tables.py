@@ -1,32 +1,8 @@
 from utils import *
 import os
 
-# initialize the lists
-
-specificity = []
-recall      = []
-precision   = []
-f_measure   = []
-g_mean      = []
-
-for i in range (1, 13):
-    specificity .append([0, 0, 0, 0, 0])
-    recall      .append([0, 0, 0, 0, 0])
-    precision   .append([0, 0, 0, 0, 0])
-    precision   .append([0, 0, 0, 0, 0])
-    f_measure   .append([0, 0, 0, 0, 0])
-    g_mean      .append([0, 0, 0, 0, 0])
-
-# print specificity
-# print ""
-
-# first of all, read the baseline
-specificity[0], recall[0], precision[0], f_measure[0], g_mean[0] = extract_baseline()
-
-# index of tests, where 0 is baseline, 1 is FS,  ecc.
-i_test = 1
-
-fs_method = "ReliefF"
+fs_method = "InfoG"
+# fs_method = "ReliefF"
 folder = "raw_data_" + fs_method
 
 files = os.listdir(folder)
@@ -36,6 +12,26 @@ if not are_files_correct(files):
 
 files.sort()
 
+# initialize the lists
+specificity = []
+recall      = []
+precision   = []
+f_measure   = []
+g_mean      = []
+for _ in range (0, 12):
+    specificity .append([0, 0, 0, 0, 0])
+    recall      .append([0, 0, 0, 0, 0])
+    precision   .append([0, 0, 0, 0, 0])
+    f_measure   .append([0, 0, 0, 0, 0])
+    g_mean      .append([0, 0, 0, 0, 0])
+
+
+# first of all, read the baseline
+specificity[0], recall[0], precision[0], f_measure[0], g_mean[0] = extract_baseline()
+
+# index of tests, where 0 is baseline, 1 is FS,  ecc.
+i_test = 1
+
 # index of the 4 test files
 # noinspection PyRedeclaration
 i = 0
@@ -43,11 +39,6 @@ for file_name in files:
 
     specificity[i_test][i], recall[i_test][i], precision[i_test][i], f_measure[i_test][i], g_mean[i_test][i] = \
         extract_data_from_file(folder + '/' + file_name, fs_method)
-
-    # print file_name
-    # print i_test, i
-    # print specificity
-    # print ""
 
     if i == 3:
         # compute the average
@@ -70,6 +61,5 @@ for f in files:
         formatted_file_names.append(formatted_file_name)
     i = (i + 1) % 4
 
-print_all_data(fs_method, formatted_file_names,
-               specificity, recall, precision, f_measure, g_mean,
-               print_on_screen=True, write_on_file=True)
+print_data(fs_method, formatted_file_names, specificity, recall, precision, f_measure, g_mean,
+           print_summary=True, print_all_tables=True, write_on_file=True)

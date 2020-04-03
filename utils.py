@@ -7,12 +7,10 @@ def avg(lst):  # returns the average of a list
 
 
 def string_from_lst_name(lst, name):
-    return name + '\t' + \
-           str('%.3f' % lst[0]).replace('.', ',') + '\t' + \
-           str('%.3f' % lst[1]).replace('.', ',') + '\t' + \
-           str('%.3f' % lst[2]).replace('.', ',') + '\t' + \
-           str('%.3f' % lst[3]).replace('.', ',') + '\t' + \
-           str('%.3f' % lst[4]).replace('.', ',')
+    s = name + '\t'
+    for el in lst:
+        s += str('%.3f' % el).replace('.', ',') + '\t'
+    return s
 
 
 def print_vector(lst, name):  # print the list like a tabular row
@@ -74,10 +72,10 @@ def extract_data_from_file(file_name, fs_method):
 def extract_baseline():
     # initialize the lists
     specificity = [0, 0, 0, 0, 0]
-    recall = [0, 0, 0, 0, 0]
-    precision = [0, 0, 0, 0, 0]
-    f_measure = [0, 0, 0, 0, 0]
-    g_mean = [0, 0, 0, 0, 0]
+    recall      = [0, 0, 0, 0, 0]
+    precision   = [0, 0, 0, 0, 0]
+    f_measure   = [0, 0, 0, 0, 0]
+    g_mean      = [0, 0, 0, 0, 0]
 
     # index of the 4 test files
     i = 0
@@ -94,22 +92,72 @@ def extract_baseline():
         i += 1
 
     specificity[4] = round(avg(specificity[0:4]), 3)
-    recall[4] = round(avg(recall[0:4]), 3)
-    precision[4] = round(avg(precision[0:4]), 3)
-    f_measure[4] = round(avg(f_measure[0:4]), 3)
-    g_mean[4] = round(avg(g_mean[0:4]), 3)
+    recall[4]      = round(avg(recall[0:4])     , 3)
+    precision[4]   = round(avg(precision[0:4])  , 3)
+    f_measure[4]   = round(avg(f_measure[0:4])  , 3)
+    g_mean[4]      = round(avg(g_mean[0:4])     , 3)
 
     return specificity, recall, precision, f_measure, g_mean
 
 
-def print_all_data(fs_method, files, specificity, recall, precision, f_measure, g_mean, print_on_screen=True,
-                   write_on_file=False):
+def print_data(fs_method, file_names, specificity, recall, precision, f_measure, g_mean,
+               print_summary=True, print_all_tables=True, write_on_file=False):
+    f = None
+
+    print fs_method + "\n"
+
     if write_on_file:
         f = open("results_" + fs_method + ".txt", "w")
+        f.write(fs_method + "\n\n")
 
-    for i_test in range(0, 12):
-        if print_on_screen:
-            print files[i_test]
+    if print_summary:
+        header = ["-"] + file_names
+
+        # extract the average values
+        rows = [[x[4] for x in specificity],
+                [x[4] for x in recall],
+                [x[4] for x in precision],
+                [x[4] for x in f_measure],
+                [x[4] for x in g_mean]]
+
+        metrics = ["Specificity", "Recall", "Precision", "F-Measure", "G-Mean"]
+
+        # first print the titles
+        for j in range(0, len(header)):
+            print("%15s" % header[j]),
+        print ""
+
+        # then print the values
+        for i in range(0, len(rows)):
+            print("%15s" % metrics[i]),
+
+            for j in range(0, len(rows[i])):
+                # print every number in the format e.g. 0,350
+                print("%15s" % str('%.3f' % float(rows[i][j])).replace('.', ',')),
+            print ''
+
+        print "\n\n"
+
+        if write_on_file:
+            # first write the titles
+            for j in range(0, len(header)):
+                f.write("%15s" % header[j]),
+            f.write("\n")
+
+            # then write the values
+            for i in range(0, len(rows)):
+                f.write("%15s" % metrics[i])
+
+                for j in range(0, len(rows[i])):
+                    # write every number in the format e.g. 0,350
+                    f.write("%15s" % str('%.3f' % float(rows[i][j])).replace('.', ','))
+                f.write("\n")
+
+            f.write("\n\n")
+
+    for i_test in range(0, len(file_names)):
+        if print_all_tables:
+            print file_names[i_test]
 
             print '\t' + '#' + '\t' + ' 1' + '\t' + ' 2' + '\t' + ' 3' + '\t' + ' 4' + '\t' + 'Average'
 
@@ -121,9 +169,9 @@ def print_all_data(fs_method, files, specificity, recall, precision, f_measure, 
 
             print "\n\n"
 
-        if write_on_file:
+        if write_on_file and print_all_tables:
             f.write(
-                files[i_test] + "\n" +
+                file_names[i_test] + "\n" +
                 '\t' + '#' + '\t\t  ' + '1' + '\t\t  ' + '2' + '\t\t  ' + '3' + '\t\t  ' + '4' + '\t\t' + 'Average\n')
 
             write_vector_on_file(f, specificity[i_test], 'Specificity')
