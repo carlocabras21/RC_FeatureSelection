@@ -1,6 +1,6 @@
 === Run information ===
 
-Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.ReliefFAttributeEval -M -1 -D 1 -K 10" -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 110" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 5.0 0.0]" -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.ReliefFAttributeEval -M -1 -D 1 -K 10" -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 110" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 5.0 0.0]" -M -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 Relation:     OVA_Uterus
 Instances:    1545
 Attributes:   10937
@@ -258,7 +258,7 @@ Header of reduced data:
 
 
 Classifier Model
-CostSensitiveClassifier using reweighted training instances
+CostSensitiveClassifier using minimized expected misclasification cost
 
 weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 
@@ -274,30 +274,30 @@ Cost Matrix
  5 0
 
 
-Time taken to build model: 476.73 seconds
+Time taken to build model: 405.58 seconds
 
 === Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances        1451               93.9159 %
-Incorrectly Classified Instances        94                6.0841 %
-Kappa statistic                          0.5939
-Mean absolute error                      0.1026
-Root mean squared error                  0.2081
-Relative absolute error                 69.2385 %
-Root relative squared error             76.5882 %
+Correctly Classified Instances        1413               91.4563 %
+Incorrectly Classified Instances       132                8.5437 %
+Kappa statistic                          0.5677
+Mean absolute error                      0.0854
+Root mean squared error                  0.2923
+Relative absolute error                 57.6478 %
+Root relative squared error            107.5819 %
 Total Number of Instances             1545     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,966    0,363    0,968      0,966    0,967      0,594    0,942     0,993     Other
-                 0,637    0,034    0,617      0,637    0,627      0,594    0,942     0,632     Uterus
-Weighted Avg.    0,939    0,337    0,940      0,939    0,940      0,594    0,942     0,964     
+                 0,921    0,161    0,985      0,921    0,952      0,595    0,880     0,980     Other
+                 0,839    0,079    0,481      0,839    0,612      0,595    0,880     0,417     Uterus
+Weighted Avg.    0,915    0,155    0,945      0,915    0,925      0,595    0,880     0,935     
 
 === Confusion Matrix ===
 
     a    b   <-- classified as
- 1372   49 |    a = Other
-   45   79 |    b = Uterus
+ 1309  112 |    a = Other
+   20  104 |    b = Uterus
 

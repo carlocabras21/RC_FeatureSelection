@@ -1,8 +1,8 @@
 from utils import *
 import os
 
-fs_method = "InfoG"
-# fs_method = "ReliefF"
+# fs_method = "InfoG"
+fs_method = "ReliefF"
 folder = "raw_data_" + fs_method
 
 files = os.listdir(folder)
