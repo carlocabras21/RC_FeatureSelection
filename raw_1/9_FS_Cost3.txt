@@ -1,0 +1,239 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 78" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 3.0 0.0]" -M -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7757
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 7757 money-fx):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.05937      1467 _dollar
+ 0.04517       480 _bank
+ 0.04367      2811 _market
+ 0.04052      2990 _money
+ 0.03997      1203 _currency
+ 0.03397       809 _central
+ 0.03307      1630 _england
+ 0.02888      5187 _yen
+ 0.02794      1202 _currencies
+ 0.02723      1252 _dealers
+ 0.02636      3736 _rates
+ 0.02239       355 _assistance
+ 0.02175      2412 _intervention
+ 0.02149      2502 _japan
+ 0.02128      1701 _exchange
+ 0.02017      4232 _shortage
+ 0.01999      3734 _rate
+ 0.0194       1192 _cts
+ 0.01895      4845 _treasury
+ 0.01762      4767 _today
+ 0.01727       970 _company
+ 0.0171       3053 _nations
+ 0.01666      3297 _paris
+ 0.01646       574 _bills
+ 0.01627      1122 _corp
+ 0.01592      2989 _monetary
+ 0.01564      1820 _fed
+ 0.01534      5430 _band
+ 0.01503      4435 _stg
+ 0.01446      4672 _thedollar
+ 0.01414      4242 _shr
+ 0.01403      4775 _tokyo
+ 0.01355      1468 _dollars
+ 0.01268      6319 _intervened
+ 0.01255      3078 _net
+ 0.01202      4571 _system
+ 0.01158      3683 _qtr
+ 0.01157      3901 _repurchase
+ 0.01142      2962 _miyazawa
+ 0.01091      3916 _reserve
+ 0.01087      2032 _germany
+ 0.01074      1953 _france
+ 0.01067      2691 _liquidity
+ 0.01029      7426 _themoney
+ 0.01024      6318 _intervene
+ 0.01017      4385 _stability
+ 0.01003      6405 _kiichi
+ 0.00972      1297 _deficit
+ 0.00951      2771 _major
+ 0.00948      4205 _share
+ 0.00927      1926 _foreign
+ 0.00909        23 _accord
+ 0.00896      4594 _target
+ 0.00886       694 _bundesbank
+ 0.00884       658 _britain
+ 0.00876      3993 _revs
+ 0.00852      3465 _policy
+ 0.00843      1205 _customer
+ 0.00843      6760 _outright
+ 0.00813      1923 _forecast
+ 0.00811      2716 _london
+ 0.00789      1706 _exchequer
+ 0.00784      2809 _mark
+ 0.00783      4823 _trading
+ 0.00779      1989 _funds
+ 0.00764      4524 _sumita
+ 0.00762      3009 _morning
+ 0.00757      1111 _cooperate
+ 0.00751      3988 _revised
+ 0.00728      1552 _economic
+ 0.00709       461 _baker
+ 0.00707      1447 _dlrs
+ 0.00706      1789 _fall
+ 0.00692      4386 _stabilize
+ 0.00686       680 _budget
+ 0.0068       2651 _levels
+ 0.00677      4209 _shares
+ 0.00675      3727 _ranges
+
+Selected attributes: 1467,480,2811,2990,1203,809,1630,5187,1202,1252,3736,355,2412,2502,1701,4232,3734,1192,4845,4767,970,3053,3297,574,1122,2989,1820,5430,4435,4672,4242,4775,1468,6319,3078,4571,3683,3901,2962,3916,2032,1953,2691,7426,6318,4385,6405,1297,2771,4205,1926,23,4594,694,658,3993,3465,1205,6760,1923,2716,1706,2809,4823,1989,4524,3009,1111,3988,1552,461,1447,1789,4386,680,2651,4209,3727 : 78
+
+
+Header of reduced data:
+@relation 'money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R1467,480,2811,2990,1203,809,1630,5187,1202,1252,3736,355,2412,2502,1701,4232,3734,1192,4845,4767,970,3053,3297,574,1122,2989,1820,5430,4435,4672,4242,4775,1468,6319,3078,4571,3683,3901,2962,3916,2032,1953,2691,7426,6318,4385,6405,1297,2771,4205,1926,23,4594,694,658,3993,3465,1205,6760,1923,2716,1706,2809,4823,1989,4524,3009,1111,3988,1552,461,1447,1789,4386,680,2651,4209,3727,7757'
+
+@attribute _dollar numeric
+@attribute _bank numeric
+@attribute _market numeric
+@attribute _money numeric
+@attribute _currency numeric
+@attribute _central numeric
+@attribute _england numeric
+@attribute _yen numeric
+@attribute _currencies numeric
+@attribute _dealers numeric
+@attribute _rates numeric
+@attribute _assistance numeric
+@attribute _intervention numeric
+@attribute _japan numeric
+@attribute _exchange numeric
+@attribute _shortage numeric
+@attribute _rate numeric
+@attribute _cts numeric
+@attribute _treasury numeric
+@attribute _today numeric
+@attribute _company numeric
+@attribute _nations numeric
+@attribute _paris numeric
+@attribute _bills numeric
+@attribute _corp numeric
+@attribute _monetary numeric
+@attribute _fed numeric
+@attribute _band numeric
+@attribute _stg numeric
+@attribute _thedollar numeric
+@attribute _shr numeric
+@attribute _tokyo numeric
+@attribute _dollars numeric
+@attribute _intervened numeric
+@attribute _net numeric
+@attribute _system numeric
+@attribute _qtr numeric
+@attribute _repurchase numeric
+@attribute _miyazawa numeric
+@attribute _reserve numeric
+@attribute _germany numeric
+@attribute _france numeric
+@attribute _liquidity numeric
+@attribute _themoney numeric
+@attribute _intervene numeric
+@attribute _stability numeric
+@attribute _kiichi numeric
+@attribute _deficit numeric
+@attribute _major numeric
+@attribute _share numeric
+@attribute _foreign numeric
+@attribute _accord numeric
+@attribute _target numeric
+@attribute _bundesbank numeric
+@attribute _britain numeric
+@attribute _revs numeric
+@attribute _policy numeric
+@attribute _customer numeric
+@attribute _outright numeric
+@attribute _forecast numeric
+@attribute _london numeric
+@attribute _exchequer numeric
+@attribute _mark numeric
+@attribute _trading numeric
+@attribute _funds numeric
+@attribute _sumita numeric
+@attribute _morning numeric
+@attribute _cooperate numeric
+@attribute _revised numeric
+@attribute _economic numeric
+@attribute _baker numeric
+@attribute _dlrs numeric
+@attribute _fall numeric
+@attribute _stabilize numeric
+@attribute _budget numeric
+@attribute _levels numeric
+@attribute _shares numeric
+@attribute _ranges numeric
+@attribute money-fx {no,yes}
+
+@data
+
+
+Classifier Model
+CostSensitiveClassifier using minimized expected misclasification cost
+
+weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Cost Matrix
+ 0 1
+ 3 0
+
+
+Time taken to build model: 44.28 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.89 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3181               96.4232 %
+Incorrectly Classified Instances       118                3.5768 %
+Kappa statistic                          0.6832
+Mean absolute error                      0.0358
+Root mean squared error                  0.1891
+Relative absolute error                 34.2899 %
+Root relative squared error             83.4859 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,975    0,223    0,987      0,975    0,981      0,687    0,876     0,986     no
+                 0,777    0,025    0,641      0,777    0,702      0,687    0,876     0,510     yes
+Weighted Avg.    0,964    0,213    0,968      0,964    0,966      0,687    0,876     0,960     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3042   78 |    a = no
+   40  139 |    b = yes
+
