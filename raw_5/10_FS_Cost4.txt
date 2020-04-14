@@ -1,0 +1,853 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 387" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 4.0 0.0]" -S 1 -W weka.classifiers.rules.ZeroR
+Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7757
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 7757 money-fx):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.05937      1467 _dollar
+ 0.04517       480 _bank
+ 0.04367      2811 _market
+ 0.04052      2990 _money
+ 0.03997      1203 _currency
+ 0.03397       809 _central
+ 0.03307      1630 _england
+ 0.02888      5187 _yen
+ 0.02794      1202 _currencies
+ 0.02723      1252 _dealers
+ 0.02636      3736 _rates
+ 0.02239       355 _assistance
+ 0.02175      2412 _intervention
+ 0.02149      2502 _japan
+ 0.02128      1701 _exchange
+ 0.02017      4232 _shortage
+ 0.01999      3734 _rate
+ 0.0194       1192 _cts
+ 0.01895      4845 _treasury
+ 0.01762      4767 _today
+ 0.01727       970 _company
+ 0.0171       3053 _nations
+ 0.01666      3297 _paris
+ 0.01646       574 _bills
+ 0.01627      1122 _corp
+ 0.01592      2989 _monetary
+ 0.01564      1820 _fed
+ 0.01534      5430 _band
+ 0.01503      4435 _stg
+ 0.01446      4672 _thedollar
+ 0.01414      4242 _shr
+ 0.01403      4775 _tokyo
+ 0.01355      1468 _dollars
+ 0.01268      6319 _intervened
+ 0.01255      3078 _net
+ 0.01202      4571 _system
+ 0.01158      3683 _qtr
+ 0.01157      3901 _repurchase
+ 0.01142      2962 _miyazawa
+ 0.01091      3916 _reserve
+ 0.01087      2032 _germany
+ 0.01074      1953 _france
+ 0.01067      2691 _liquidity
+ 0.01029      7426 _themoney
+ 0.01024      6318 _intervene
+ 0.01017      4385 _stability
+ 0.01003      6405 _kiichi
+ 0.00972      1297 _deficit
+ 0.00951      2771 _major
+ 0.00948      4205 _share
+ 0.00927      1926 _foreign
+ 0.00909        23 _accord
+ 0.00896      4594 _target
+ 0.00886       694 _bundesbank
+ 0.00884       658 _britain
+ 0.00876      3993 _revs
+ 0.00852      3465 _policy
+ 0.00843      1205 _customer
+ 0.00843      6760 _outright
+ 0.00813      1923 _forecast
+ 0.00811      2716 _london
+ 0.00789      1706 _exchequer
+ 0.00784      2809 _mark
+ 0.00783      4823 _trading
+ 0.00779      1989 _funds
+ 0.00764      4524 _sumita
+ 0.00762      3009 _morning
+ 0.00757      1111 _cooperate
+ 0.00751      3988 _revised
+ 0.00728      1552 _economic
+ 0.00709       461 _baker
+ 0.00707      1447 _dlrs
+ 0.00706      1789 _fall
+ 0.00692      4386 _stabilize
+ 0.00686       680 _budget
+ 0.0068       2651 _levels
+ 0.00677      4209 _shares
+ 0.00675      3727 _ranges
+ 0.00673       976 _compares
+ 0.00666       486 _banks
+ 0.00657      2061 _governor
+ 0.00652      4432 _sterling
+ 0.00633      4384 _stabilise
+ 0.00631      1779 _factors
+ 0.00627      2725 _loss
+ 0.00623      2816 _marks
+ 0.00622      1821 _federal
+ 0.00613      3639 _provided
+ 0.00607      7073 _satoshi
+ 0.006        5090 _west
+ 0.00592      1556 _economists
+ 0.00576      2963 _mln
+ 0.00572      1670 _estimate
+ 0.00557      4190 _session
+ 0.0055       1945 _foster
+ 0.00548      2498 _james
+ 0.00543      4907 _underlying
+ 0.00535      3592 _profit
+ 0.00527       568 _billion
+ 0.0052       6893 _providedthe
+ 0.00517        61 _add
+ 0.00515      2815 _markets
+ 0.00509       627 _bought
+ 0.00501      4816 _trade
+ 0.00497       132 _agreements
+ 0.00492      2503 _japanese
+ 0.0049       1987 _fundamentals
+ 0.00488      3206 _opened
+ 0.00478      6533 _maturingin
+ 0.00478      5390 _ashortage
+ 0.00477      3560 _prior
+ 0.0047       4790 _tonnes
+ 0.00468      1440 _dividend
+ 0.00467      1251 _dealer
+ 0.00462      1929 _foreignexchange
+ 0.00458      6258 _industrialized
+ 0.00456      1434 _div
+ 0.00455      3902 _repurchases
+ 0.00453      2733 _low
+ 0.00453      2235 _houses
+ 0.00447       483 _bankers
+ 0.00444      5853 _drain
+ 0.00437      2850 _measures
+ 0.00436      2650 _level
+ 0.00436      2972 _mlnstg
+ 0.00433       415 _author
+ 0.00427      7032 _revisedits
+ 0.00426      1535 _early
+ 0.00426       113 _afternoon
+ 0.00422      2316 _includes
+ 0.00422      4355 _speculative
+ 0.0042       4387 _stable
+ 0.00417      3674 _push
+ 0.00417      1958 _frankfurt
+ 0.00411      5739 _dealersblah
+ 0.00411      4011 _rise
+ 0.0041       5908 _ems
+ 0.0041       4143 _secretary
+ 0.00407      1557 _economy
+ 0.00403       484 _banking
+ 0.00402      3000 _month
+ 0.00401      2349 _industrial
+ 0.00398       903 _closely
+ 0.00395      3116 _note
+ 0.00394      1863 _finance
+ 0.00394      3918 _reserves
+ 0.00392      4832 _transactions
+ 0.0039       7282 _sumitasaid
+ 0.00389       464 _balances
+ 0.00386      2059 _government
+ 0.00384      3536 _pressure
+ 0.00384        44 _acquisition
+ 0.00381      4192 _set
+ 0.0038        957 _committee
+ 0.00373      4438 _stimulate
+ 0.00371      6673 _ofcustomer
+ 0.00368      4243 _shrs
+ 0.00366       103 _affecting
+ 0.00364      3309 _partly
+ 0.00364       431 _avg
+ 0.00361      1208 _cut
+ 0.00359      4624 _temporary
+ 0.00359      2130 _hands
+ 0.00355      7508 _tointervene
+ 0.00355      6320 _intervenes
+ 0.00355      5454 _basket
+ 0.00352      1112 _cooperation
+ 0.00349      3682 _qtly
+ 0.00345       341 _asked
+ 0.00343      7462 _theyen
+ 0.00342      2612 _lawson
+ 0.00342       874 _circulation
+ 0.00341      1405 _discount
+ 0.00339      1204 _current
+ 0.00333      7372 _thebundesbank
+ 0.00333      5741 _dealerssaid
+ 0.00329      3328 _pay
+ 0.00328      4177 _sentiment
+ 0.00328      1555 _economist
+ 0.00323      3771 _recent
+ 0.00321      3497 _pound
+ 0.00319      3165 _official
+ 0.00315      2939 _ministers
+ 0.00315      1539 _earnings
+ 0.00314      3458 _point
+ 0.00314      3259 _overnight
+ 0.00314      6687 _offsetting
+ 0.00312      7434 _theparis
+ 0.00308      1143 _countries
+ 0.00307      3452 _plc
+ 0.00306      2031 _german
+ 0.00304      6783 _parislast
+ 0.00304      5857 _drainsome
+ 0.00304      7583 _turbulence
+ 0.00304      6203 _hovered
+ 0.00304      5432 _bands
+ 0.00304      6745 _ortner
+ 0.00304      7365 _theafternoon
+ 0.00304      6321 _intervening
+ 0.00303      6757 _outflows
+ 0.00303       738 _canada
+ 0.00299      1542 _eased
+ 0.00298      5188 _yesterday
+ 0.00298      3665 _purchased
+ 0.00296       810 _centralbank
+ 0.00296       944 _comment
+ 0.00296      1007 _comprising
+ 0.00295      7455 _thesystem
+ 0.00294       727 _call
+ 0.00294      2625 _leading
+ 0.00293      4547 _surplus
+ 0.00292      1889 _fixed
+ 0.00292      6471 _lira
+ 0.00292      6587 _monetarypolicy
+ 0.00292      4439 _stock
+ 0.00292       125 _aggressively
+ 0.0029       3267 _owned
+ 0.00287      3281 _pact
+ 0.00287       947 _comments
+ 0.00287      2354 _inflation
+ 0.00281      1817 _feb
+ 0.00281       725 _calif
+ 0.0028       5180 _year
+ 0.0028       6255 _indirectly
+ 0.0028       7005 _resale
+ 0.00279        26 _account
+ 0.00279      3031 _mths
+ 0.00278      4081 _sale
+ 0.00276      3859 _remarks
+ 0.00275      4208 _shareholders
+ 0.00274      5648 _concerted
+ 0.00273      4391 _stake
+ 0.00273      4776 _told
+ 0.0027       4817 _traded
+ 0.00267      5495 _billionstg
+ 0.0026       6243 _inband
+ 0.00259      6502 _majorindustrial
+ 0.00259      5880 _economicfundamentals
+ 0.00259      5955 _exchangerates
+ 0.00258       832 _chancellor
+ 0.00258      3067 _needed
+ 0.00256        67 _adds
+ 0.00255      7604 _undervalued
+ 0.00254      2078 _greater
+ 0.00254      2399 _interest
+ 0.00254      4495 _subsidiary
+ 0.00254       428 _averaged
+ 0.00251      3588 _production
+ 0.00249      2350 _industrialised
+ 0.00249      5772 _devaluation
+ 0.00248      4281 _slide
+ 0.00243      2101 _growth
+ 0.00243      4541 _support
+ 0.00242      3976 _reuters
+ 0.00241      2764 _main
+ 0.00236      3464 _policies
+ 0.00236      4040 _room
+ 0.00236      7398 _theforeign
+ 0.00234      2499 _jan
+ 0.00234      7381 _thecurrency
+ 0.00234      7339 _temporaryreserves
+ 0.00232      6832 _plaza
+ 0.00232      4929 _unit
+ 0.0023       2969 _mlndlrs
+ 0.0023       2938 _minister
+ 0.00229      3209 _oper
+ 0.00228      1724 _expect
+ 0.00228      2881 _merger
+ 0.00226      4047 _round
+ 0.00225       325 _arrange
+ 0.00225      1243 _day
+ 0.00224      1259 _debentures
+ 0.00223       135 _agriculture
+ 0.00221      6283 _inject
+ 0.00221      2599 _late
+ 0.00218      4382 _st
+ 0.00218      5895 _effectiveness
+ 0.00218      5403 _ataround
+ 0.00217      5215 _abovetarget
+ 0.00217      6515 _marketintervention
+ 0.00217      5246 _afterforecasting
+ 0.00217      5640 _committedthemselves
+ 0.00217      6653 _notecirculation
+ 0.00217      6331 _invitedan
+ 0.00217      5828 _dollarrate
+ 0.00217      7321 _takeout
+ 0.00217      5676 _cooperateto
+ 0.00217      5377 _aroundcurrent
+ 0.00217      5826 _dollarfell
+ 0.00215       834 _change
+ 0.00215      6752 _otto
+ 0.00214      3396 _petroleum
+ 0.00214      3045 _narrow
+ 0.00214      2591 _large
+ 0.00212      4016 _risk
+ 0.00211      2556 _key
+ 0.00209       710 _buying
+ 0.00209      2282 _imbalances
+ 0.00209      4818 _tradedeficit
+ 0.00209      5457 _bearish
+ 0.00207       567 _bill
+ 0.00206      4721 _theu
+ 0.00204       129 _agreed
+ 0.00204      3024 _movements
+ 0.00204      1184 _crude
+ 0.00199      5113 _widely
+ 0.00199        41 _acquired
+ 0.00199      6909 _quiet
+ 0.00198       417 _authorities
+ 0.00198      5077 _week
+ 0.00198      1281 _declined
+ 0.00198      2859 _meeting
+ 0.00198      1766 _extremely
+ 0.00198      6953 _rebound
+ 0.00197      3156 _offer
+ 0.00197      3699 _question
+ 0.00197      1818 _february
+ 0.00196      1471 _domestic
+ 0.00195      2007 _gas
+ 0.00195      1148 _coupon
+ 0.00194      6419 _kwacha
+ 0.00194      7573 _treasurybills
+ 0.00194      3457 _poehl
+ 0.00194      5593 _centralbanks
+ 0.00194      5082 _weighted
+ 0.00194      2281 _imbalance
+ 0.00194      3181 _oil
+ 0.00192      3329 _payable
+ 0.00191      3584 _producers
+ 0.00191       961 _common
+ 0.0019       3333 _payout
+ 0.0019       3219 _operators
+ 0.0019       4412 _statements
+ 0.0019       4235 _shortfall
+ 0.00189      4930 _united
+ 0.00187      7559 _tradesurplus
+ 0.00187      1369 _dhabi
+ 0.00187       952 _commission
+ 0.00186      4656 _thatthe
+ 0.00186      6019 _fluctuate
+ 0.00186      7132 _shifts
+ 0.00184      1280 _decline
+ 0.00183      4650 _texas
+ 0.00181      5117 _widespread
+ 0.00181      5100 _whenthe
+ 0.00181      1726 _expected
+ 0.00181      3141 _occur
+ 0.00181      5026 _volcker
+ 0.0018       1541 _ease
+ 0.00179      3980 _revenues
+ 0.00178      2344 _indirect
+ 0.00178       655 _brings
+ 0.00177      5300 _andcompares
+ 0.00177      5335 _anearly
+ 0.00177      5789 _dinar
+ 0.00177      6301 _instability
+ 0.00177      6709 _oftreasury
+ 0.00177      5678 _coordinated
+ 0.00177      7237 _stgand
+ 0.00177      7243 _stimulating
+ 0.00177      7671 _watched
+ 0.00177      5698 _credited
+ 0.00177      3543 _prevent
+ 0.00176      2069 _grain
+ 0.00175      1059 _consistent
+ 0.00175      3338 _pct
+ 0.00174      7539 _tostabilise
+ 0.00173      5586 _carritt
+ 0.00173      6780 _parisaccord
+ 0.00173      6771 _overvalued
+ 0.00173      7316 _systemtoday
+ 0.00173      6037 _forex
+ 0.00173      5866 _dutchcentral
+ 0.00173      5940 _europeancurrencies
+ 0.00173      5531 _broadlyconsistent
+ 0.00173      5499 _billsin
+ 0.00173      5498 _billscomprising
+ 0.00173      6965 _reflectfundamentals
+ 0.00173      7654 _volckersaid
+ 0.00173      7082 _scepticalabout
+ 0.00173      5440 _bankintervention
+ 0.00173      5438 _bankgovernors
+ 0.00173      6246 _inclose
+ 0.00173      5707 _currenciesblah
+ 0.00173      7565 _transactionsand
+ 0.00173      5266 _aliquidity
+ 0.00173      7421 _themarkets
+
+Selected attributes: 1467,480,2811,2990,1203,809,1630,5187,1202,1252,3736,355,2412,2502,1701,4232,3734,1192,4845,4767,970,3053,3297,574,1122,2989,1820,5430,4435,4672,4242,4775,1468,6319,3078,4571,3683,3901,2962,3916,2032,1953,2691,7426,6318,4385,6405,1297,2771,4205,1926,23,4594,694,658,3993,3465,1205,6760,1923,2716,1706,2809,4823,1989,4524,3009,1111,3988,1552,461,1447,1789,4386,680,2651,4209,3727,976,486,2061,4432,4384,1779,2725,2816,1821,3639,7073,5090,1556,2963,1670,4190,1945,2498,4907,3592,568,6893,61,2815,627,4816,132,2503,1987,3206,6533,5390,3560,4790,1440,1251,1929,6258,1434,3902,2733,2235,483,5853,2850,2650,2972,415,7032,1535,113,2316,4355,4387,3674,1958,5739,4011,5908,4143,1557,484,3000,2349,903,3116,1863,3918,4832,7282,464,2059,3536,44,4192,957,4438,6673,4243,103,3309,431,1208,4624,2130,7508,6320,5454,1112,3682,341,7462,2612,874,1405,1204,7372,5741,3328,4177,1555,3771,3497,3165,2939,1539,3458,3259,6687,7434,1143,3452,2031,6783,5857,7583,6203,5432,6745,7365,6321,6757,738,1542,5188,3665,810,944,1007,7455,727,2625,4547,1889,6471,6587,4439,125,3267,3281,947,2354,1817,725,5180,6255,7005,26,3031,4081,3859,4208,5648,4391,4776,4817,5495,6243,6502,5880,5955,832,3067,67,7604,2078,2399,4495,428,3588,2350,5772,4281,2101,4541,3976,2764,3464,4040,7398,2499,7381,7339,6832,4929,2969,2938,3209,1724,2881,4047,325,1243,1259,135,6283,2599,4382,5895,5403,5215,6515,5246,5640,6653,6331,5828,7321,5676,5377,5826,834,6752,3396,3045,2591,4016,2556,710,2282,4818,5457,567,4721,129,3024,1184,5113,41,6909,417,5077,1281,2859,1766,6953,3156,3699,1818,1471,2007,1148,6419,7573,3457,5593,5082,2281,3181,3329,3584,961,3333,3219,4412,4235,4930,7559,1369,952,4656,6019,7132,1280,4650,5117,5100,1726,3141,5026,1541,3980,2344,655,5300,5335,5789,6301,6709,5678,7237,7243,7671,5698,3543,2069,1059,3338,7539,5586,6780,6771,7316,6037,5866,5940,5531,5499,5498,6965,7654,7082,5440,5438,6246,5707,7565,5266,7421 : 387
+
+
+Header of reduced data:
+@relation 'money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R1467,480,2811,2990,1203,809,1630,5187,1202,1252,3736,355,2412,2502,1701,4232,3734,1192,4845,4767,970,3053,3297,574,1122,2989,1820,5430,4435,4672,4242,4775,1468,6319,3078,4571,3683,3901,2962,3916,2032,1953,2691,7426,6318,4385,6405,1297,2771,4205,1926,23,4594,694,658,3993,3465,1205,6760,1923,2716,1706,2809,4823,1989,4524,3009,1111,3988,1552,461,1447,1789,4386,680,2651,4209,3727,976,486,2061,4432,4384,1779,2725,2816,1821,3639,7073,5090,1556,2963,1670,4190,1945,2498,4907,3592,568,6893,61,2815,627,4816,132,2503,1987,3206,6533,5390,3560,4790,1440,1251,1929,6258,1434,3902,2733,2235,483,5853,2850,2650,2972,415,7032,1535,113,2316,4355,4387,3674,1958,5739,4011,5908,4143,1557,484,3000,2349,903,3116,1863,3918,4832,7282,464,2059,3536,44,4192,957,4438,6673,4243,103,3309,431,1208,4624,2130,7508,6320,5454,1112,3682,341,7462,2612,874,1405,1204,7372,5741,3328,4177,1555,3771,3497,3165,2939,1539,3458,3259,6687,7434,1143,3452,2031,6783,5857,7583,6203,5432,6745,7365,6321,6757,738,1542,5188,3665,810,944,1007,7455,727,2625,4547,1889,6471,6587,4439,125,3267,3281,947,2354,1817,725,5180,6255,7005,26,3031,4081,3859,4208,5648,4391,4776,4817,5495,6243,6502,5880,5955,832,3067,67,7604,2078,2399,4495,428,3588,2350,5772,4281,2101,4541,3976,2764,3464,4040,7398,2499,7381,7339,6832,4929,2969,2938,3209,1724,2881,4047,325,1243,1259,135,6283,2599,4382,5895,5403,5215,6515,5246,5640,6653,6331,5828,7321,5676,5377,5826,834,6752,3396,3045,2591,4016,2556,710,2282,4818,5457,567,4721,129,3024,1184,5113,41,6909,417,5077,1281,2859,1766,6953,3156,3699,1818,1471,2007,1148,6419,7573,3457,5593,5082,2281,3181,3329,3584,961,3333,3219,4412,4235,4930,7559,1369,952,4656,6019,7132,1280,4650,5117,5100,1726,3141,5026,1541,3980,2344,655,5300,5335,5789,6301,6709,5678,7237,7243,7671,5698,3543,2069,1059,3338,7539,5586,6780,6771,7316,6037,5866,5940,5531,5499,5498,6965,7654,7082,5440,5438,6246,5707,7565,5266,7421,7757'
+
+@attribute _dollar numeric
+@attribute _bank numeric
+@attribute _market numeric
+@attribute _money numeric
+@attribute _currency numeric
+@attribute _central numeric
+@attribute _england numeric
+@attribute _yen numeric
+@attribute _currencies numeric
+@attribute _dealers numeric
+@attribute _rates numeric
+@attribute _assistance numeric
+@attribute _intervention numeric
+@attribute _japan numeric
+@attribute _exchange numeric
+@attribute _shortage numeric
+@attribute _rate numeric
+@attribute _cts numeric
+@attribute _treasury numeric
+@attribute _today numeric
+@attribute _company numeric
+@attribute _nations numeric
+@attribute _paris numeric
+@attribute _bills numeric
+@attribute _corp numeric
+@attribute _monetary numeric
+@attribute _fed numeric
+@attribute _band numeric
+@attribute _stg numeric
+@attribute _thedollar numeric
+@attribute _shr numeric
+@attribute _tokyo numeric
+@attribute _dollars numeric
+@attribute _intervened numeric
+@attribute _net numeric
+@attribute _system numeric
+@attribute _qtr numeric
+@attribute _repurchase numeric
+@attribute _miyazawa numeric
+@attribute _reserve numeric
+@attribute _germany numeric
+@attribute _france numeric
+@attribute _liquidity numeric
+@attribute _themoney numeric
+@attribute _intervene numeric
+@attribute _stability numeric
+@attribute _kiichi numeric
+@attribute _deficit numeric
+@attribute _major numeric
+@attribute _share numeric
+@attribute _foreign numeric
+@attribute _accord numeric
+@attribute _target numeric
+@attribute _bundesbank numeric
+@attribute _britain numeric
+@attribute _revs numeric
+@attribute _policy numeric
+@attribute _customer numeric
+@attribute _outright numeric
+@attribute _forecast numeric
+@attribute _london numeric
+@attribute _exchequer numeric
+@attribute _mark numeric
+@attribute _trading numeric
+@attribute _funds numeric
+@attribute _sumita numeric
+@attribute _morning numeric
+@attribute _cooperate numeric
+@attribute _revised numeric
+@attribute _economic numeric
+@attribute _baker numeric
+@attribute _dlrs numeric
+@attribute _fall numeric
+@attribute _stabilize numeric
+@attribute _budget numeric
+@attribute _levels numeric
+@attribute _shares numeric
+@attribute _ranges numeric
+@attribute _compares numeric
+@attribute _banks numeric
+@attribute _governor numeric
+@attribute _sterling numeric
+@attribute _stabilise numeric
+@attribute _factors numeric
+@attribute _loss numeric
+@attribute _marks numeric
+@attribute _federal numeric
+@attribute _provided numeric
+@attribute _satoshi numeric
+@attribute _west numeric
+@attribute _economists numeric
+@attribute _mln numeric
+@attribute _estimate numeric
+@attribute _session numeric
+@attribute _foster numeric
+@attribute _james numeric
+@attribute _underlying numeric
+@attribute _profit numeric
+@attribute _billion numeric
+@attribute _providedthe numeric
+@attribute _add numeric
+@attribute _markets numeric
+@attribute _bought numeric
+@attribute _trade numeric
+@attribute _agreements numeric
+@attribute _japanese numeric
+@attribute _fundamentals numeric
+@attribute _opened numeric
+@attribute _maturingin numeric
+@attribute _ashortage numeric
+@attribute _prior numeric
+@attribute _tonnes numeric
+@attribute _dividend numeric
+@attribute _dealer numeric
+@attribute _foreignexchange numeric
+@attribute _industrialized numeric
+@attribute _div numeric
+@attribute _repurchases numeric
+@attribute _low numeric
+@attribute _houses numeric
+@attribute _bankers numeric
+@attribute _drain numeric
+@attribute _measures numeric
+@attribute _level numeric
+@attribute _mlnstg numeric
+@attribute _author numeric
+@attribute _revisedits numeric
+@attribute _early numeric
+@attribute _afternoon numeric
+@attribute _includes numeric
+@attribute _speculative numeric
+@attribute _stable numeric
+@attribute _push numeric
+@attribute _frankfurt numeric
+@attribute _dealersblah numeric
+@attribute _rise numeric
+@attribute _ems numeric
+@attribute _secretary numeric
+@attribute _economy numeric
+@attribute _banking numeric
+@attribute _month numeric
+@attribute _industrial numeric
+@attribute _closely numeric
+@attribute _note numeric
+@attribute _finance numeric
+@attribute _reserves numeric
+@attribute _transactions numeric
+@attribute _sumitasaid numeric
+@attribute _balances numeric
+@attribute _government numeric
+@attribute _pressure numeric
+@attribute _acquisition numeric
+@attribute _set numeric
+@attribute _committee numeric
+@attribute _stimulate numeric
+@attribute _ofcustomer numeric
+@attribute _shrs numeric
+@attribute _affecting numeric
+@attribute _partly numeric
+@attribute _avg numeric
+@attribute _cut numeric
+@attribute _temporary numeric
+@attribute _hands numeric
+@attribute _tointervene numeric
+@attribute _intervenes numeric
+@attribute _basket numeric
+@attribute _cooperation numeric
+@attribute _qtly numeric
+@attribute _asked numeric
+@attribute _theyen numeric
+@attribute _lawson numeric
+@attribute _circulation numeric
+@attribute _discount numeric
+@attribute _current numeric
+@attribute _thebundesbank numeric
+@attribute _dealerssaid numeric
+@attribute _pay numeric
+@attribute _sentiment numeric
+@attribute _economist numeric
+@attribute _recent numeric
+@attribute _pound numeric
+@attribute _official numeric
+@attribute _ministers numeric
+@attribute _earnings numeric
+@attribute _point numeric
+@attribute _overnight numeric
+@attribute _offsetting numeric
+@attribute _theparis numeric
+@attribute _countries numeric
+@attribute _plc numeric
+@attribute _german numeric
+@attribute _parislast numeric
+@attribute _drainsome numeric
+@attribute _turbulence numeric
+@attribute _hovered numeric
+@attribute _bands numeric
+@attribute _ortner numeric
+@attribute _theafternoon numeric
+@attribute _intervening numeric
+@attribute _outflows numeric
+@attribute _canada numeric
+@attribute _eased numeric
+@attribute _yesterday numeric
+@attribute _purchased numeric
+@attribute _centralbank numeric
+@attribute _comment numeric
+@attribute _comprising numeric
+@attribute _thesystem numeric
+@attribute _call numeric
+@attribute _leading numeric
+@attribute _surplus numeric
+@attribute _fixed numeric
+@attribute _lira numeric
+@attribute _monetarypolicy numeric
+@attribute _stock numeric
+@attribute _aggressively numeric
+@attribute _owned numeric
+@attribute _pact numeric
+@attribute _comments numeric
+@attribute _inflation numeric
+@attribute _feb numeric
+@attribute _calif numeric
+@attribute _year numeric
+@attribute _indirectly numeric
+@attribute _resale numeric
+@attribute _account numeric
+@attribute _mths numeric
+@attribute _sale numeric
+@attribute _remarks numeric
+@attribute _shareholders numeric
+@attribute _concerted numeric
+@attribute _stake numeric
+@attribute _told numeric
+@attribute _traded numeric
+@attribute _billionstg numeric
+@attribute _inband numeric
+@attribute _majorindustrial numeric
+@attribute _economicfundamentals numeric
+@attribute _exchangerates numeric
+@attribute _chancellor numeric
+@attribute _needed numeric
+@attribute _adds numeric
+@attribute _undervalued numeric
+@attribute _greater numeric
+@attribute _interest numeric
+@attribute _subsidiary numeric
+@attribute _averaged numeric
+@attribute _production numeric
+@attribute _industrialised numeric
+@attribute _devaluation numeric
+@attribute _slide numeric
+@attribute _growth numeric
+@attribute _support numeric
+@attribute _reuters numeric
+@attribute _main numeric
+@attribute _policies numeric
+@attribute _room numeric
+@attribute _theforeign numeric
+@attribute _jan numeric
+@attribute _thecurrency numeric
+@attribute _temporaryreserves numeric
+@attribute _plaza numeric
+@attribute _unit numeric
+@attribute _mlndlrs numeric
+@attribute _minister numeric
+@attribute _oper numeric
+@attribute _expect numeric
+@attribute _merger numeric
+@attribute _round numeric
+@attribute _arrange numeric
+@attribute _day numeric
+@attribute _debentures numeric
+@attribute _agriculture numeric
+@attribute _inject numeric
+@attribute _late numeric
+@attribute _st numeric
+@attribute _effectiveness numeric
+@attribute _ataround numeric
+@attribute _abovetarget numeric
+@attribute _marketintervention numeric
+@attribute _afterforecasting numeric
+@attribute _committedthemselves numeric
+@attribute _notecirculation numeric
+@attribute _invitedan numeric
+@attribute _dollarrate numeric
+@attribute _takeout numeric
+@attribute _cooperateto numeric
+@attribute _aroundcurrent numeric
+@attribute _dollarfell numeric
+@attribute _change numeric
+@attribute _otto numeric
+@attribute _petroleum numeric
+@attribute _narrow numeric
+@attribute _large numeric
+@attribute _risk numeric
+@attribute _key numeric
+@attribute _buying numeric
+@attribute _imbalances numeric
+@attribute _tradedeficit numeric
+@attribute _bearish numeric
+@attribute _bill numeric
+@attribute _theu numeric
+@attribute _agreed numeric
+@attribute _movements numeric
+@attribute _crude numeric
+@attribute _widely numeric
+@attribute _acquired numeric
+@attribute _quiet numeric
+@attribute _authorities numeric
+@attribute _week numeric
+@attribute _declined numeric
+@attribute _meeting numeric
+@attribute _extremely numeric
+@attribute _rebound numeric
+@attribute _offer numeric
+@attribute _question numeric
+@attribute _february numeric
+@attribute _domestic numeric
+@attribute _gas numeric
+@attribute _coupon numeric
+@attribute _kwacha numeric
+@attribute _treasurybills numeric
+@attribute _poehl numeric
+@attribute _centralbanks numeric
+@attribute _weighted numeric
+@attribute _imbalance numeric
+@attribute _oil numeric
+@attribute _payable numeric
+@attribute _producers numeric
+@attribute _common numeric
+@attribute _payout numeric
+@attribute _operators numeric
+@attribute _statements numeric
+@attribute _shortfall numeric
+@attribute _united numeric
+@attribute _tradesurplus numeric
+@attribute _dhabi numeric
+@attribute _commission numeric
+@attribute _thatthe numeric
+@attribute _fluctuate numeric
+@attribute _shifts numeric
+@attribute _decline numeric
+@attribute _texas numeric
+@attribute _widespread numeric
+@attribute _whenthe numeric
+@attribute _expected numeric
+@attribute _occur numeric
+@attribute _volcker numeric
+@attribute _ease numeric
+@attribute _revenues numeric
+@attribute _indirect numeric
+@attribute _brings numeric
+@attribute _andcompares numeric
+@attribute _anearly numeric
+@attribute _dinar numeric
+@attribute _instability numeric
+@attribute _oftreasury numeric
+@attribute _coordinated numeric
+@attribute _stgand numeric
+@attribute _stimulating numeric
+@attribute _watched numeric
+@attribute _credited numeric
+@attribute _prevent numeric
+@attribute _grain numeric
+@attribute _consistent numeric
+@attribute _pct numeric
+@attribute _tostabilise numeric
+@attribute _carritt numeric
+@attribute _parisaccord numeric
+@attribute _overvalued numeric
+@attribute _systemtoday numeric
+@attribute _forex numeric
+@attribute _dutchcentral numeric
+@attribute _europeancurrencies numeric
+@attribute _broadlyconsistent numeric
+@attribute _billsin numeric
+@attribute _billscomprising numeric
+@attribute _reflectfundamentals numeric
+@attribute _volckersaid numeric
+@attribute _scepticalabout numeric
+@attribute _bankintervention numeric
+@attribute _bankgovernors numeric
+@attribute _inclose numeric
+@attribute _currenciesblah numeric
+@attribute _transactionsand numeric
+@attribute _aliquidity numeric
+@attribute _themarkets numeric
+@attribute money-fx {no,yes}
+
+@data
+
+
+Classifier Model
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.rules.ZeroR 
+
+Classifier Model
+ZeroR predicts class value: no
+
+Cost Matrix
+ 0 1
+ 4 0
+
+
+Time taken to build model: 29.63 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.41 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3120               94.5741 %
+Incorrectly Classified Instances       179                5.4259 %
+Kappa statistic                          0     
+Mean absolute error                      0.2254
+Root mean squared error                  0.2651
+Relative absolute error                216.1064 %
+Root relative squared error            117.0317 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    1,000    0,946      1,000    0,972      ?        0,500     0,946     no
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,054     yes
+Weighted Avg.    0,946    0,946    ?          0,946    ?          ?        0,500     0,897     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3120    0 |    a = no
+  179    0 |    b = yes
+
