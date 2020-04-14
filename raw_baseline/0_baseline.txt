@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7757
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 149.91 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 3.85 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3149               95.4532 %
+Incorrectly Classified Instances       150                4.5468 %
+Kappa statistic                          0.3422
+Mean absolute error                      0.0627
+Root mean squared error                  0.1631
+Relative absolute error                 60.0847 %
+Root relative squared error             72.0022 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,996    0,765    0,958      0,996    0,976      0,408    0,987     0,999     no
+                 0,235    0,004    0,764      0,235    0,359      0,408    0,987     0,780     yes
+Weighted Avg.    0,955    0,724    0,947      0,955    0,943      0,408    0,987     0,987     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3107   13 |    a = no
+  137   42 |    b = yes
+
