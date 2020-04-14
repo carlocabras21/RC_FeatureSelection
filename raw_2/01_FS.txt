@@ -1,0 +1,383 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 155" -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7757
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 7757 money-fx):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.05937      1467 _dollar
+ 0.04517       480 _bank
+ 0.04367      2811 _market
+ 0.04052      2990 _money
+ 0.03997      1203 _currency
+ 0.03397       809 _central
+ 0.03307      1630 _england
+ 0.02888      5187 _yen
+ 0.02794      1202 _currencies
+ 0.02723      1252 _dealers
+ 0.02636      3736 _rates
+ 0.02239       355 _assistance
+ 0.02175      2412 _intervention
+ 0.02149      2502 _japan
+ 0.02128      1701 _exchange
+ 0.02017      4232 _shortage
+ 0.01999      3734 _rate
+ 0.0194       1192 _cts
+ 0.01895      4845 _treasury
+ 0.01762      4767 _today
+ 0.01727       970 _company
+ 0.0171       3053 _nations
+ 0.01666      3297 _paris
+ 0.01646       574 _bills
+ 0.01627      1122 _corp
+ 0.01592      2989 _monetary
+ 0.01564      1820 _fed
+ 0.01534      5430 _band
+ 0.01503      4435 _stg
+ 0.01446      4672 _thedollar
+ 0.01414      4242 _shr
+ 0.01403      4775 _tokyo
+ 0.01355      1468 _dollars
+ 0.01268      6319 _intervened
+ 0.01255      3078 _net
+ 0.01202      4571 _system
+ 0.01158      3683 _qtr
+ 0.01157      3901 _repurchase
+ 0.01142      2962 _miyazawa
+ 0.01091      3916 _reserve
+ 0.01087      2032 _germany
+ 0.01074      1953 _france
+ 0.01067      2691 _liquidity
+ 0.01029      7426 _themoney
+ 0.01024      6318 _intervene
+ 0.01017      4385 _stability
+ 0.01003      6405 _kiichi
+ 0.00972      1297 _deficit
+ 0.00951      2771 _major
+ 0.00948      4205 _share
+ 0.00927      1926 _foreign
+ 0.00909        23 _accord
+ 0.00896      4594 _target
+ 0.00886       694 _bundesbank
+ 0.00884       658 _britain
+ 0.00876      3993 _revs
+ 0.00852      3465 _policy
+ 0.00843      1205 _customer
+ 0.00843      6760 _outright
+ 0.00813      1923 _forecast
+ 0.00811      2716 _london
+ 0.00789      1706 _exchequer
+ 0.00784      2809 _mark
+ 0.00783      4823 _trading
+ 0.00779      1989 _funds
+ 0.00764      4524 _sumita
+ 0.00762      3009 _morning
+ 0.00757      1111 _cooperate
+ 0.00751      3988 _revised
+ 0.00728      1552 _economic
+ 0.00709       461 _baker
+ 0.00707      1447 _dlrs
+ 0.00706      1789 _fall
+ 0.00692      4386 _stabilize
+ 0.00686       680 _budget
+ 0.0068       2651 _levels
+ 0.00677      4209 _shares
+ 0.00675      3727 _ranges
+ 0.00673       976 _compares
+ 0.00666       486 _banks
+ 0.00657      2061 _governor
+ 0.00652      4432 _sterling
+ 0.00633      4384 _stabilise
+ 0.00631      1779 _factors
+ 0.00627      2725 _loss
+ 0.00623      2816 _marks
+ 0.00622      1821 _federal
+ 0.00613      3639 _provided
+ 0.00607      7073 _satoshi
+ 0.006        5090 _west
+ 0.00592      1556 _economists
+ 0.00576      2963 _mln
+ 0.00572      1670 _estimate
+ 0.00557      4190 _session
+ 0.0055       1945 _foster
+ 0.00548      2498 _james
+ 0.00543      4907 _underlying
+ 0.00535      3592 _profit
+ 0.00527       568 _billion
+ 0.0052       6893 _providedthe
+ 0.00517        61 _add
+ 0.00515      2815 _markets
+ 0.00509       627 _bought
+ 0.00501      4816 _trade
+ 0.00497       132 _agreements
+ 0.00492      2503 _japanese
+ 0.0049       1987 _fundamentals
+ 0.00488      3206 _opened
+ 0.00478      6533 _maturingin
+ 0.00478      5390 _ashortage
+ 0.00477      3560 _prior
+ 0.0047       4790 _tonnes
+ 0.00468      1440 _dividend
+ 0.00467      1251 _dealer
+ 0.00462      1929 _foreignexchange
+ 0.00458      6258 _industrialized
+ 0.00456      1434 _div
+ 0.00455      3902 _repurchases
+ 0.00453      2733 _low
+ 0.00453      2235 _houses
+ 0.00447       483 _bankers
+ 0.00444      5853 _drain
+ 0.00437      2850 _measures
+ 0.00436      2650 _level
+ 0.00436      2972 _mlnstg
+ 0.00433       415 _author
+ 0.00427      7032 _revisedits
+ 0.00426      1535 _early
+ 0.00426       113 _afternoon
+ 0.00422      2316 _includes
+ 0.00422      4355 _speculative
+ 0.0042       4387 _stable
+ 0.00417      3674 _push
+ 0.00417      1958 _frankfurt
+ 0.00411      5739 _dealersblah
+ 0.00411      4011 _rise
+ 0.0041       5908 _ems
+ 0.0041       4143 _secretary
+ 0.00407      1557 _economy
+ 0.00403       484 _banking
+ 0.00402      3000 _month
+ 0.00401      2349 _industrial
+ 0.00398       903 _closely
+ 0.00395      3116 _note
+ 0.00394      1863 _finance
+ 0.00394      3918 _reserves
+ 0.00392      4832 _transactions
+ 0.0039       7282 _sumitasaid
+ 0.00389       464 _balances
+ 0.00386      2059 _government
+ 0.00384      3536 _pressure
+ 0.00384        44 _acquisition
+ 0.00381      4192 _set
+ 0.0038        957 _committee
+ 0.00373      4438 _stimulate
+
+Selected attributes: 1467,480,2811,2990,1203,809,1630,5187,1202,1252,3736,355,2412,2502,1701,4232,3734,1192,4845,4767,970,3053,3297,574,1122,2989,1820,5430,4435,4672,4242,4775,1468,6319,3078,4571,3683,3901,2962,3916,2032,1953,2691,7426,6318,4385,6405,1297,2771,4205,1926,23,4594,694,658,3993,3465,1205,6760,1923,2716,1706,2809,4823,1989,4524,3009,1111,3988,1552,461,1447,1789,4386,680,2651,4209,3727,976,486,2061,4432,4384,1779,2725,2816,1821,3639,7073,5090,1556,2963,1670,4190,1945,2498,4907,3592,568,6893,61,2815,627,4816,132,2503,1987,3206,6533,5390,3560,4790,1440,1251,1929,6258,1434,3902,2733,2235,483,5853,2850,2650,2972,415,7032,1535,113,2316,4355,4387,3674,1958,5739,4011,5908,4143,1557,484,3000,2349,903,3116,1863,3918,4832,7282,464,2059,3536,44,4192,957,4438 : 155
+
+
+Header of reduced data:
+@relation 'money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R1467,480,2811,2990,1203,809,1630,5187,1202,1252,3736,355,2412,2502,1701,4232,3734,1192,4845,4767,970,3053,3297,574,1122,2989,1820,5430,4435,4672,4242,4775,1468,6319,3078,4571,3683,3901,2962,3916,2032,1953,2691,7426,6318,4385,6405,1297,2771,4205,1926,23,4594,694,658,3993,3465,1205,6760,1923,2716,1706,2809,4823,1989,4524,3009,1111,3988,1552,461,1447,1789,4386,680,2651,4209,3727,976,486,2061,4432,4384,1779,2725,2816,1821,3639,7073,5090,1556,2963,1670,4190,1945,2498,4907,3592,568,6893,61,2815,627,4816,132,2503,1987,3206,6533,5390,3560,4790,1440,1251,1929,6258,1434,3902,2733,2235,483,5853,2850,2650,2972,415,7032,1535,113,2316,4355,4387,3674,1958,5739,4011,5908,4143,1557,484,3000,2349,903,3116,1863,3918,4832,7282,464,2059,3536,44,4192,957,4438,7757'
+
+@attribute _dollar numeric
+@attribute _bank numeric
+@attribute _market numeric
+@attribute _money numeric
+@attribute _currency numeric
+@attribute _central numeric
+@attribute _england numeric
+@attribute _yen numeric
+@attribute _currencies numeric
+@attribute _dealers numeric
+@attribute _rates numeric
+@attribute _assistance numeric
+@attribute _intervention numeric
+@attribute _japan numeric
+@attribute _exchange numeric
+@attribute _shortage numeric
+@attribute _rate numeric
+@attribute _cts numeric
+@attribute _treasury numeric
+@attribute _today numeric
+@attribute _company numeric
+@attribute _nations numeric
+@attribute _paris numeric
+@attribute _bills numeric
+@attribute _corp numeric
+@attribute _monetary numeric
+@attribute _fed numeric
+@attribute _band numeric
+@attribute _stg numeric
+@attribute _thedollar numeric
+@attribute _shr numeric
+@attribute _tokyo numeric
+@attribute _dollars numeric
+@attribute _intervened numeric
+@attribute _net numeric
+@attribute _system numeric
+@attribute _qtr numeric
+@attribute _repurchase numeric
+@attribute _miyazawa numeric
+@attribute _reserve numeric
+@attribute _germany numeric
+@attribute _france numeric
+@attribute _liquidity numeric
+@attribute _themoney numeric
+@attribute _intervene numeric
+@attribute _stability numeric
+@attribute _kiichi numeric
+@attribute _deficit numeric
+@attribute _major numeric
+@attribute _share numeric
+@attribute _foreign numeric
+@attribute _accord numeric
+@attribute _target numeric
+@attribute _bundesbank numeric
+@attribute _britain numeric
+@attribute _revs numeric
+@attribute _policy numeric
+@attribute _customer numeric
+@attribute _outright numeric
+@attribute _forecast numeric
+@attribute _london numeric
+@attribute _exchequer numeric
+@attribute _mark numeric
+@attribute _trading numeric
+@attribute _funds numeric
+@attribute _sumita numeric
+@attribute _morning numeric
+@attribute _cooperate numeric
+@attribute _revised numeric
+@attribute _economic numeric
+@attribute _baker numeric
+@attribute _dlrs numeric
+@attribute _fall numeric
+@attribute _stabilize numeric
+@attribute _budget numeric
+@attribute _levels numeric
+@attribute _shares numeric
+@attribute _ranges numeric
+@attribute _compares numeric
+@attribute _banks numeric
+@attribute _governor numeric
+@attribute _sterling numeric
+@attribute _stabilise numeric
+@attribute _factors numeric
+@attribute _loss numeric
+@attribute _marks numeric
+@attribute _federal numeric
+@attribute _provided numeric
+@attribute _satoshi numeric
+@attribute _west numeric
+@attribute _economists numeric
+@attribute _mln numeric
+@attribute _estimate numeric
+@attribute _session numeric
+@attribute _foster numeric
+@attribute _james numeric
+@attribute _underlying numeric
+@attribute _profit numeric
+@attribute _billion numeric
+@attribute _providedthe numeric
+@attribute _add numeric
+@attribute _markets numeric
+@attribute _bought numeric
+@attribute _trade numeric
+@attribute _agreements numeric
+@attribute _japanese numeric
+@attribute _fundamentals numeric
+@attribute _opened numeric
+@attribute _maturingin numeric
+@attribute _ashortage numeric
+@attribute _prior numeric
+@attribute _tonnes numeric
+@attribute _dividend numeric
+@attribute _dealer numeric
+@attribute _foreignexchange numeric
+@attribute _industrialized numeric
+@attribute _div numeric
+@attribute _repurchases numeric
+@attribute _low numeric
+@attribute _houses numeric
+@attribute _bankers numeric
+@attribute _drain numeric
+@attribute _measures numeric
+@attribute _level numeric
+@attribute _mlnstg numeric
+@attribute _author numeric
+@attribute _revisedits numeric
+@attribute _early numeric
+@attribute _afternoon numeric
+@attribute _includes numeric
+@attribute _speculative numeric
+@attribute _stable numeric
+@attribute _push numeric
+@attribute _frankfurt numeric
+@attribute _dealersblah numeric
+@attribute _rise numeric
+@attribute _ems numeric
+@attribute _secretary numeric
+@attribute _economy numeric
+@attribute _banking numeric
+@attribute _month numeric
+@attribute _industrial numeric
+@attribute _closely numeric
+@attribute _note numeric
+@attribute _finance numeric
+@attribute _reserves numeric
+@attribute _transactions numeric
+@attribute _sumitasaid numeric
+@attribute _balances numeric
+@attribute _government numeric
+@attribute _pressure numeric
+@attribute _acquisition numeric
+@attribute _set numeric
+@attribute _committee numeric
+@attribute _stimulate numeric
+@attribute money-fx {no,yes}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 44.13 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.74 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3189               96.6657 %
+Incorrectly Classified Instances       110                3.3343 %
+Kappa statistic                          0.6189
+Mean absolute error                      0.0445
+Root mean squared error                  0.1506
+Relative absolute error                 42.6712 %
+Root relative squared error             66.4817 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,991    0,464    0,974      0,991    0,983      0,631    0,982     0,999     no
+                 0,536    0,009    0,780      0,536    0,636      0,631    0,982     0,763     yes
+Weighted Avg.    0,967    0,439    0,963      0,967    0,964      0,631    0,982     0,986     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3093   27 |    a = no
+   83   96 |    b = yes
+
