@@ -38,7 +38,7 @@ i = 0
 for file_name in files:
 
     specificity[i_test][i], recall[i_test][i], precision[i_test][i], f_measure[i_test][i], g_mean[i_test][i] = \
-        extract_data_from_file(folder + '/' + file_name, fs_method)
+        extract_data_from_file(folder + '/' + file_name)
 
     if i == 3:
         # compute the average
