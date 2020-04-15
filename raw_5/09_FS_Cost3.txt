@@ -1,6 +1,6 @@
 === Run information ===
 
-Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 387" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 3.0 0.0]" -S 1 -W weka.classifiers.rules.ZeroR
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 387" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 3.0 0.0]" -M -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
 Instances:    9598
 Attributes:   7757
@@ -809,45 +809,49 @@ Header of reduced data:
 
 
 Classifier Model
-CostSensitiveClassifier using reweighted training instances
+CostSensitiveClassifier using minimized expected misclasification cost
 
-weka.classifiers.rules.ZeroR 
+weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 
 Classifier Model
-ZeroR predicts class value: no
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
 
 Cost Matrix
  0 1
  3 0
 
 
-Time taken to build model: 29.49 seconds
+Time taken to build model: 54.08 seconds
 
 === Evaluation on test set ===
 
-Time taken to test model on supplied test set: 0.39 seconds
+Time taken to test model on supplied test set: 1.01 seconds
 
 === Summary ===
 
-Correctly Classified Instances        3120               94.5741 %
-Incorrectly Classified Instances       179                5.4259 %
-Kappa statistic                          0     
-Mean absolute error                      0.1891
-Root mean squared error                  0.2464
-Relative absolute error                181.3057 %
-Root relative squared error            108.7824 %
+Correctly Classified Instances        3210               97.3022 %
+Incorrectly Classified Instances        89                2.6978 %
+Kappa statistic                          0.7521
+Mean absolute error                      0.027 
+Root mean squared error                  0.1642
+Relative absolute error                 25.8627 %
+Root relative squared error             72.5049 %
 Total Number of Instances             3299     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 1,000    1,000    0,946      1,000    0,972      ?        0,500     0,946     no
-                 0,000    0,000    ?          0,000    ?          ?        0,500     0,054     yes
-Weighted Avg.    0,946    0,946    ?          0,946    ?          ?        0,500     0,897     
+                 0,982    0,184    0,989      0,982    0,986      0,754    0,899     0,989     no
+                 0,816    0,018    0,723      0,816    0,766      0,754    0,899     0,600     yes
+Weighted Avg.    0,973    0,175    0,975      0,973    0,974      0,754    0,899     0,967     
 
 === Confusion Matrix ===
 
     a    b   <-- classified as
- 3120    0 |    a = no
-  179    0 |    b = yes
+ 3064   56 |    a = no
+   33  146 |    b = yes
 

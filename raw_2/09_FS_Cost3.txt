@@ -1,6 +1,6 @@
 === Run information ===
 
-Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 155" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 3.0 0.0]" -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 155" -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 1.0; 3.0 0.0]" -M -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
 Instances:    9598
 Attributes:   7757
@@ -345,7 +345,7 @@ Header of reduced data:
 
 
 Classifier Model
-CostSensitiveClassifier using reweighted training instances
+CostSensitiveClassifier using minimized expected misclasification cost
 
 weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 
@@ -361,33 +361,33 @@ Cost Matrix
  3 0
 
 
-Time taken to build model: 41.08 seconds
+Time taken to build model: 39.72 seconds
 
 === Evaluation on test set ===
 
-Time taken to test model on supplied test set: 0.72 seconds
+Time taken to test model on supplied test set: 0.8 seconds
 
 === Summary ===
 
-Correctly Classified Instances        3195               96.8475 %
-Incorrectly Classified Instances       104                3.1525 %
-Kappa statistic                          0.6646
-Mean absolute error                      0.0446
-Root mean squared error                  0.1467
-Relative absolute error                 42.7923 %
-Root relative squared error             64.7575 %
+Correctly Classified Instances        3191               96.7263 %
+Incorrectly Classified Instances       108                3.2737 %
+Kappa statistic                          0.7044
+Mean absolute error                      0.0327
+Root mean squared error                  0.1809
+Relative absolute error                 31.384  %
+Root relative squared error             79.8701 %
 Total Number of Instances             3299     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,988    0,380    0,978      0,988    0,983      0,668    0,982     0,999     no
-                 0,620    0,012    0,755      0,620    0,681      0,668    0,982     0,771     yes
-Weighted Avg.    0,968    0,360    0,966      0,968    0,967      0,668    0,982     0,986     
+                 0,978    0,218    0,987      0,978    0,983      0,707    0,880     0,986     no
+                 0,782    0,022    0,670      0,782    0,722      0,707    0,880     0,536     yes
+Weighted Avg.    0,967    0,207    0,970      0,967    0,968      0,707    0,880     0,962     
 
 === Confusion Matrix ===
 
     a    b   <-- classified as
- 3084   36 |    a = no
-   68  111 |    b = yes
+ 3051   69 |    a = no
+   39  140 |    b = yes
 

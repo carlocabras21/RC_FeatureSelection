@@ -61,5 +61,5 @@ for f in files:
         formatted_file_names.append(formatted_file_name)
     i = (i + 1) % 4
 
-print_data(fs_method, formatted_file_names, specificity, recall, precision, f_measure, g_mean,
-           print_summary=True, print_all_tables=True, write_on_file=True)
+print_data(fs_method, formatted_file_names, specificity, recall, precision, f_measure, g_mean, print_summary=True,
+           write_on_file=True)
