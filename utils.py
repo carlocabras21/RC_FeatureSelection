@@ -23,8 +23,8 @@ def write_vector_on_file(f, lst, name):  # print the list like a tabular row
 
 
 # check if there are all the test files
-def are_files_correct(files):
-    if len(files) < 11:  # 11 tests
+def are_files_correct(files, n_tests):
+    if len(files) < n_tests:
         return False
     return True
 
@@ -51,6 +51,7 @@ def extract_data_from_file(file_name):
         f.readline()
         line = f.readline()
         specificity = float(line.split()[3].replace(',', '.'))
+        mcc         = float(line.split()[5].replace(',', '.'))
 
         line = f.readline()
         recall = float(line.split()[3].replace(',', '.'))
@@ -58,14 +59,14 @@ def extract_data_from_file(file_name):
         f_measure = float(line.split()[4].replace(',', '.'))
         g_mean = round(math.sqrt(specificity * recall), 3)
 
-    return specificity, recall, precision, f_measure, g_mean
+    return specificity, recall, precision, f_measure, g_mean, mcc
 
 
 def extract_baseline():
     return extract_data_from_file("raw_baseline/0_baseline.txt")
 
 
-def print_data(percent, file_names, specificity, recall, precision, f_measure, g_mean, print_summary=True,
+def print_data(percent, file_names, specificity, recall, precision, f_measure, g_mean, mcc, print_summary=True,
                write_on_file=False):
     f = None
 
@@ -84,9 +85,9 @@ def print_data(percent, file_names, specificity, recall, precision, f_measure, g
         header = ["-"] + file_names
 
         # extract the average values
-        rows = [specificity, recall, precision, f_measure, g_mean]
+        rows = [specificity, recall, precision, f_measure, g_mean, mcc]
 
-        metrics = ["Specificity", "Recall", "Precision", "F-Measure", "G-Mean"]
+        metrics = ["Specificity", "Recall", "Precision", "F-Measure", "G-Mean", "MCC"]
 
         # first print the titles
         for j in range(0, len(header)):
