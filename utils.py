@@ -22,17 +22,12 @@ def write_vector_on_file(f, lst, name):  # print the list like a tabular row
     f.write(s)
 
 
-# check if there are all the test files
-def are_files_correct(files, n_tests):
-    if len(files) < n_tests:
-        return False
-    return True
-
-
-# returns the data vectors. If fs_method = "", we do not check if the method is correct
+# returns the data vectors
 def extract_data_from_file(file_name):
 
     with open(file_name) as f:
+        # e.g.:  raw_1/02_RU(3:1)_FS.txt  --->  RU(3:1) + FS
+        test_name = file_name.split("/")[1][3:-4].replace("_", " + ")
 
         ''' line example:
         === Detailed Accuracy By Class ===
@@ -51,23 +46,23 @@ def extract_data_from_file(file_name):
         f.readline()
         line = f.readline()
         specificity = float(line.split()[3].replace(',', '.'))
-        mcc         = float(line.split()[5].replace(',', '.'))
 
         line = f.readline()
-        recall = float(line.split()[3].replace(',', '.'))
-        precision = float(line.split()[2].replace(',', '.'))
-        f_measure = float(line.split()[4].replace(',', '.'))
-        g_mean = round(math.sqrt(specificity * recall), 3)
+        recall      = float(line.split()[3].replace(',', '.'))
+        precision   = float(line.split()[2].replace(',', '.'))
+        f_measure   = float(line.split()[4].replace(',', '.'))
+        g_mean      = round(math.sqrt(specificity * recall), 3)
+        mcc         = float(line.split()[5].replace(',', '.'))
 
-    return specificity, recall, precision, f_measure, g_mean, mcc
+    return test_name, specificity, recall, precision, f_measure, g_mean, mcc
 
 
 def extract_baseline():
     return extract_data_from_file("raw_baseline/0_baseline.txt")
 
 
-def print_data(percent, file_names, specificity, recall, precision, f_measure, g_mean, mcc, print_summary=True,
-               write_on_file=False):
+def print_data(percent, test_names, specificity, recall, precision, f_measure, g_mean, mcc,
+               print_summary=True, write_on_file=False):
     f = None
 
     title = "Percentage of selected features: " + str(percent) + "%\n"
@@ -81,14 +76,11 @@ def print_data(percent, file_names, specificity, recall, precision, f_measure, g
 
         f.write(title + "\n")
 
+    header  = ["-"] + test_names
+    rows    = [ specificity,   recall,   precision,   f_measure,   g_mean,   mcc]
+    metrics = ["Specificity", "Recall", "Precision", "F-Measure", "G-Mean", "MCC"]
+
     if print_summary:
-        header = ["-"] + file_names
-
-        # extract the average values
-        rows = [specificity, recall, precision, f_measure, g_mean, mcc]
-
-        metrics = ["Specificity", "Recall", "Precision", "F-Measure", "G-Mean", "MCC"]
-
         # first print the titles
         for j in range(0, len(header)):
             print("%15s" % header[j]),
@@ -105,25 +97,49 @@ def print_data(percent, file_names, specificity, recall, precision, f_measure, g
 
         print "\n\n"
 
-        if write_on_file:
-            # first write the titles
-            for j in range(0, len(header)):
-                f.write("%15s" % header[j]),
+    if write_on_file:
+        # first write the titles
+        for j in range(0, len(header)):
+            f.write("%15s" % header[j]),
+        f.write("\n")
+
+        # then write the values
+        for i in range(0, len(rows)):
+            f.write("%15s" % metrics[i])
+
+            for j in range(0, len(rows[i])):
+                # write every number in the format e.g. 0,350
+                f.write("%15s" % str('%.3f' % float(rows[i][j])).replace('.', ','))
             f.write("\n")
 
-            # then write the values
-            for i in range(0, len(rows)):
-                f.write("%15s" % metrics[i])
+        f.write("\n\n")
 
-                for j in range(0, len(rows[i])):
-                    # write every number in the format e.g. 0,350
-                    f.write("%15s" % str('%.3f' % float(rows[i][j])).replace('.', ','))
-                f.write("\n")
-
-            f.write("\n\n")
-
-    if write_on_file:
         f.close()
 
-        # print "#" + "\t" + str(files)[2:-2].replace("', '", "\t")
-        # print [x[4] for x in specificity]
+
+def extract_data_from_folder(folder):
+    # read all the files and count them
+    files = os.listdir(folder)
+    files.sort()
+
+    # initialize the lists
+    test_names  = []
+    specificity = []
+    recall      = []
+    precision   = []
+    f_measure   = []
+    g_mean      = []
+    mcc         = []
+
+    # extract data from files
+    for file_name in files:
+        results = extract_data_from_file(folder + '/' + file_name)
+        test_names  += [results[0]]
+        specificity += [results[1]]
+        recall      += [results[2]]
+        precision   += [results[3]]
+        f_measure   += [results[4]]
+        g_mean      += [results[5]]
+        mcc         += [results[6]]
+
+    return test_names, specificity, recall, precision, f_measure, g_mean, mcc

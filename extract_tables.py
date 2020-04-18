@@ -1,52 +1,32 @@
 from utils import *
-import os
 
 percents = [1, 2, 5]
 for percent in percents:
-    folder = "raw_" + str(percent)
-
-    n_tests = 11
-
-    files = os.listdir(folder)
-
-    if not are_files_correct(files, n_tests):
-        exit("Exit: not enough files in folder. There are missing tests.")
-
-    files.sort()
-
-    # initialize the lists
-    specificity = []
-    recall      = []
-    precision   = []
-    f_measure   = []
-    g_mean      = []
-    mcc         = []
-    for _ in range (0, n_tests + 1): # +1 is for the baseline
-        specificity .append(0)
-        recall      .append(0)
-        precision   .append(0)
-        f_measure   .append(0)
-        g_mean      .append(0)
-        mcc         .append(0)
 
     # first of all, read the baseline
-    specificity[0], recall[0], precision[0], f_measure[0], g_mean[0], mcc[0] = extract_baseline()
+    test_names, specificity, recall, precision, f_measure, g_mean, mcc = \
+        extract_data_from_folder("raw_baseline")
 
-    # index of tests, where 0 is baseline, 1 is FS,  ecc.
-    i_test = 1
+    # then read the test files and append the results
+    folder = "raw_" + str(percent)
+    results = extract_data_from_folder(folder)
+    test_names  += results[0]
+    specificity += results[1]
+    recall      += results[2]
+    precision   += results[3]
+    f_measure   += results[4]
+    g_mean      += results[5]
+    mcc         += results[6]
 
-    for file_name in files:
-        specificity[i_test], recall[i_test], precision[i_test], f_measure[i_test], g_mean[i_test], mcc[i_test] = \
-            extract_data_from_file(folder + '/' + file_name)
-        i_test += 1
+    # finally, append the tests without Feature Selection
+    results = extract_data_from_folder("raw_no_FS")
+    test_names  += results[0]
+    specificity += results[1]
+    recall      += results[2]
+    precision   += results[3]
+    f_measure   += results[4]
+    g_mean      += results[5]
+    mcc         += results[6]
 
-    formatted_file_names = ["Baseline"]
-    # noinspection PyRedeclaration
-    i = 0
-    for f in files:
-        formatted_file_name = f[3:-4].replace("_", " + ")
-        formatted_file_names.append(formatted_file_name)
-        i += 1
-
-    print_data(percent, formatted_file_names, specificity, recall, precision, f_measure, g_mean, mcc,
+    print_data(percent, test_names, specificity, recall, precision, f_measure, g_mean, mcc,
                print_summary=True, write_on_file=True)
