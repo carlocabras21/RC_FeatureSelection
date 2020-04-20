@@ -65,7 +65,11 @@ def print_data(percent, test_names, specificity, recall, precision, f_measure, g
                print_summary=True, write_on_file=False):
     f = None
 
-    title = "Percentage of selected features: " + str(percent) + "%\n"
+    if percent == 100:
+        title = "No Feature Selection"
+    else:
+        title = "Percentage of selected features: " + str(percent) + "%\n"
+
     print title
 
     if write_on_file:
