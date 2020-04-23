@@ -26,7 +26,7 @@ def write_vector_on_file(f, lst, name):  # print the list like a tabular row
 def extract_data_from_file(file_name):
 
     with open(file_name) as f:
-        # e.g.:  raw_1/02_RU(3:1)_FS.txt  --->  RU(3:1) + FS
+        # e.g.:  raw_data/raw_acq_1/02_RU(3:1)_FS.txt  --->  RU(3:1) + FS
         test_name = file_name.split("/")[2][3:-4].replace("_", " + ")
 
         ''' line example:
@@ -61,11 +61,10 @@ def extract_baseline():
     return extract_data_from_file("raw_baseline/0_baseline.txt")
 
 
+# prints data on screen and write it to results.txt
 def print_data(dataset, percent, test_names, specificity, recall, precision, f_measure, g_mean, mcc,
                print_summary=True, write_on_file=False):
     f = None
-
-    # print "dataset: " + dataset
 
     if percent == 100:
         title = "No Feature Selection\n"
@@ -80,7 +79,7 @@ def print_data(dataset, percent, test_names, specificity, recall, precision, f_m
         else:  # otherwise, append the results
             f = open("results.txt", "a")
 
-        if percent == 1:  # write the dataset name only the first time
+        if percent == 1:  # write the dataset name only the first time for each dataset
             f.write("Dataset: " + dataset + "\n\n")
 
         f.write(title + "\n")
@@ -131,6 +130,7 @@ def print_data(dataset, percent, test_names, specificity, recall, precision, f_m
         f.close()
 
 
+# extract all the metrics data from the tests in the folder
 def extract_data_from_folder(folder):
     # read all the files and count them
     files = os.listdir(folder)
