@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 1.0; 4.0 0.0]" -M -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     money-fx-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7757
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using minimized expected misclasification cost
+
+weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Cost Matrix
+ 0 1
+ 4 0
+
+
+Time taken to build model: 121.18 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 2.2 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3208               97.2416 %
+Incorrectly Classified Instances        91                2.7584 %
+Kappa statistic                          0.7503
+Mean absolute error                      0.0276
+Root mean squared error                  0.1661
+Relative absolute error                 26.4439 %
+Root relative squared error             73.315  %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,981    0,173    0,990      0,981    0,985      0,753    0,904     0,989     no
+                 0,827    0,019    0,712      0,827    0,765      0,753    0,904     0,598     yes
+Weighted Avg.    0,972    0,165    0,975      0,972    0,973      0,753    0,904     0,968     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3060   60 |    a = no
+   31  148 |    b = yes
+
