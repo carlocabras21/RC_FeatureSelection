@@ -1,0 +1,1209 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 375" -W weka.classifiers.meta.FilteredClassifier -- -F "weka.filters.supervised.instance.SpreadSubsample -M 1.0 -X 0.0 -S 1" -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     acq-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7495
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 7495 acq):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.06916      4083 _shares
+ 0.06464        41 _acquisition
+ 0.06205      4260 _stake
+ 0.05751        39 _acquire
+ 0.05102      1117 _cts
+ 0.04567      2773 _merger
+ 0.04426       904 _company
+ 0.04069      4117 _shr
+ 0.03624      3564 _qtr
+ 0.03317      2964 _net
+ 0.03305      5032 _year
+ 0.03231      3047 _offer
+ 0.0289        658 _buy
+ 0.02888      1050 _corp
+ 0.02874      3878 _revs
+ 0.02772      2000 _group
+ 0.02757       896 _common
+ 0.02673        40 _acquired
+ 0.02662      4698 _transaction
+ 0.02532      3549 _purchase
+ 0.02477       522 _bid
+ 0.02444      4451 _takeover
+ 0.02429      4082 _shareholders
+ 0.02403      4785 _unit
+ 0.02398      3005 _note
+ 0.02208      4036 _sell
+ 0.02085      4305 _stock
+ 0.02004       928 _completes
+ 0.01987      4507 _terms
+ 0.01926      4776 _undisclosed
+ 0.01908      1330 _disclosed
+ 0.01758       729 _cash
+ 0.01692      4352 _subject
+ 0.01668      1771 _filing
+ 0.01646      3963 _sale
+ 0.0161       3157 _outstanding
+ 0.01604       264 _approval
+ 0.01591      3614 _rate
+ 0.01576      3665 _record
+ 0.01564      2299 _intent
+ 0.01493      1357 _div
+ 0.01492      4079 _share
+ 0.01486      2624 _loss
+ 0.01432      4364 _subsidiary
+ 0.01425      1025 _control
+ 0.01389      4654 _tonnes
+ 0.01355       116 _agreed
+ 0.01352       663 _buys
+ 0.0135       2336 _investor
+ 0.01346      5451 _buyout
+ 0.01329      3165 _owned
+ 0.01325      3169 _owns
+ 0.01316      2547 _letter
+ 0.01306       549 _board
+ 0.01304      5709 _definitive
+ 0.01281       323 _assets
+ 0.01223      4081 _shareholder
+ 0.0122       5081 _acquires
+ 0.01206      1789 _firm
+ 0.01193       926 _completed
+ 0.01191       401 _avg
+ 0.01143      3563 _qtly
+ 0.0112       3894 _rise
+ 0.01089       117 _agreement
+ 0.01089      1324 _directors
+ 0.01086      3481 _profit
+ 0.01083      3617 _rates
+ 0.0107       4681 _trade
+ 0.0107       1671 _exports
+ 0.01041      4496 _tender
+ 0.01023      1666 _export
+ 0.01007      4118 _shrs
+ 0.00958      5683 _cyclops
+ 0.00955       530 _billion
+ 0.0095       1443 _due
+ 0.00937      1387 _dollar
+ 0.00936      2075 _held
+ 0.00932      6466 _merge
+ 0.00931      2110 _holdings
+ 0.00913      2916 _mths
+ 0.0091       1705 _fall
+ 0.00884      7372 _usair
+ 0.00881       467 _based
+ 0.00862      1069 _countries
+ 0.00849       121 _agriculture
+ 0.00814      1241 _demand
+ 0.0081        887 _commission
+ 0.00803      1765 _figures
+ 0.00801      1363 _division
+ 0.00794      3344 _plc
+ 0.00789      3452 _prior
+ 0.00789      2334 _investment
+ 0.00788      1129 _currency
+ 0.00788      4963 _wholly
+ 0.00787      7211 _tendered
+ 0.00781      2111 _holds
+ 0.00771      7336 _twa
+ 0.00767      2685 _manager
+ 0.0075       1074 _coupon
+ 0.00748      3106 _oper
+ 0.00736      1361 _dividend
+ 0.00731      2369 _issues
+ 0.00726      2522 _lead
+ 0.00725      1751 _fell
+ 0.00716      2683 _management
+ 0.00715      4708 _treasury
+ 0.00714       226 _announced
+ 0.0071        580 _bought
+ 0.00706      2676 _makes
+ 0.00705      1173 _deal
+ 0.00701       903 _companies
+ 0.00697      3923 _rose
+ 0.00692      3440 _previously
+ 0.00691      5684 _cyl
+ 0.00688      3442 _priced
+ 0.00684      4954 _wheat
+ 0.00683      3450 _principle
+ 0.00671      2193 _imports
+ 0.00671      2381 _ithas
+ 0.00668      2877 _money
+ 0.00668      5082 _acquiring
+ 0.00659      4529 _thecompany
+ 0.00644      3444 _prices
+ 0.0064       1391 _domestic
+ 0.00636      3455 _privately
+ 0.00629      5766 _dixons
+ 0.00623      3233 _payout
+ 0.00618       754 _central
+ 0.00617       136 _airlines
+ 0.00617      4887 _voting
+ 0.00615      2674 _maker
+ 0.00607      1367 _dlrs
+ 0.00595      4446 _systems
+ 0.00594      1926 _gencorp
+ 0.00589      3955 _saidit
+ 0.00588      2886 _month
+ 0.00581      3510 _proposed
+ 0.00581      2006 _growth
+ 0.00574      2939 _nations
+ 0.00573      1842 _foreign
+ 0.00573      4839 _valued
+ 0.00573       559 _bonds
+ 0.0057        929 _completion
+ 0.00568      3077 _ohio
+ 0.00566       843 _closing
+ 0.00564      2549 _level
+ 0.00564      3212 _partnership
+ 0.00561      4040 _sells
+ 0.0056       1482 _economy
+ 0.00556      4825 _usda
+ 0.00554      2223 _incsaid
+ 0.00553      2875 _monetary
+ 0.00553      2404 _january
+ 0.0055       1629 _excludes
+ 0.00542      2109 _holding
+ 0.00541      1187 _debt
+ 0.00539       558 _bond
+ 0.00537       767 _chairman
+ 0.00531      6218 _itacquired
+ 0.00531      6830 _purolator
+ 0.00528      2635 _lower
+ 0.00527      2672 _majority
+ 0.00524      2616 _london
+ 0.00522        66 _adjusted
+ 0.0052       3168 _ownership
+ 0.00519       909 _compared
+ 0.00519      3890 _rights
+ 0.00505      4184 _sold
+ 0.00504      5950 _forundisclosed
+ 0.00504      5607 _conditioned
+ 0.00501      2252 _inflation
+ 0.00501       538 _bills
+ 0.00501      4420 _surplus
+ 0.00499      1475 _economic
+ 0.00499      5659 _courier
+ 0.00498      2823 _minister
+ 0.00488      3367 _poor
+ 0.00487      1253 _denominations
+ 0.00485      4474 _tax
+ 0.00485      4025 _securities
+ 0.00484      4029 _seek
+ 0.00479      7285 _toacquire
+ 0.00479      3719 _regulatory
+ 0.00478      5681 _cyacq
+ 0.00478      6695 _pcc
+ 0.00476      6219 _itagreed
+ 0.00473      7366 _unsolicited
+ 0.00468      5040 _yen
+ 0.00467      1736 _february
+ 0.00466       877 _comment
+ 0.00464      4030 _seeking
+ 0.00462      3573 _quarter
+ 0.00461      3575 _quarterly
+ 0.0046        271 _april
+ 0.00458      1134 _cut
+ 0.00456      1223 _deficit
+ 0.00455      3056 _official
+ 0.00454      1070 _country
+ 0.00452       925 _complete
+ 0.00452      6415 _manufacturer
+ 0.00451      6041 _gy
+ 0.00451      6743 _piedmont
+ 0.0045       1026 _controlled
+ 0.00449      1965 _government
+ 0.00446      2186 _import
+ 0.00446      2365 _issue
+ 0.00445       653 _businesses
+ 0.00441      2370 _issuing
+ 0.00441       681 _callable
+ 0.00436      7188 _taft
+ 0.00433      2309 _interests
+ 0.00433      4897 _wall
+ 0.00431      3228 _pay
+ 0.0043       7218 _terminated
+ 0.00428      7243 _themerger
+ 0.00422      7265 _thetransaction
+ 0.0042       3155 _output
+ 0.00419      3473 _producers
+ 0.00419       652 _business
+ 0.00416       612 _broadcasting
+ 0.00416      3109 _operates
+ 0.00414       596 _brazil
+ 0.00413      3653 _receive
+ 0.00412      1075 _court
+ 0.00412      2405 _japan
+ 0.00412      6467 _merged
+ 0.0041       3842 _results
+ 0.00409      2402 _jan
+ 0.00409      2321 _intervention
+ 0.00409      3439 _previous
+ 0.00408      6223 _itcompleted
+ 0.00407      4032 _sees
+ 0.00405      5387 _boards
+ 0.00405      5137 _allegheny
+ 0.00404      7213 _tenderoffer
+ 0.00404      6123 _hostile
+ 0.00401      5043 _yield
+ 0.00396      1593 _eurobond
+ 0.00394      1105 _crop
+ 0.00393      3477 _production
+ 0.0039       1838 _forecast
+ 0.00386      5537 _chemlawn
+ 0.00383      3507 _proposal
+ 0.00381      7226 _theacquisition
+ 0.00376      4129 _signed
+ 0.00376      2746 _measures
+ 0.00375      1976 _grain
+ 0.00372      2888 _months
+ 0.00371      6338 _lbo
+ 0.00364      1474 _ec
+ 0.00359        97 _afg
+ 0.00359      1097 _credits
+ 0.00357      1111 _crude
+ 0.00357      4907 _warner
+ 0.00357      5401 _borg
+ 0.00357      6741 _pie
+ 0.00356      5301 _aviation
+ 0.00355       131 _air
+ 0.00353       448 _bank
+ 0.00351      1206 _decline
+ 0.0035       4329 _street
+ 0.00345      4283 _statistics
+ 0.00345      5787 _dudley
+ 0.00345      7221 _tfb
+ 0.00344      6691 _patti
+ 0.00344      5773 _domm
+ 0.00344      7305 _totaloutstanding
+ 0.00343      1669 _exporters
+ 0.00342      3800 _reserve
+ 0.00341      3236 _pct
+ 0.00341      2550 _levels
+ 0.00341      2305 _interested
+ 0.00339      3232 _payments
+ 0.00338      2634 _low
+ 0.00336      7246 _theoffer
+ 0.00334      7304 _tosell
+ 0.00334      1997 _gross
+ 0.00332      5481 _carl
+ 0.00332      5598 _completedthe
+ 0.00332      1434 _drop
+ 0.00329      1854 _formed
+ 0.00328      2230 _index
+ 0.00328      2150 _hutton
+ 0.00327      3722 _rejects
+ 0.00325      5037 _years
+ 0.00323      3354 _points
+ 0.00323       396 _average
+ 0.00322       952 _concession
+ 0.0032       4653 _tonne
+ 0.0032       3269 _periods
+ 0.00319       630 _budget
+ 0.00315      2249 _industries
+ 0.00313      4697 _trans
+ 0.00313        94 _affiliates
+ 0.00312       856 _coffee
+ 0.00311      4640 _tokyo
+ 0.00308       669 _caesars
+ 0.00308      5133 _aletter
+ 0.00308      3681 _reduction
+ 0.00307      4917 _waste
+ 0.00307      2544 _lending
+ 0.00306      1130 _current
+ 0.00305      1960 _goods
+ 0.00305      1620 _exchange
+ 0.00304      1128 _currencies
+ 0.00303      4773 _underwriting
+ 0.00301      3898 _rising
+ 0.00301      3192 _par
+ 0.003        1167 _day
+ 0.003        1906 _futures
+ 0.00299      2439 _justice
+ 0.00299      3166 _owner
+ 0.00295      3268 _period
+ 0.00294      1898 _fully
+ 0.00294      1800 _fixed
+ 0.00293       265 _approvals
+ 0.00293       895 _commodity
+ 0.00293      4068 _sets
+ 0.00292       529 _bill
+ 0.00292      7410 _wagner
+ 0.00292      6468 _mergeragreement
+ 0.00292      6135 _icahn
+ 0.00291       546 _block
+ 0.0029       2987 _nil
+ 0.0029       3802 _reserves
+ 0.0029       4111 _show
+ 0.00288      6916 _rival
+ 0.00286      5097 _advertisement
+ 0.00286      4627 _tobuy
+ 0.00286      4884 _vote
+ 0.00285      7193 _takeovers
+ 0.00285      4470 _tariffs
+ 0.00285      3053 _officer
+ 0.00285      1707 _falling
+ 0.00284      4067 _set
+ 0.00284      7085 _sosnoff
+ 0.00284      5102 _advisor
+ 0.00283      1775 _finance
+ 0.00281      1575 _equipment
+ 0.00279      2832 _minus
+ 0.00279      4852 _venture
+ 0.00279      4086 _sharp
+ 0.00279      4207 _soviet
+ 0.00278      1911 _gains
+ 0.00276      3615 _rated
+ 0.00276      3329 _plans
+ 0.00274      7279 _tire
+ 0.00274      3588 _quota
+ 0.00273      2650 _luxembourg
+ 0.00273      3078 _oil
+ 0.00273      3715 _regular
+ 0.00272      1658 _expire
+ 0.00272      5588 _commonshares
+ 0.00271      1099 _crisis
+ 0.0027       2609 _loans
+ 0.00267       455 _banks
+ 0.00267       119 _agrees
+ 0.00266      6864 _receipt
+ 0.00265      6488 _midnight
+ 0.00265      4160 _slightly
+ 0.00265      4012 _seasonally
+ 0.00265      4098 _shipment
+ 0.00265      5296 _ava
+ 0.00265      6763 _poison
+ 0.00265      5815 _emery
+ 0.00265      5899 _ferruzzi
+ 0.00264      3174 _pacific
+ 0.00264      3229 _payable
+ 0.00263      3201 _part
+ 0.00262      4104 _short
+ 0.00262      3197 _paris
+ 0.00262      3589 _quotas
+ 0.00261      4412 _supply
+ 0.00261      2825 _ministry
+ 0.00261      5760 _divest
+
+Selected attributes: 4083,41,4260,39,1117,2773,904,4117,3564,2964,5032,3047,658,1050,3878,2000,896,40,4698,3549,522,4451,4082,4785,3005,4036,4305,928,4507,4776,1330,729,4352,1771,3963,3157,264,3614,3665,2299,1357,4079,2624,4364,1025,4654,116,663,2336,5451,3165,3169,2547,549,5709,323,4081,5081,1789,926,401,3563,3894,117,1324,3481,3617,4681,1671,4496,1666,4118,5683,530,1443,1387,2075,6466,2110,2916,1705,7372,467,1069,121,1241,887,1765,1363,3344,3452,2334,1129,4963,7211,2111,7336,2685,1074,3106,1361,2369,2522,1751,2683,4708,226,580,2676,1173,903,3923,3440,5684,3442,4954,3450,2193,2381,2877,5082,4529,3444,1391,3455,5766,3233,754,136,4887,2674,1367,4446,1926,3955,2886,3510,2006,2939,1842,4839,559,929,3077,843,2549,3212,4040,1482,4825,2223,2875,2404,1629,2109,1187,558,767,6218,6830,2635,2672,2616,66,3168,909,3890,4184,5950,5607,2252,538,4420,1475,5659,2823,3367,1253,4474,4025,4029,7285,3719,5681,6695,6219,7366,5040,1736,877,4030,3573,3575,271,1134,1223,3056,1070,925,6415,6041,6743,1026,1965,2186,2365,653,2370,681,7188,2309,4897,3228,7218,7243,7265,3155,3473,652,612,3109,596,3653,1075,2405,6467,3842,2402,2321,3439,6223,4032,5387,5137,7213,6123,5043,1593,1105,3477,1838,5537,3507,7226,4129,2746,1976,2888,6338,1474,97,1097,1111,4907,5401,6741,5301,131,448,1206,4329,4283,5787,7221,6691,5773,7305,1669,3800,3236,2550,2305,3232,2634,7246,7304,1997,5481,5598,1434,1854,2230,2150,3722,5037,3354,396,952,4653,3269,630,2249,4697,94,856,4640,669,5133,3681,4917,2544,1130,1960,1620,1128,4773,3898,3192,1167,1906,2439,3166,3268,1898,1800,265,895,4068,529,7410,6468,6135,546,2987,3802,4111,6916,5097,4627,4884,7193,4470,3053,1707,4067,7085,5102,1775,1575,2832,4852,4086,4207,1911,3615,3329,7279,3588,2650,3078,3715,1658,5588,1099,2609,455,119,6864,6488,4160,4012,4098,5296,6763,5815,5899,3174,3229,3201,4104,3197,3589,4412,2825,5760 : 375
+
+
+Header of reduced data:
+@relation 'acq-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R4083,41,4260,39,1117,2773,904,4117,3564,2964,5032,3047,658,1050,3878,2000,896,40,4698,3549,522,4451,4082,4785,3005,4036,4305,928,4507,4776,1330,729,4352,1771,3963,3157,264,3614,3665,2299,1357,4079,2624,4364,1025,4654,116,663,2336,5451,3165,3169,2547,549,5709,323,4081,5081,1789,926,401,3563,3894,117,1324,3481,3617,4681,1671,4496,1666,4118,5683,530,1443,1387,2075,6466,2110,2916,1705,7372,467,1069,121,1241,887,1765,1363,3344,3452,2334,1129,4963,7211,2111,7336,2685,1074,3106,1361,2369,2522,1751,2683,4708,226,580,2676,1173,903,3923,3440,5684,3442,4954,3450,2193,2381,2877,5082,4529,3444,1391,3455,5766,3233,754,136,4887,2674,1367,4446,1926,3955,2886,3510,2006,2939,1842,4839,559,929,3077,843,2549,3212,4040,1482,4825,2223,2875,2404,1629,2109,1187,558,767,6218,6830,2635,2672,2616,66,3168,909,3890,4184,5950,5607,2252,538,4420,1475,5659,2823,3367,1253,4474,4025,4029,7285,3719,5681,6695,6219,7366,5040,1736,877,4030,3573,3575,271,1134,1223,3056,1070,925,6415,6041,6743,1026,1965,2186,2365,653,2370,681,7188,2309,4897,3228,7218,7243,7265,3155,3473,652,612,3109,596,3653,1075,2405,6467,3842,2402,2321,3439,6223,4032,5387,5137,7213,6123,5043,1593,1105,3477,1838,5537,3507,7226,4129,2746,1976,2888,6338,1474,97,1097,1111,4907,5401,6741,5301,131,448,1206,4329,4283,5787,7221,6691,5773,7305,1669,3800,3236,2550,2305,3232,2634,7246,7304,1997,5481,5598,1434,1854,2230,2150,3722,5037,3354,396,952,4653,3269,630,2249,4697,94,856,4640,669,5133,3681,4917,2544,1130,1960,1620,1128,4773,3898,3192,1167,1906,2439,3166,3268,1898,1800,265,895,4068,529,7410,6468,6135,546,2987,3802,4111,6916,5097,4627,4884,7193,4470,3053,1707,4067,7085,5102,1775,1575,2832,4852,4086,4207,1911,3615,3329,7279,3588,2650,3078,3715,1658,5588,1099,2609,455,119,6864,6488,4160,4012,4098,5296,6763,5815,5899,3174,3229,3201,4104,3197,3589,4412,2825,5760,7495'
+
+@attribute _shares numeric
+@attribute _acquisition numeric
+@attribute _stake numeric
+@attribute _acquire numeric
+@attribute _cts numeric
+@attribute _merger numeric
+@attribute _company numeric
+@attribute _shr numeric
+@attribute _qtr numeric
+@attribute _net numeric
+@attribute _year numeric
+@attribute _offer numeric
+@attribute _buy numeric
+@attribute _corp numeric
+@attribute _revs numeric
+@attribute _group numeric
+@attribute _common numeric
+@attribute _acquired numeric
+@attribute _transaction numeric
+@attribute _purchase numeric
+@attribute _bid numeric
+@attribute _takeover numeric
+@attribute _shareholders numeric
+@attribute _unit numeric
+@attribute _note numeric
+@attribute _sell numeric
+@attribute _stock numeric
+@attribute _completes numeric
+@attribute _terms numeric
+@attribute _undisclosed numeric
+@attribute _disclosed numeric
+@attribute _cash numeric
+@attribute _subject numeric
+@attribute _filing numeric
+@attribute _sale numeric
+@attribute _outstanding numeric
+@attribute _approval numeric
+@attribute _rate numeric
+@attribute _record numeric
+@attribute _intent numeric
+@attribute _div numeric
+@attribute _share numeric
+@attribute _loss numeric
+@attribute _subsidiary numeric
+@attribute _control numeric
+@attribute _tonnes numeric
+@attribute _agreed numeric
+@attribute _buys numeric
+@attribute _investor numeric
+@attribute _buyout numeric
+@attribute _owned numeric
+@attribute _owns numeric
+@attribute _letter numeric
+@attribute _board numeric
+@attribute _definitive numeric
+@attribute _assets numeric
+@attribute _shareholder numeric
+@attribute _acquires numeric
+@attribute _firm numeric
+@attribute _completed numeric
+@attribute _avg numeric
+@attribute _qtly numeric
+@attribute _rise numeric
+@attribute _agreement numeric
+@attribute _directors numeric
+@attribute _profit numeric
+@attribute _rates numeric
+@attribute _trade numeric
+@attribute _exports numeric
+@attribute _tender numeric
+@attribute _export numeric
+@attribute _shrs numeric
+@attribute _cyclops numeric
+@attribute _billion numeric
+@attribute _due numeric
+@attribute _dollar numeric
+@attribute _held numeric
+@attribute _merge numeric
+@attribute _holdings numeric
+@attribute _mths numeric
+@attribute _fall numeric
+@attribute _usair numeric
+@attribute _based numeric
+@attribute _countries numeric
+@attribute _agriculture numeric
+@attribute _demand numeric
+@attribute _commission numeric
+@attribute _figures numeric
+@attribute _division numeric
+@attribute _plc numeric
+@attribute _prior numeric
+@attribute _investment numeric
+@attribute _currency numeric
+@attribute _wholly numeric
+@attribute _tendered numeric
+@attribute _holds numeric
+@attribute _twa numeric
+@attribute _manager numeric
+@attribute _coupon numeric
+@attribute _oper numeric
+@attribute _dividend numeric
+@attribute _issues numeric
+@attribute _lead numeric
+@attribute _fell numeric
+@attribute _management numeric
+@attribute _treasury numeric
+@attribute _announced numeric
+@attribute _bought numeric
+@attribute _makes numeric
+@attribute _deal numeric
+@attribute _companies numeric
+@attribute _rose numeric
+@attribute _previously numeric
+@attribute _cyl numeric
+@attribute _priced numeric
+@attribute _wheat numeric
+@attribute _principle numeric
+@attribute _imports numeric
+@attribute _ithas numeric
+@attribute _money numeric
+@attribute _acquiring numeric
+@attribute _thecompany numeric
+@attribute _prices numeric
+@attribute _domestic numeric
+@attribute _privately numeric
+@attribute _dixons numeric
+@attribute _payout numeric
+@attribute _central numeric
+@attribute _airlines numeric
+@attribute _voting numeric
+@attribute _maker numeric
+@attribute _dlrs numeric
+@attribute _systems numeric
+@attribute _gencorp numeric
+@attribute _saidit numeric
+@attribute _month numeric
+@attribute _proposed numeric
+@attribute _growth numeric
+@attribute _nations numeric
+@attribute _foreign numeric
+@attribute _valued numeric
+@attribute _bonds numeric
+@attribute _completion numeric
+@attribute _ohio numeric
+@attribute _closing numeric
+@attribute _level numeric
+@attribute _partnership numeric
+@attribute _sells numeric
+@attribute _economy numeric
+@attribute _usda numeric
+@attribute _incsaid numeric
+@attribute _monetary numeric
+@attribute _january numeric
+@attribute _excludes numeric
+@attribute _holding numeric
+@attribute _debt numeric
+@attribute _bond numeric
+@attribute _chairman numeric
+@attribute _itacquired numeric
+@attribute _purolator numeric
+@attribute _lower numeric
+@attribute _majority numeric
+@attribute _london numeric
+@attribute _adjusted numeric
+@attribute _ownership numeric
+@attribute _compared numeric
+@attribute _rights numeric
+@attribute _sold numeric
+@attribute _forundisclosed numeric
+@attribute _conditioned numeric
+@attribute _inflation numeric
+@attribute _bills numeric
+@attribute _surplus numeric
+@attribute _economic numeric
+@attribute _courier numeric
+@attribute _minister numeric
+@attribute _poor numeric
+@attribute _denominations numeric
+@attribute _tax numeric
+@attribute _securities numeric
+@attribute _seek numeric
+@attribute _toacquire numeric
+@attribute _regulatory numeric
+@attribute _cyacq numeric
+@attribute _pcc numeric
+@attribute _itagreed numeric
+@attribute _unsolicited numeric
+@attribute _yen numeric
+@attribute _february numeric
+@attribute _comment numeric
+@attribute _seeking numeric
+@attribute _quarter numeric
+@attribute _quarterly numeric
+@attribute _april numeric
+@attribute _cut numeric
+@attribute _deficit numeric
+@attribute _official numeric
+@attribute _country numeric
+@attribute _complete numeric
+@attribute _manufacturer numeric
+@attribute _gy numeric
+@attribute _piedmont numeric
+@attribute _controlled numeric
+@attribute _government numeric
+@attribute _import numeric
+@attribute _issue numeric
+@attribute _businesses numeric
+@attribute _issuing numeric
+@attribute _callable numeric
+@attribute _taft numeric
+@attribute _interests numeric
+@attribute _wall numeric
+@attribute _pay numeric
+@attribute _terminated numeric
+@attribute _themerger numeric
+@attribute _thetransaction numeric
+@attribute _output numeric
+@attribute _producers numeric
+@attribute _business numeric
+@attribute _broadcasting numeric
+@attribute _operates numeric
+@attribute _brazil numeric
+@attribute _receive numeric
+@attribute _court numeric
+@attribute _japan numeric
+@attribute _merged numeric
+@attribute _results numeric
+@attribute _jan numeric
+@attribute _intervention numeric
+@attribute _previous numeric
+@attribute _itcompleted numeric
+@attribute _sees numeric
+@attribute _boards numeric
+@attribute _allegheny numeric
+@attribute _tenderoffer numeric
+@attribute _hostile numeric
+@attribute _yield numeric
+@attribute _eurobond numeric
+@attribute _crop numeric
+@attribute _production numeric
+@attribute _forecast numeric
+@attribute _chemlawn numeric
+@attribute _proposal numeric
+@attribute _theacquisition numeric
+@attribute _signed numeric
+@attribute _measures numeric
+@attribute _grain numeric
+@attribute _months numeric
+@attribute _lbo numeric
+@attribute _ec numeric
+@attribute _afg numeric
+@attribute _credits numeric
+@attribute _crude numeric
+@attribute _warner numeric
+@attribute _borg numeric
+@attribute _pie numeric
+@attribute _aviation numeric
+@attribute _air numeric
+@attribute _bank numeric
+@attribute _decline numeric
+@attribute _street numeric
+@attribute _statistics numeric
+@attribute _dudley numeric
+@attribute _tfb numeric
+@attribute _patti numeric
+@attribute _domm numeric
+@attribute _totaloutstanding numeric
+@attribute _exporters numeric
+@attribute _reserve numeric
+@attribute _pct numeric
+@attribute _levels numeric
+@attribute _interested numeric
+@attribute _payments numeric
+@attribute _low numeric
+@attribute _theoffer numeric
+@attribute _tosell numeric
+@attribute _gross numeric
+@attribute _carl numeric
+@attribute _completedthe numeric
+@attribute _drop numeric
+@attribute _formed numeric
+@attribute _index numeric
+@attribute _hutton numeric
+@attribute _rejects numeric
+@attribute _years numeric
+@attribute _points numeric
+@attribute _average numeric
+@attribute _concession numeric
+@attribute _tonne numeric
+@attribute _periods numeric
+@attribute _budget numeric
+@attribute _industries numeric
+@attribute _trans numeric
+@attribute _affiliates numeric
+@attribute _coffee numeric
+@attribute _tokyo numeric
+@attribute _caesars numeric
+@attribute _aletter numeric
+@attribute _reduction numeric
+@attribute _waste numeric
+@attribute _lending numeric
+@attribute _current numeric
+@attribute _goods numeric
+@attribute _exchange numeric
+@attribute _currencies numeric
+@attribute _underwriting numeric
+@attribute _rising numeric
+@attribute _par numeric
+@attribute _day numeric
+@attribute _futures numeric
+@attribute _justice numeric
+@attribute _owner numeric
+@attribute _period numeric
+@attribute _fully numeric
+@attribute _fixed numeric
+@attribute _approvals numeric
+@attribute _commodity numeric
+@attribute _sets numeric
+@attribute _bill numeric
+@attribute _wagner numeric
+@attribute _mergeragreement numeric
+@attribute _icahn numeric
+@attribute _block numeric
+@attribute _nil numeric
+@attribute _reserves numeric
+@attribute _show numeric
+@attribute _rival numeric
+@attribute _advertisement numeric
+@attribute _tobuy numeric
+@attribute _vote numeric
+@attribute _takeovers numeric
+@attribute _tariffs numeric
+@attribute _officer numeric
+@attribute _falling numeric
+@attribute _set numeric
+@attribute _sosnoff numeric
+@attribute _advisor numeric
+@attribute _finance numeric
+@attribute _equipment numeric
+@attribute _minus numeric
+@attribute _venture numeric
+@attribute _sharp numeric
+@attribute _soviet numeric
+@attribute _gains numeric
+@attribute _rated numeric
+@attribute _plans numeric
+@attribute _tire numeric
+@attribute _quota numeric
+@attribute _luxembourg numeric
+@attribute _oil numeric
+@attribute _regular numeric
+@attribute _expire numeric
+@attribute _commonshares numeric
+@attribute _crisis numeric
+@attribute _loans numeric
+@attribute _banks numeric
+@attribute _agrees numeric
+@attribute _receipt numeric
+@attribute _midnight numeric
+@attribute _slightly numeric
+@attribute _seasonally numeric
+@attribute _shipment numeric
+@attribute _ava numeric
+@attribute _poison numeric
+@attribute _emery numeric
+@attribute _ferruzzi numeric
+@attribute _pacific numeric
+@attribute _payable numeric
+@attribute _part numeric
+@attribute _short numeric
+@attribute _paris numeric
+@attribute _quotas numeric
+@attribute _supply numeric
+@attribute _ministry numeric
+@attribute _divest numeric
+@attribute acq {no,yes}
+
+@data
+
+
+Classifier Model
+FilteredClassifier using weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1710559250 on data filtered through weka.filters.supervised.instance.SpreadSubsample -M 1.0 -X 0.0 -S 1001837950
+
+Filtered Header
+@relation 'acq-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R4083,41,4260,39,1117,2773,904,4117,3564,2964,5032,3047,658,1050,3878,2000,896,40,4698,3549,522,4451,4082,4785,3005,4036,4305,928,4507,4776,1330,729,4352,1771,3963,3157,264,3614,3665,2299,1357,4079,2624,4364,1025,4654,116,663,2336,5451,3165,3169,2547,549,5709,323,4081,5081,1789,926,401,3563,3894,117,1324,3481,3617,4681,1671,4496,1666,4118,5683,530,1443,1387,2075,6466,2110,2916,1705,7372,467,1069,121,1241,887,1765,1363,3344,3452,2334,1129,4963,7211,2111,7336,2685,1074,3106,1361,2369,2522,1751,2683,4708,226,580,2676,1173,903,3923,3440,5684,3442,4954,3450,2193,2381,2877,5082,4529,3444,1391,3455,5766,3233,754,136,4887,2674,1367,4446,1926,3955,2886,3510,2006,2939,1842,4839,559,929,3077,843,2549,3212,4040,1482,4825,2223,2875,2404,1629,2109,1187,558,767,6218,6830,2635,2672,2616,66,3168,909,3890,4184,5950,5607,2252,538,4420,1475,5659,2823,3367,1253,4474,4025,4029,7285,3719,5681,6695,6219,7366,5040,1736,877,4030,3573,3575,271,1134,1223,3056,1070,925,6415,6041,6743,1026,1965,2186,2365,653,2370,681,7188,2309,4897,3228,7218,7243,7265,3155,3473,652,612,3109,596,3653,1075,2405,6467,3842,2402,2321,3439,6223,4032,5387,5137,7213,6123,5043,1593,1105,3477,1838,5537,3507,7226,4129,2746,1976,2888,6338,1474,97,1097,1111,4907,5401,6741,5301,131,448,1206,4329,4283,5787,7221,6691,5773,7305,1669,3800,3236,2550,2305,3232,2634,7246,7304,1997,5481,5598,1434,1854,2230,2150,3722,5037,3354,396,952,4653,3269,630,2249,4697,94,856,4640,669,5133,3681,4917,2544,1130,1960,1620,1128,4773,3898,3192,1167,1906,2439,3166,3268,1898,1800,265,895,4068,529,7410,6468,6135,546,2987,3802,4111,6916,5097,4627,4884,7193,4470,3053,1707,4067,7085,5102,1775,1575,2832,4852,4086,4207,1911,3615,3329,7279,3588,2650,3078,3715,1658,5588,1099,2609,455,119,6864,6488,4160,4012,4098,5296,6763,5815,5899,3174,3229,3201,4104,3197,3589,4412,2825,5760,7495-weka.filters.supervised.instance.SpreadSubsample-M1.0-X0.0-S1001837950'
+
+@attribute _shares numeric
+@attribute _acquisition numeric
+@attribute _stake numeric
+@attribute _acquire numeric
+@attribute _cts numeric
+@attribute _merger numeric
+@attribute _company numeric
+@attribute _shr numeric
+@attribute _qtr numeric
+@attribute _net numeric
+@attribute _year numeric
+@attribute _offer numeric
+@attribute _buy numeric
+@attribute _corp numeric
+@attribute _revs numeric
+@attribute _group numeric
+@attribute _common numeric
+@attribute _acquired numeric
+@attribute _transaction numeric
+@attribute _purchase numeric
+@attribute _bid numeric
+@attribute _takeover numeric
+@attribute _shareholders numeric
+@attribute _unit numeric
+@attribute _note numeric
+@attribute _sell numeric
+@attribute _stock numeric
+@attribute _completes numeric
+@attribute _terms numeric
+@attribute _undisclosed numeric
+@attribute _disclosed numeric
+@attribute _cash numeric
+@attribute _subject numeric
+@attribute _filing numeric
+@attribute _sale numeric
+@attribute _outstanding numeric
+@attribute _approval numeric
+@attribute _rate numeric
+@attribute _record numeric
+@attribute _intent numeric
+@attribute _div numeric
+@attribute _share numeric
+@attribute _loss numeric
+@attribute _subsidiary numeric
+@attribute _control numeric
+@attribute _tonnes numeric
+@attribute _agreed numeric
+@attribute _buys numeric
+@attribute _investor numeric
+@attribute _buyout numeric
+@attribute _owned numeric
+@attribute _owns numeric
+@attribute _letter numeric
+@attribute _board numeric
+@attribute _definitive numeric
+@attribute _assets numeric
+@attribute _shareholder numeric
+@attribute _acquires numeric
+@attribute _firm numeric
+@attribute _completed numeric
+@attribute _avg numeric
+@attribute _qtly numeric
+@attribute _rise numeric
+@attribute _agreement numeric
+@attribute _directors numeric
+@attribute _profit numeric
+@attribute _rates numeric
+@attribute _trade numeric
+@attribute _exports numeric
+@attribute _tender numeric
+@attribute _export numeric
+@attribute _shrs numeric
+@attribute _cyclops numeric
+@attribute _billion numeric
+@attribute _due numeric
+@attribute _dollar numeric
+@attribute _held numeric
+@attribute _merge numeric
+@attribute _holdings numeric
+@attribute _mths numeric
+@attribute _fall numeric
+@attribute _usair numeric
+@attribute _based numeric
+@attribute _countries numeric
+@attribute _agriculture numeric
+@attribute _demand numeric
+@attribute _commission numeric
+@attribute _figures numeric
+@attribute _division numeric
+@attribute _plc numeric
+@attribute _prior numeric
+@attribute _investment numeric
+@attribute _currency numeric
+@attribute _wholly numeric
+@attribute _tendered numeric
+@attribute _holds numeric
+@attribute _twa numeric
+@attribute _manager numeric
+@attribute _coupon numeric
+@attribute _oper numeric
+@attribute _dividend numeric
+@attribute _issues numeric
+@attribute _lead numeric
+@attribute _fell numeric
+@attribute _management numeric
+@attribute _treasury numeric
+@attribute _announced numeric
+@attribute _bought numeric
+@attribute _makes numeric
+@attribute _deal numeric
+@attribute _companies numeric
+@attribute _rose numeric
+@attribute _previously numeric
+@attribute _cyl numeric
+@attribute _priced numeric
+@attribute _wheat numeric
+@attribute _principle numeric
+@attribute _imports numeric
+@attribute _ithas numeric
+@attribute _money numeric
+@attribute _acquiring numeric
+@attribute _thecompany numeric
+@attribute _prices numeric
+@attribute _domestic numeric
+@attribute _privately numeric
+@attribute _dixons numeric
+@attribute _payout numeric
+@attribute _central numeric
+@attribute _airlines numeric
+@attribute _voting numeric
+@attribute _maker numeric
+@attribute _dlrs numeric
+@attribute _systems numeric
+@attribute _gencorp numeric
+@attribute _saidit numeric
+@attribute _month numeric
+@attribute _proposed numeric
+@attribute _growth numeric
+@attribute _nations numeric
+@attribute _foreign numeric
+@attribute _valued numeric
+@attribute _bonds numeric
+@attribute _completion numeric
+@attribute _ohio numeric
+@attribute _closing numeric
+@attribute _level numeric
+@attribute _partnership numeric
+@attribute _sells numeric
+@attribute _economy numeric
+@attribute _usda numeric
+@attribute _incsaid numeric
+@attribute _monetary numeric
+@attribute _january numeric
+@attribute _excludes numeric
+@attribute _holding numeric
+@attribute _debt numeric
+@attribute _bond numeric
+@attribute _chairman numeric
+@attribute _itacquired numeric
+@attribute _purolator numeric
+@attribute _lower numeric
+@attribute _majority numeric
+@attribute _london numeric
+@attribute _adjusted numeric
+@attribute _ownership numeric
+@attribute _compared numeric
+@attribute _rights numeric
+@attribute _sold numeric
+@attribute _forundisclosed numeric
+@attribute _conditioned numeric
+@attribute _inflation numeric
+@attribute _bills numeric
+@attribute _surplus numeric
+@attribute _economic numeric
+@attribute _courier numeric
+@attribute _minister numeric
+@attribute _poor numeric
+@attribute _denominations numeric
+@attribute _tax numeric
+@attribute _securities numeric
+@attribute _seek numeric
+@attribute _toacquire numeric
+@attribute _regulatory numeric
+@attribute _cyacq numeric
+@attribute _pcc numeric
+@attribute _itagreed numeric
+@attribute _unsolicited numeric
+@attribute _yen numeric
+@attribute _february numeric
+@attribute _comment numeric
+@attribute _seeking numeric
+@attribute _quarter numeric
+@attribute _quarterly numeric
+@attribute _april numeric
+@attribute _cut numeric
+@attribute _deficit numeric
+@attribute _official numeric
+@attribute _country numeric
+@attribute _complete numeric
+@attribute _manufacturer numeric
+@attribute _gy numeric
+@attribute _piedmont numeric
+@attribute _controlled numeric
+@attribute _government numeric
+@attribute _import numeric
+@attribute _issue numeric
+@attribute _businesses numeric
+@attribute _issuing numeric
+@attribute _callable numeric
+@attribute _taft numeric
+@attribute _interests numeric
+@attribute _wall numeric
+@attribute _pay numeric
+@attribute _terminated numeric
+@attribute _themerger numeric
+@attribute _thetransaction numeric
+@attribute _output numeric
+@attribute _producers numeric
+@attribute _business numeric
+@attribute _broadcasting numeric
+@attribute _operates numeric
+@attribute _brazil numeric
+@attribute _receive numeric
+@attribute _court numeric
+@attribute _japan numeric
+@attribute _merged numeric
+@attribute _results numeric
+@attribute _jan numeric
+@attribute _intervention numeric
+@attribute _previous numeric
+@attribute _itcompleted numeric
+@attribute _sees numeric
+@attribute _boards numeric
+@attribute _allegheny numeric
+@attribute _tenderoffer numeric
+@attribute _hostile numeric
+@attribute _yield numeric
+@attribute _eurobond numeric
+@attribute _crop numeric
+@attribute _production numeric
+@attribute _forecast numeric
+@attribute _chemlawn numeric
+@attribute _proposal numeric
+@attribute _theacquisition numeric
+@attribute _signed numeric
+@attribute _measures numeric
+@attribute _grain numeric
+@attribute _months numeric
+@attribute _lbo numeric
+@attribute _ec numeric
+@attribute _afg numeric
+@attribute _credits numeric
+@attribute _crude numeric
+@attribute _warner numeric
+@attribute _borg numeric
+@attribute _pie numeric
+@attribute _aviation numeric
+@attribute _air numeric
+@attribute _bank numeric
+@attribute _decline numeric
+@attribute _street numeric
+@attribute _statistics numeric
+@attribute _dudley numeric
+@attribute _tfb numeric
+@attribute _patti numeric
+@attribute _domm numeric
+@attribute _totaloutstanding numeric
+@attribute _exporters numeric
+@attribute _reserve numeric
+@attribute _pct numeric
+@attribute _levels numeric
+@attribute _interested numeric
+@attribute _payments numeric
+@attribute _low numeric
+@attribute _theoffer numeric
+@attribute _tosell numeric
+@attribute _gross numeric
+@attribute _carl numeric
+@attribute _completedthe numeric
+@attribute _drop numeric
+@attribute _formed numeric
+@attribute _index numeric
+@attribute _hutton numeric
+@attribute _rejects numeric
+@attribute _years numeric
+@attribute _points numeric
+@attribute _average numeric
+@attribute _concession numeric
+@attribute _tonne numeric
+@attribute _periods numeric
+@attribute _budget numeric
+@attribute _industries numeric
+@attribute _trans numeric
+@attribute _affiliates numeric
+@attribute _coffee numeric
+@attribute _tokyo numeric
+@attribute _caesars numeric
+@attribute _aletter numeric
+@attribute _reduction numeric
+@attribute _waste numeric
+@attribute _lending numeric
+@attribute _current numeric
+@attribute _goods numeric
+@attribute _exchange numeric
+@attribute _currencies numeric
+@attribute _underwriting numeric
+@attribute _rising numeric
+@attribute _par numeric
+@attribute _day numeric
+@attribute _futures numeric
+@attribute _justice numeric
+@attribute _owner numeric
+@attribute _period numeric
+@attribute _fully numeric
+@attribute _fixed numeric
+@attribute _approvals numeric
+@attribute _commodity numeric
+@attribute _sets numeric
+@attribute _bill numeric
+@attribute _wagner numeric
+@attribute _mergeragreement numeric
+@attribute _icahn numeric
+@attribute _block numeric
+@attribute _nil numeric
+@attribute _reserves numeric
+@attribute _show numeric
+@attribute _rival numeric
+@attribute _advertisement numeric
+@attribute _tobuy numeric
+@attribute _vote numeric
+@attribute _takeovers numeric
+@attribute _tariffs numeric
+@attribute _officer numeric
+@attribute _falling numeric
+@attribute _set numeric
+@attribute _sosnoff numeric
+@attribute _advisor numeric
+@attribute _finance numeric
+@attribute _equipment numeric
+@attribute _minus numeric
+@attribute _venture numeric
+@attribute _sharp numeric
+@attribute _soviet numeric
+@attribute _gains numeric
+@attribute _rated numeric
+@attribute _plans numeric
+@attribute _tire numeric
+@attribute _quota numeric
+@attribute _luxembourg numeric
+@attribute _oil numeric
+@attribute _regular numeric
+@attribute _expire numeric
+@attribute _commonshares numeric
+@attribute _crisis numeric
+@attribute _loans numeric
+@attribute _banks numeric
+@attribute _agrees numeric
+@attribute _receipt numeric
+@attribute _midnight numeric
+@attribute _slightly numeric
+@attribute _seasonally numeric
+@attribute _shipment numeric
+@attribute _ava numeric
+@attribute _poison numeric
+@attribute _emery numeric
+@attribute _ferruzzi numeric
+@attribute _pacific numeric
+@attribute _payable numeric
+@attribute _part numeric
+@attribute _short numeric
+@attribute _paris numeric
+@attribute _quotas numeric
+@attribute _supply numeric
+@attribute _ministry numeric
+@attribute _divest numeric
+@attribute acq {no,yes}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1710559250 -do-not-check-capabilities
+
+Time taken to build model: 39.32 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.94 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3176               96.2716 %
+Incorrectly Classified Instances       123                3.7284 %
+Kappa statistic                          0.8943
+Mean absolute error                      0.1171
+Root mean squared error                  0.1918
+Relative absolute error                 37.1828 %
+Root relative squared error             46.1605 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,963    0,038    0,989      0,963    0,976      0,896    0,993     0,998     no
+                 0,962    0,037    0,878      0,962    0,918      0,896    0,993     0,979     yes
+Weighted Avg.    0,963    0,037    0,965      0,963    0,963      0,896    0,993     0,994     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2484   96 |    a = no
+   27  692 |    b = yes
+

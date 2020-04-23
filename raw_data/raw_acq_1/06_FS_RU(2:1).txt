@@ -1,0 +1,309 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 75" -W weka.classifiers.meta.FilteredClassifier -- -F "weka.filters.supervised.instance.SpreadSubsample -M 2.0 -X 0.0 -S 1" -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     acq-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   7495
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 7495 acq):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.06916      4083 _shares
+ 0.06464        41 _acquisition
+ 0.06205      4260 _stake
+ 0.05751        39 _acquire
+ 0.05102      1117 _cts
+ 0.04567      2773 _merger
+ 0.04426       904 _company
+ 0.04069      4117 _shr
+ 0.03624      3564 _qtr
+ 0.03317      2964 _net
+ 0.03305      5032 _year
+ 0.03231      3047 _offer
+ 0.0289        658 _buy
+ 0.02888      1050 _corp
+ 0.02874      3878 _revs
+ 0.02772      2000 _group
+ 0.02757       896 _common
+ 0.02673        40 _acquired
+ 0.02662      4698 _transaction
+ 0.02532      3549 _purchase
+ 0.02477       522 _bid
+ 0.02444      4451 _takeover
+ 0.02429      4082 _shareholders
+ 0.02403      4785 _unit
+ 0.02398      3005 _note
+ 0.02208      4036 _sell
+ 0.02085      4305 _stock
+ 0.02004       928 _completes
+ 0.01987      4507 _terms
+ 0.01926      4776 _undisclosed
+ 0.01908      1330 _disclosed
+ 0.01758       729 _cash
+ 0.01692      4352 _subject
+ 0.01668      1771 _filing
+ 0.01646      3963 _sale
+ 0.0161       3157 _outstanding
+ 0.01604       264 _approval
+ 0.01591      3614 _rate
+ 0.01576      3665 _record
+ 0.01564      2299 _intent
+ 0.01493      1357 _div
+ 0.01492      4079 _share
+ 0.01486      2624 _loss
+ 0.01432      4364 _subsidiary
+ 0.01425      1025 _control
+ 0.01389      4654 _tonnes
+ 0.01355       116 _agreed
+ 0.01352       663 _buys
+ 0.0135       2336 _investor
+ 0.01346      5451 _buyout
+ 0.01329      3165 _owned
+ 0.01325      3169 _owns
+ 0.01316      2547 _letter
+ 0.01306       549 _board
+ 0.01304      5709 _definitive
+ 0.01281       323 _assets
+ 0.01223      4081 _shareholder
+ 0.0122       5081 _acquires
+ 0.01206      1789 _firm
+ 0.01193       926 _completed
+ 0.01191       401 _avg
+ 0.01143      3563 _qtly
+ 0.0112       3894 _rise
+ 0.01089       117 _agreement
+ 0.01089      1324 _directors
+ 0.01086      3481 _profit
+ 0.01083      3617 _rates
+ 0.0107       4681 _trade
+ 0.0107       1671 _exports
+ 0.01041      4496 _tender
+ 0.01023      1666 _export
+ 0.01007      4118 _shrs
+ 0.00958      5683 _cyclops
+ 0.00955       530 _billion
+ 0.0095       1443 _due
+
+Selected attributes: 4083,41,4260,39,1117,2773,904,4117,3564,2964,5032,3047,658,1050,3878,2000,896,40,4698,3549,522,4451,4082,4785,3005,4036,4305,928,4507,4776,1330,729,4352,1771,3963,3157,264,3614,3665,2299,1357,4079,2624,4364,1025,4654,116,663,2336,5451,3165,3169,2547,549,5709,323,4081,5081,1789,926,401,3563,3894,117,1324,3481,3617,4681,1671,4496,1666,4118,5683,530,1443 : 75
+
+
+Header of reduced data:
+@relation 'acq-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R4083,41,4260,39,1117,2773,904,4117,3564,2964,5032,3047,658,1050,3878,2000,896,40,4698,3549,522,4451,4082,4785,3005,4036,4305,928,4507,4776,1330,729,4352,1771,3963,3157,264,3614,3665,2299,1357,4079,2624,4364,1025,4654,116,663,2336,5451,3165,3169,2547,549,5709,323,4081,5081,1789,926,401,3563,3894,117,1324,3481,3617,4681,1671,4496,1666,4118,5683,530,1443,7495'
+
+@attribute _shares numeric
+@attribute _acquisition numeric
+@attribute _stake numeric
+@attribute _acquire numeric
+@attribute _cts numeric
+@attribute _merger numeric
+@attribute _company numeric
+@attribute _shr numeric
+@attribute _qtr numeric
+@attribute _net numeric
+@attribute _year numeric
+@attribute _offer numeric
+@attribute _buy numeric
+@attribute _corp numeric
+@attribute _revs numeric
+@attribute _group numeric
+@attribute _common numeric
+@attribute _acquired numeric
+@attribute _transaction numeric
+@attribute _purchase numeric
+@attribute _bid numeric
+@attribute _takeover numeric
+@attribute _shareholders numeric
+@attribute _unit numeric
+@attribute _note numeric
+@attribute _sell numeric
+@attribute _stock numeric
+@attribute _completes numeric
+@attribute _terms numeric
+@attribute _undisclosed numeric
+@attribute _disclosed numeric
+@attribute _cash numeric
+@attribute _subject numeric
+@attribute _filing numeric
+@attribute _sale numeric
+@attribute _outstanding numeric
+@attribute _approval numeric
+@attribute _rate numeric
+@attribute _record numeric
+@attribute _intent numeric
+@attribute _div numeric
+@attribute _share numeric
+@attribute _loss numeric
+@attribute _subsidiary numeric
+@attribute _control numeric
+@attribute _tonnes numeric
+@attribute _agreed numeric
+@attribute _buys numeric
+@attribute _investor numeric
+@attribute _buyout numeric
+@attribute _owned numeric
+@attribute _owns numeric
+@attribute _letter numeric
+@attribute _board numeric
+@attribute _definitive numeric
+@attribute _assets numeric
+@attribute _shareholder numeric
+@attribute _acquires numeric
+@attribute _firm numeric
+@attribute _completed numeric
+@attribute _avg numeric
+@attribute _qtly numeric
+@attribute _rise numeric
+@attribute _agreement numeric
+@attribute _directors numeric
+@attribute _profit numeric
+@attribute _rates numeric
+@attribute _trade numeric
+@attribute _exports numeric
+@attribute _tender numeric
+@attribute _export numeric
+@attribute _shrs numeric
+@attribute _cyclops numeric
+@attribute _billion numeric
+@attribute _due numeric
+@attribute acq {no,yes}
+
+@data
+
+
+Classifier Model
+FilteredClassifier using weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1600602909 on data filtered through weka.filters.supervised.instance.SpreadSubsample -M 2.0 -X 0.0 -S 2099513562
+
+Filtered Header
+@relation 'acq-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R4083,41,4260,39,1117,2773,904,4117,3564,2964,5032,3047,658,1050,3878,2000,896,40,4698,3549,522,4451,4082,4785,3005,4036,4305,928,4507,4776,1330,729,4352,1771,3963,3157,264,3614,3665,2299,1357,4079,2624,4364,1025,4654,116,663,2336,5451,3165,3169,2547,549,5709,323,4081,5081,1789,926,401,3563,3894,117,1324,3481,3617,4681,1671,4496,1666,4118,5683,530,1443,7495-weka.filters.supervised.instance.SpreadSubsample-M2.0-X0.0-S2099513562'
+
+@attribute _shares numeric
+@attribute _acquisition numeric
+@attribute _stake numeric
+@attribute _acquire numeric
+@attribute _cts numeric
+@attribute _merger numeric
+@attribute _company numeric
+@attribute _shr numeric
+@attribute _qtr numeric
+@attribute _net numeric
+@attribute _year numeric
+@attribute _offer numeric
+@attribute _buy numeric
+@attribute _corp numeric
+@attribute _revs numeric
+@attribute _group numeric
+@attribute _common numeric
+@attribute _acquired numeric
+@attribute _transaction numeric
+@attribute _purchase numeric
+@attribute _bid numeric
+@attribute _takeover numeric
+@attribute _shareholders numeric
+@attribute _unit numeric
+@attribute _note numeric
+@attribute _sell numeric
+@attribute _stock numeric
+@attribute _completes numeric
+@attribute _terms numeric
+@attribute _undisclosed numeric
+@attribute _disclosed numeric
+@attribute _cash numeric
+@attribute _subject numeric
+@attribute _filing numeric
+@attribute _sale numeric
+@attribute _outstanding numeric
+@attribute _approval numeric
+@attribute _rate numeric
+@attribute _record numeric
+@attribute _intent numeric
+@attribute _div numeric
+@attribute _share numeric
+@attribute _loss numeric
+@attribute _subsidiary numeric
+@attribute _control numeric
+@attribute _tonnes numeric
+@attribute _agreed numeric
+@attribute _buys numeric
+@attribute _investor numeric
+@attribute _buyout numeric
+@attribute _owned numeric
+@attribute _owns numeric
+@attribute _letter numeric
+@attribute _board numeric
+@attribute _definitive numeric
+@attribute _assets numeric
+@attribute _shareholder numeric
+@attribute _acquires numeric
+@attribute _firm numeric
+@attribute _completed numeric
+@attribute _avg numeric
+@attribute _qtly numeric
+@attribute _rise numeric
+@attribute _agreement numeric
+@attribute _directors numeric
+@attribute _profit numeric
+@attribute _rates numeric
+@attribute _trade numeric
+@attribute _exports numeric
+@attribute _tender numeric
+@attribute _export numeric
+@attribute _shrs numeric
+@attribute _cyclops numeric
+@attribute _billion numeric
+@attribute _due numeric
+@attribute acq {no,yes}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1600602909 -do-not-check-capabilities
+
+Time taken to build model: 57.12 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.09 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3143               95.2713 %
+Incorrectly Classified Instances       156                4.7287 %
+Kappa statistic                          0.8623
+Mean absolute error                      0.0969
+Root mean squared error                  0.1992
+Relative absolute error                 30.7658 %
+Root relative squared error             47.947  %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,099    0,972      0,967    0,970      0,862    0,983     0,995     no
+                 0,901    0,033    0,884      0,901    0,893      0,862    0,983     0,935     yes
+Weighted Avg.    0,953    0,084    0,953      0,953    0,953      0,862    0,983     0,982     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2495   85 |    a = no
+   71  648 |    b = yes
+
