@@ -27,7 +27,7 @@ def extract_data_from_file(file_name):
 
     with open(file_name) as f:
         # e.g.:  raw_1/02_RU(3:1)_FS.txt  --->  RU(3:1) + FS
-        test_name = file_name.split("/")[1][3:-4].replace("_", " + ")
+        test_name = file_name.split("/")[2][3:-4].replace("_", " + ")
 
         ''' line example:
         === Detailed Accuracy By Class ===
@@ -61,22 +61,27 @@ def extract_baseline():
     return extract_data_from_file("raw_baseline/0_baseline.txt")
 
 
-def print_data(percent, test_names, specificity, recall, precision, f_measure, g_mean, mcc,
+def print_data(dataset, percent, test_names, specificity, recall, precision, f_measure, g_mean, mcc,
                print_summary=True, write_on_file=False):
     f = None
 
+    # print "dataset: " + dataset
+
     if percent == 100:
-        title = "No Feature Selection"
+        title = "No Feature Selection\n"
     else:
         title = "Percentage of selected features: " + str(percent) + "%\n"
 
     print title
 
     if write_on_file:
-        if percent == 1:
+        if dataset == "acq" and percent == 1:  # open in write mode only if it's the first dataset
             f = open("results.txt", "w")
-        else:
+        else:  # otherwise, append the results
             f = open("results.txt", "a")
+
+        if percent == 1:  # write the dataset name only the first time
+            f.write("Dataset: " + dataset + "\n\n")
 
         f.write(title + "\n")
 
@@ -117,6 +122,11 @@ def print_data(percent, test_names, specificity, recall, precision, f_measure, g
             f.write("\n")
 
         f.write("\n\n")
+
+        if percent == 100:
+            f.write("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * " +
+                    "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * " +
+                    "* * * * * * * * * * * * * * * * * * * * * * * * * * *\n\n\n")
 
         f.close()
 
