@@ -1,0 +1,1329 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 415" -W weka.classifiers.meta.FilteredClassifier -- -F "weka.filters.supervised.instance.SpreadSubsample -M 2.0 -X 0.0 -S 1" -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     corn-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   8302
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 8302 corn):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.079869       1094 _corn
+ 0.026924       4731 _tonnes
+ 0.026585       2740 _maize
+ 0.023117       2032 _grain
+ 0.021866       4908 _usda
+ 0.020121       5037 _wheat
+ 0.019249        130 _agriculture
+ 0.014366       7588 _sorghum
+ 0.010011       5606 _bushel
+ 0.009582       4278 _soybean
+ 0.009119       1766 _farmers
+ 0.009082       1718 _export
+ 0.009078       1307 _department
+ 0.008747       4910 _ussr
+ 0.00866         479 _barley
+ 0.008206       4999 _washington
+ 0.007694       1152 _crop
+ 0.007586       4279 _soybeans
+ 0.007225        678 _bushels
+ 0.006508       4275 _soviet
+ 0.006052       2062 _growers
+ 0.005681        946 _company
+ 0.005516       8099 _unknown
+ 0.005474       3037 _net
+ 0.005205         45 _acreage
+ 0.00496        3837 _report
+ 0.004917       4077 _season
+ 0.004726       2933 _mlntonnes
+ 0.004689       4265 _sources
+ 0.004658       4188 _shr
+ 0.004489       1096 _corp
+ 0.004391       1327 _destinations
+ 0.004255       1153 _crops
+ 0.00421        7180 _pik
+ 0.004094       3402 _planted
+ 0.00404         463 _bank
+ 0.003889       4730 _tonne
+ 0.003873       1721 _exporters
+ 0.003833       3551 _program
+ 0.003824       3543 _production
+ 0.00382        1523 _ec
+ 0.003815       3636 _qtr
+ 0.003759       1167 _cts
+ 0.003748       6568 _inspections
+ 0.003736       1291 _delivery
+ 0.00368        2258 _imports
+ 0.00366        2944 _moisture
+ 0.00366        1793 _feed
+ 0.003625         46 _acres
+ 0.003605       4381 _stock
+ 0.003598       3678 _ranged
+ 0.003596       6982 _ofcorn
+ 0.003596       6072 _enrollment
+ 0.003596       6070 _enrolled
+ 0.003526        304 _argentine
+ 0.003505       4868 _union
+ 0.003381       6149 _farmer
+ 0.003288       7544 _signup
+ 0.003181       1928 _french
+ 0.003171       5130 _york
+ 0.003167       6380 _guesses
+ 0.003158       2106 _harvest
+ 0.003117       3539 _producers
+ 0.003108       2251 _import
+ 0.003069       2033 _grains
+ 0.003035       1765 _farm
+ 0.003022       1643 _estimates
+ 0.003005        833 _chicago
+ 0.002995       7927 _thous
+ 0.002995       8148 _villanueva
+ 0.002995       5789 _cordoba
+ 0.002987       5534 _belt
+ 0.00297        1027 _conservation
+ 0.002925       8285 _yellow
+ 0.002904       1423 _dlrs
+ 0.002888       4508 _switched
+ 0.002886       3945 _revs
+ 0.002871       4732 _tonnesof
+ 0.002839       4520 _taiwan
+ 0.002838       4283 _spain
+ 0.002771        129 _agricultural
+ 0.002759         44 _acre
+ 0.002742       4758 _trade
+ 0.002739       4656 _thesoviet
+ 0.002727       1110 _cotton
+ 0.00271        1490 _dry
+ 0.00267        4440 _subsidy
+ 0.002661       1238 _debt
+ 0.002651       3074 _note
+ 0.002595       5410 _ascs
+ 0.002595       2695 _loss
+ 0.002591       6291 _fructose
+ 0.002558       3950 _rice
+ 0.002508       2512 _kansas
+ 0.002494       2078 _gulf
+ 0.002476       3547 _profit
+ 0.002428       3620 _purchases
+ 0.002396       1504 _duty
+ 0.002394       7209 _postedcounty
+ 0.002394       7116 _pampa
+ 0.002394       6075 _entre
+ 0.002394       7420 _rios
+ 0.002387       4571 _tenders
+ 0.002376       4154 _shares
+ 0.002358        143 _aires
+ 0.002352        793 _cereal
+ 0.002352        794 _cereals
+ 0.002327       4438 _subsidies
+ 0.00232         661 _buenos
+ 0.002316       2782 _marketing
+ 0.002313        297 _areas
+ 0.002304       2687 _london
+ 0.002291       4276 _soviets
+ 0.002273       4170 _shipments
+ 0.002267       7712 _sunflower
+ 0.002181       3089 _oats
+ 0.002171       3668 _rains
+ 0.002144        936 _commodity
+ 0.002123       3403 _planting
+ 0.002103       5907 _deficiency
+ 0.002076       5583 _bread
+ 0.002064       4169 _shipment
+ 0.002021       7463 _saidprivate
+ 0.002021       7739 _syrup
+ 0.002021       7028 _ofsoybeans
+ 0.001983       4126 _september
+ 0.001974       1534 _ecus
+ 0.001967       2107 _harvested
+ 0.001967        889 _coarse
+ 0.001967       7643 _stabilization
+ 0.001967       6774 _manuel
+ 0.001948       4250 _soft
+ 0.001931       1874 _fob
+ 0.001907       3667 _rainfall
+ 0.001907       1869 _flour
+ 0.001893       5013 _weather
+ 0.001872       7433 _roll
+ 0.001862        944 _community
+ 0.001853        470 _banks
+ 0.001851       1794 _feedgrains
+ 0.00183        1723 _exports
+ 0.001826       5830 _countervailing
+ 0.001826       7730 _sweetener
+ 0.001826       6849 _mlnhectares
+ 0.001818       1198 _damage
+ 0.001798       1353 _difference
+ 0.001794       6820 _mge
+ 0.001794       6349 _grainsagreement
+ 0.001794       5486 _bargefreight
+ 0.001794       5814 _corrientes
+ 0.001794       6449 _hfcs
+ 0.001794       6246 _formosa
+ 0.001794       6336 _grainagreement
+ 0.001794       6841 _misiones
+ 0.001794       7806 _theconservation
+ 0.001794       6847 _mlnbushels
+ 0.001794       5853 _cropland
+ 0.001794       6758 _maizeimporters
+ 0.001764        837 _china
+ 0.00176        4006 _ruling
+ 0.001749       2810 _meal
+ 0.00174        2632 _licences
+ 0.00174        4007 _rumors
+ 0.00174        2722 _lyng
+ 0.001737       2975 _moscow
+ 0.001723       3125 _official
+ 0.001691        937 _common
+ 0.001689       1642 _estimated
+ 0.001687       2555 _land
+ 0.001684       5685 _certs
+ 0.00167        4112 _senate
+ 0.001649        935 _commodities
+ 0.001648       6403 _harvesting
+ 0.001629        303 _argentina
+ 0.001587       7039 _ofu
+ 0.001587       6315 _generic
+ 0.001578       3713 _rebate
+ 0.001576       1956 _futures
+ 0.001576       3265 _paris
+ 0.001572       6233 _fordelivery
+ 0.001544       4150 _share
+ 0.001542       1416 _dividend
+ 0.00154        3600 _province
+ 0.00154        4111 _sen
+ 0.001532       6824 _midwest
+ 0.001532       3404 _plantings
+ 0.001532       4092 _securities
+ 0.001522        796 _certificates
+ 0.001517       5071 _winter
+ 0.001503       1410 _div
+ 0.0015         4480 _supplies
+ 0.001493       4762 _traders
+ 0.001475       2404 _iowa
+ 0.001459       8064 _tribunal
+ 0.001459       8119 _upholds
+ 0.001459       5977 _dole
+ 0.001459       5827 _counselor
+ 0.001459       7440 _rouen
+ 0.001459       7882 _therains
+ 0.001459       6701 _licencesto
+ 0.001449       5016 _week
+ 0.001432       3714 _rebates
+ 0.001432       3148 _oilseed
+ 0.001432       1778 _fe
+ 0.001432       1309 _departmentsaid
+ 0.001391       2276 _includes
+ 0.001388       2934 _mm
+ 0.001376       4284 _spanish
+ 0.001375       2374 _international
+ 0.001358       2950 _money
+ 0.00133        2371 _interior
+ 0.001308       4747 _total
+ 0.001307       4562 _temperatures
+ 0.001307        736 _cargill
+ 0.001297        542 _bids
+ 0.001297        588 _bonus
+ 0.001294       7058 _onic
+ 0.001294       6479 _idled
+ 0.001294       5301 _andconservation
+ 0.001294       4355 _states
+ 0.001273        791 _cents
+ 0.001266       1330 _detailed
+ 0.001254        795 _certificate
+ 0.001237        549 _billion
+ 0.001214       4189 _shrs
+ 0.001213       5214 _administrator
+ 0.001207        347 _association
+ 0.001204        717 _canadian
+ 0.001195       5763 _conservationprogram
+ 0.001195       7432 _robertdole
+ 0.001195       6567 _inspectionreport
+ 0.001195       5241 _agrianalysis
+ 0.001195       7992 _tonnefor
+ 0.001195       6857 _mmin
+ 0.001195       5235 _agpm
+ 0.001195       5839 _countyposted
+ 0.001195       6521 _incorn
+ 0.001195       7291 _publica
+ 0.001195       5837 _countrymovement
+ 0.001195       5801 _cornimports
+ 0.001195       5794 _cornexports
+ 0.001195       5734 _commodityoperations
+ 0.001195       6470 _hrw
+ 0.001195       5796 _cornfor
+ 0.001195       5746 _competitiveprices
+ 0.001195       7347 _reducedby
+ 0.001195       7600 _sovietpurchases
+ 0.001195       6197 _finishingloading
+ 0.001195       6099 _evencorn
+ 0.001195       6789 _marketingyear
+ 0.001195       6084 _erodible
+ 0.001195       7545 _signups
+ 0.001195       6354 _grainsupply
+ 0.001195       5332 _andsorghum
+ 0.001195       6331 _governmentpayments
+ 0.001195       6323 _gluten
+ 0.001195       7388 _reportedunder
+ 0.001195       6071 _enrolling
+ 0.001195       7834 _theillinois
+ 0.001195       6384 _gustafson
+ 0.001195       5673 _cereais
+ 0.001195       5688 _chaco
+ 0.001195       6679 _latestexport
+ 0.001195       6673 _lapampa
+ 0.001195       7203 _pooryielding
+ 0.001195       5328 _andrice
+ 0.001195       6385 _hackmann
+ 0.001195       5603 _bureaufederation
+ 0.001195       5608 _bushelsof
+ 0.001195       6069 _enroll
+ 0.001195       6261 _fourthyear
+ 0.001195       8183 _weekdrying
+ 0.001195       7008 _ofmaize
+ 0.001195       8033 _totrade
+ 0.001195       5148 _abastecimento
+ 0.001195       8106 _unpublished
+ 0.001195       8047 _tradetalks
+ 0.001188       1832 _financial
+ 0.001178       6058 _empty
+ 0.001178       7042 _ofwheat
+ 0.001178       5487 _barges
+ 0.001178       6148 _farmbill
+ 0.001171       4171 _shipped
+ 0.001171       2129 _hectares
+ 0.00117        2296 _indiana
+ 0.001166       2312 _industries
+ 0.001163       2361 _intentions
+ 0.001155       1650 _european
+ 0.001152       3635 _qtly
+ 0.001149       4618 _theeuropean
+ 0.001138       3506 _prices
+ 0.001128       2546 _la
+ 0.001128       4525 _talk
+ 0.00112        1924 _free
+ 0.001117       6780 _marginal
+ 0.001117       3601 _provinces
+ 0.001117       4906 _usage
+ 0.001116       2468 _jan
+ 0.001115       1422 _dlr
+ 0.001115       4567 _tender
+ 0.001113       4153 _shareholders
+ 0.001111        131 _agriculturedepartment
+ 0.001111        725 _capital
+ 0.001107       4334 _stake
+ 0.001107       4393 _storage
+ 0.001105       1014 _congress
+ 0.001101       3745 _reduced
+ 0.001087       7652 _starch
+ 0.001086       3295 _pay
+ 0.001077       3065 _normal
+ 0.001077       3069 _northern
+ 0.001075       2421 _israel
+ 0.001065       4377 _stg
+ 0.001058       3665 _rain
+ 0.00105        2705 _lower
+ 0.001036       1329 _detail
+ 0.001036        773 _cbt
+ 0.001026        340 _assets
+ 0.001013        448 _bales
+ 0.001013       7682 _stored
+ 0.001013       7623 _specialists
+ 0.001013       7715 _sunflowerseed
+ 0.001013       5594 _bu
+ 0.001012       3414 _plc
+ 0.000994       3928 _reuters
+ 0.000977       4566 _ten
+ 0.000966       2128 _heavy
+ 0.000961       1815 _figures
+ 0.00096         765 _caused
+ 0.000954       3517 _prior
+ 0.00095        6048 _elevators
+ 0.00095        6405 _harvests
+ 0.00095        7983 _toledo
+ 0.000947       1890 _foreign
+ 0.000946       3076 _notes
+ 0.000943       5123 _yen
+ 0.000941       1641 _estimate
+ 0.000935       3443 _portugal
+ 0.000926        702 _calif
+ 0.000925        106 _africa
+ 0.000921       4125 _sept
+ 0.00092        2991 _mths
+ 0.000915       1512 _earnings
+ 0.000915       2434 _italy
+ 0.000915       5018 _weekly
+ 0.000913       3553 _programs
+ 0.000911       5531 _beintroduced
+ 0.000911       7130 _pasta
+ 0.000911       7640 _srw
+ 0.000911       5705 _cigra
+ 0.000911       5195 _addedthe
+ 0.000911       6815 _melnikov
+ 0.000911       6368 _growersand
+ 0.000911       7465 _saidsales
+ 0.000911       7907 _theussr
+ 0.000911       7795 _thearea
+ 0.000911       5504 _becausethey
+ 0.000911       7143 _pctaverage
+ 0.000911       5727 _committeeapproved
+ 0.000911       5437 _atbetween
+ 0.000911       6358 _grassley
+ 0.000911       6975 _ofbarley
+ 0.000911       5458 _authorizations
+ 0.000911       6551 _injure
+ 0.000911       7732 _sweeteners
+ 0.000911       5186 _acresof
+ 0.000911       5863 _cst
+ 0.000911       7832 _thehigh
+ 0.000905        627 _breakdown
+ 0.000905       1544 _eep
+ 0.000901       3442 _ports
+ 0.000896       7707 _sugarcane
+ 0.000896        478 _barge
+ 0.000896       7794 _theamount
+ 0.000896       7948 _toaround
+ 0.000896       6555 _injury
+ 0.000896       1866 _flooding
+ 0.000884         38 _acquire
+ 0.000884        586 _bonds
+ 0.000881       1927 _freight
+ 0.000874       4267 _south
+ 0.000868       2501 _july
+ 0.000861       3501 _previous
+ 0.00085        4439 _subsidized
+ 0.00085        4909 _users
+ 0.000848       5166 _accordingto
+ 0.000848        798 _cftc
+ 0.000843       2149 _high
+ 0.000841        667 _bulk
+ 0.000839       1697 _expected
+ 0.000834       1971 _gas
+ 0.000834       1122 _coupon
+ 0.000832       3841 _reports
+ 0.00083        2059 _group
+ 0.000826       1250 _decision
+ 0.000825       3296 _payable
+ 0.000805       6741 _luis
+ 0.000805       2384 _intothe
+ 0.000805       2970 _morocco
+ 0.000805       7579 _soil
+ 0.000805       6785 _marketed
+ 0.000801       1212 _dated
+ 0.0008         2804 _maximum
+ 0.000799       3694 _reach
+ 0.000793       3824 _rep
+ 0.00079          42 _acquisition
+ 0.000788        249 _annually
+ 0.000786        329 _asked
+ 0.000784       7699 _subsidize
+ 0.000784       6554 _injurious
+ 0.000784       6361 _grazing
+ 0.000784       5732 _commoditycertificates
+ 0.000784       7810 _thecrop
+ 0.000784       6076 _epac
+ 0.000784       8250 _willlikely
+
+Selected attributes: 1094,4731,2740,2032,4908,5037,130,7588,5606,4278,1766,1718,1307,4910,479,4999,1152,4279,678,4275,2062,946,8099,3037,45,3837,4077,2933,4265,4188,1096,1327,1153,7180,3402,463,4730,1721,3551,3543,1523,3636,1167,6568,1291,2258,2944,1793,46,4381,3678,6982,6072,6070,304,4868,6149,7544,1928,5130,6380,2106,3539,2251,2033,1765,1643,833,7927,8148,5789,5534,1027,8285,1423,4508,3945,4732,4520,4283,129,44,4758,4656,1110,1490,4440,1238,3074,5410,2695,6291,3950,2512,2078,3547,3620,1504,7209,7116,6075,7420,4571,4154,143,793,794,4438,661,2782,297,2687,4276,4170,7712,3089,3668,936,3403,5907,5583,4169,7463,7739,7028,4126,1534,2107,889,7643,6774,4250,1874,3667,1869,5013,7433,944,470,1794,1723,5830,7730,6849,1198,1353,6820,6349,5486,5814,6449,6246,6336,6841,7806,6847,5853,6758,837,4006,2810,2632,4007,2722,2975,3125,937,1642,2555,5685,4112,935,6403,303,7039,6315,3713,1956,3265,6233,4150,1416,3600,4111,6824,3404,4092,796,5071,1410,4480,4762,2404,8064,8119,5977,5827,7440,7882,6701,5016,3714,3148,1778,1309,2276,2934,4284,2374,2950,2371,4747,4562,736,542,588,7058,6479,5301,4355,791,1330,795,549,4189,5214,347,717,5763,7432,6567,5241,7992,6857,5235,5839,6521,7291,5837,5801,5794,5734,6470,5796,5746,7347,7600,6197,6099,6789,6084,7545,6354,5332,6331,6323,7388,6071,7834,6384,5673,5688,6679,6673,7203,5328,6385,5603,5608,6069,6261,8183,7008,8033,5148,8106,8047,1832,6058,7042,5487,6148,4171,2129,2296,2312,2361,1650,3635,4618,3506,2546,4525,1924,6780,3601,4906,2468,1422,4567,4153,131,725,4334,4393,1014,3745,7652,3295,3065,3069,2421,4377,3665,2705,1329,773,340,448,7682,7623,7715,5594,3414,3928,4566,2128,1815,765,3517,6048,6405,7983,1890,3076,5123,1641,3443,702,106,4125,2991,1512,2434,5018,3553,5531,7130,7640,5705,5195,6815,6368,7465,7907,7795,5504,7143,5727,5437,6358,6975,5458,6551,7732,5186,5863,7832,627,1544,3442,7707,478,7794,7948,6555,1866,38,586,1927,4267,2501,3501,4439,4909,5166,798,2149,667,1697,1971,1122,3841,2059,1250,3296,6741,2384,2970,7579,6785,1212,2804,3694,3824,42,249,329,7699,6554,6361,5732,7810,6076,8250 : 415
+
+
+Header of reduced data:
+@relation 'corn-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R1094,4731,2740,2032,4908,5037,130,7588,5606,4278,1766,1718,1307,4910,479,4999,1152,4279,678,4275,2062,946,8099,3037,45,3837,4077,2933,4265,4188,1096,1327,1153,7180,3402,463,4730,1721,3551,3543,1523,3636,1167,6568,1291,2258,2944,1793,46,4381,3678,6982,6072,6070,304,4868,6149,7544,1928,5130,6380,2106,3539,2251,2033,1765,1643,833,7927,8148,5789,5534,1027,8285,1423,4508,3945,4732,4520,4283,129,44,4758,4656,1110,1490,4440,1238,3074,5410,2695,6291,3950,2512,2078,3547,3620,1504,7209,7116,6075,7420,4571,4154,143,793-794,4438,661,2782,297,2687,4276,4170,7712,3089,3668,936,3403,5907,5583,4169,7463,7739,7028,4126,1534,2107,889,7643,6774,4250,1874,3667,1869,5013,7433,944,470,1794,1723,5830,7730,6849,1198,1353,6820,6349,5486,5814,6449,6246,6336,6841,7806,6847,5853,6758,837,4006,2810,2632,4007,2722,2975,3125,937,1642,2555,5685,4112,935,6403,303,7039,6315,3713,1956,3265,6233,4150,1416,3600,4111,6824,3404,4092,796,5071,1410,4480,4762,2404,8064,8119,5977,5827,7440,7882,6701,5016,3714,3148,1778,1309,2276,2934,4284,2374,2950,2371,4747,4562,736,542,588,7058,6479,5301,4355,791,1330,795,549,4189,5214,347,717,5763,7432,6567,5241,7992,6857,5235,5839,6521,7291,5837,5801,5794,5734,6470,5796,5746,7347,7600,6197,6099,6789,6084,7545,6354,5332,6331,6323,7388,6071,7834,6384,5673,5688,6679,6673,7203,5328,6385,5603,5608,6069,6261,8183,7008,8033,5148,8106,8047,1832,6058,7042,5487,6148,4171,2129,2296,2312,2361,1650,3635,4618,3506,2546,4525,1924,6780,3601,4906,2468,1422,4567,4153,131,725,4334,4393,1014,3745,7652,3295,3065,3069,2421,4377,3665,2705,1329,773,340,448,7682,7623,7715,5594,3414,3928,4566,2128,1815,765,3517,6048,6405,7983,1890,3076,5123,1641,3443,702,106,4125,2991,1512,2434,5018,3553,5531,7130,7640,5705,5195,6815,6368,7465,7907,7795,5504,7143,5727,5437,6358,6975,5458,6551,7732,5186,5863,7832,627,1544,3442,7707,478,7794,7948,6555,1866,38,586,1927,4267,2501,3501,4439,4909,5166,798,2149,667,1697,1971,1122,3841,2059,1250,3296,6741,2384,2970,7579,6785,1212,2804,3694,3824,42,249,329,7699,6554,6361,5732,7810,6076,8250,8302'
+
+@attribute _corn numeric
+@attribute _tonnes numeric
+@attribute _maize numeric
+@attribute _grain numeric
+@attribute _usda numeric
+@attribute _wheat numeric
+@attribute _agriculture numeric
+@attribute _sorghum numeric
+@attribute _bushel numeric
+@attribute _soybean numeric
+@attribute _farmers numeric
+@attribute _export numeric
+@attribute _department numeric
+@attribute _ussr numeric
+@attribute _barley numeric
+@attribute _washington numeric
+@attribute _crop numeric
+@attribute _soybeans numeric
+@attribute _bushels numeric
+@attribute _soviet numeric
+@attribute _growers numeric
+@attribute _company numeric
+@attribute _unknown numeric
+@attribute _net numeric
+@attribute _acreage numeric
+@attribute _report numeric
+@attribute _season numeric
+@attribute _mlntonnes numeric
+@attribute _sources numeric
+@attribute _shr numeric
+@attribute _corp numeric
+@attribute _destinations numeric
+@attribute _crops numeric
+@attribute _pik numeric
+@attribute _planted numeric
+@attribute _bank numeric
+@attribute _tonne numeric
+@attribute _exporters numeric
+@attribute _program numeric
+@attribute _production numeric
+@attribute _ec numeric
+@attribute _qtr numeric
+@attribute _cts numeric
+@attribute _inspections numeric
+@attribute _delivery numeric
+@attribute _imports numeric
+@attribute _moisture numeric
+@attribute _feed numeric
+@attribute _acres numeric
+@attribute _stock numeric
+@attribute _ranged numeric
+@attribute _ofcorn numeric
+@attribute _enrollment numeric
+@attribute _enrolled numeric
+@attribute _argentine numeric
+@attribute _union numeric
+@attribute _farmer numeric
+@attribute _signup numeric
+@attribute _french numeric
+@attribute _york numeric
+@attribute _guesses numeric
+@attribute _harvest numeric
+@attribute _producers numeric
+@attribute _import numeric
+@attribute _grains numeric
+@attribute _farm numeric
+@attribute _estimates numeric
+@attribute _chicago numeric
+@attribute _thous numeric
+@attribute _villanueva numeric
+@attribute _cordoba numeric
+@attribute _belt numeric
+@attribute _conservation numeric
+@attribute _yellow numeric
+@attribute _dlrs numeric
+@attribute _switched numeric
+@attribute _revs numeric
+@attribute _tonnesof numeric
+@attribute _taiwan numeric
+@attribute _spain numeric
+@attribute _agricultural numeric
+@attribute _acre numeric
+@attribute _trade numeric
+@attribute _thesoviet numeric
+@attribute _cotton numeric
+@attribute _dry numeric
+@attribute _subsidy numeric
+@attribute _debt numeric
+@attribute _note numeric
+@attribute _ascs numeric
+@attribute _loss numeric
+@attribute _fructose numeric
+@attribute _rice numeric
+@attribute _kansas numeric
+@attribute _gulf numeric
+@attribute _profit numeric
+@attribute _purchases numeric
+@attribute _duty numeric
+@attribute _postedcounty numeric
+@attribute _pampa numeric
+@attribute _entre numeric
+@attribute _rios numeric
+@attribute _tenders numeric
+@attribute _shares numeric
+@attribute _aires numeric
+@attribute _cereal numeric
+@attribute _cereals numeric
+@attribute _subsidies numeric
+@attribute _buenos numeric
+@attribute _marketing numeric
+@attribute _areas numeric
+@attribute _london numeric
+@attribute _soviets numeric
+@attribute _shipments numeric
+@attribute _sunflower numeric
+@attribute _oats numeric
+@attribute _rains numeric
+@attribute _commodity numeric
+@attribute _planting numeric
+@attribute _deficiency numeric
+@attribute _bread numeric
+@attribute _shipment numeric
+@attribute _saidprivate numeric
+@attribute _syrup numeric
+@attribute _ofsoybeans numeric
+@attribute _september numeric
+@attribute _ecus numeric
+@attribute _harvested numeric
+@attribute _coarse numeric
+@attribute _stabilization numeric
+@attribute _manuel numeric
+@attribute _soft numeric
+@attribute _fob numeric
+@attribute _rainfall numeric
+@attribute _flour numeric
+@attribute _weather numeric
+@attribute _roll numeric
+@attribute _community numeric
+@attribute _banks numeric
+@attribute _feedgrains numeric
+@attribute _exports numeric
+@attribute _countervailing numeric
+@attribute _sweetener numeric
+@attribute _mlnhectares numeric
+@attribute _damage numeric
+@attribute _difference numeric
+@attribute _mge numeric
+@attribute _grainsagreement numeric
+@attribute _bargefreight numeric
+@attribute _corrientes numeric
+@attribute _hfcs numeric
+@attribute _formosa numeric
+@attribute _grainagreement numeric
+@attribute _misiones numeric
+@attribute _theconservation numeric
+@attribute _mlnbushels numeric
+@attribute _cropland numeric
+@attribute _maizeimporters numeric
+@attribute _china numeric
+@attribute _ruling numeric
+@attribute _meal numeric
+@attribute _licences numeric
+@attribute _rumors numeric
+@attribute _lyng numeric
+@attribute _moscow numeric
+@attribute _official numeric
+@attribute _common numeric
+@attribute _estimated numeric
+@attribute _land numeric
+@attribute _certs numeric
+@attribute _senate numeric
+@attribute _commodities numeric
+@attribute _harvesting numeric
+@attribute _argentina numeric
+@attribute _ofu numeric
+@attribute _generic numeric
+@attribute _rebate numeric
+@attribute _futures numeric
+@attribute _paris numeric
+@attribute _fordelivery numeric
+@attribute _share numeric
+@attribute _dividend numeric
+@attribute _province numeric
+@attribute _sen numeric
+@attribute _midwest numeric
+@attribute _plantings numeric
+@attribute _securities numeric
+@attribute _certificates numeric
+@attribute _winter numeric
+@attribute _div numeric
+@attribute _supplies numeric
+@attribute _traders numeric
+@attribute _iowa numeric
+@attribute _tribunal numeric
+@attribute _upholds numeric
+@attribute _dole numeric
+@attribute _counselor numeric
+@attribute _rouen numeric
+@attribute _therains numeric
+@attribute _licencesto numeric
+@attribute _week numeric
+@attribute _rebates numeric
+@attribute _oilseed numeric
+@attribute _fe numeric
+@attribute _departmentsaid numeric
+@attribute _includes numeric
+@attribute _mm numeric
+@attribute _spanish numeric
+@attribute _international numeric
+@attribute _money numeric
+@attribute _interior numeric
+@attribute _total numeric
+@attribute _temperatures numeric
+@attribute _cargill numeric
+@attribute _bids numeric
+@attribute _bonus numeric
+@attribute _onic numeric
+@attribute _idled numeric
+@attribute _andconservation numeric
+@attribute _states numeric
+@attribute _cents numeric
+@attribute _detailed numeric
+@attribute _certificate numeric
+@attribute _billion numeric
+@attribute _shrs numeric
+@attribute _administrator numeric
+@attribute _association numeric
+@attribute _canadian numeric
+@attribute _conservationprogram numeric
+@attribute _robertdole numeric
+@attribute _inspectionreport numeric
+@attribute _agrianalysis numeric
+@attribute _tonnefor numeric
+@attribute _mmin numeric
+@attribute _agpm numeric
+@attribute _countyposted numeric
+@attribute _incorn numeric
+@attribute _publica numeric
+@attribute _countrymovement numeric
+@attribute _cornimports numeric
+@attribute _cornexports numeric
+@attribute _commodityoperations numeric
+@attribute _hrw numeric
+@attribute _cornfor numeric
+@attribute _competitiveprices numeric
+@attribute _reducedby numeric
+@attribute _sovietpurchases numeric
+@attribute _finishingloading numeric
+@attribute _evencorn numeric
+@attribute _marketingyear numeric
+@attribute _erodible numeric
+@attribute _signups numeric
+@attribute _grainsupply numeric
+@attribute _andsorghum numeric
+@attribute _governmentpayments numeric
+@attribute _gluten numeric
+@attribute _reportedunder numeric
+@attribute _enrolling numeric
+@attribute _theillinois numeric
+@attribute _gustafson numeric
+@attribute _cereais numeric
+@attribute _chaco numeric
+@attribute _latestexport numeric
+@attribute _lapampa numeric
+@attribute _pooryielding numeric
+@attribute _andrice numeric
+@attribute _hackmann numeric
+@attribute _bureaufederation numeric
+@attribute _bushelsof numeric
+@attribute _enroll numeric
+@attribute _fourthyear numeric
+@attribute _weekdrying numeric
+@attribute _ofmaize numeric
+@attribute _totrade numeric
+@attribute _abastecimento numeric
+@attribute _unpublished numeric
+@attribute _tradetalks numeric
+@attribute _financial numeric
+@attribute _empty numeric
+@attribute _ofwheat numeric
+@attribute _barges numeric
+@attribute _farmbill numeric
+@attribute _shipped numeric
+@attribute _hectares numeric
+@attribute _indiana numeric
+@attribute _industries numeric
+@attribute _intentions numeric
+@attribute _european numeric
+@attribute _qtly numeric
+@attribute _theeuropean numeric
+@attribute _prices numeric
+@attribute _la numeric
+@attribute _talk numeric
+@attribute _free numeric
+@attribute _marginal numeric
+@attribute _provinces numeric
+@attribute _usage numeric
+@attribute _jan numeric
+@attribute _dlr numeric
+@attribute _tender numeric
+@attribute _shareholders numeric
+@attribute _agriculturedepartment numeric
+@attribute _capital numeric
+@attribute _stake numeric
+@attribute _storage numeric
+@attribute _congress numeric
+@attribute _reduced numeric
+@attribute _starch numeric
+@attribute _pay numeric
+@attribute _normal numeric
+@attribute _northern numeric
+@attribute _israel numeric
+@attribute _stg numeric
+@attribute _rain numeric
+@attribute _lower numeric
+@attribute _detail numeric
+@attribute _cbt numeric
+@attribute _assets numeric
+@attribute _bales numeric
+@attribute _stored numeric
+@attribute _specialists numeric
+@attribute _sunflowerseed numeric
+@attribute _bu numeric
+@attribute _plc numeric
+@attribute _reuters numeric
+@attribute _ten numeric
+@attribute _heavy numeric
+@attribute _figures numeric
+@attribute _caused numeric
+@attribute _prior numeric
+@attribute _elevators numeric
+@attribute _harvests numeric
+@attribute _toledo numeric
+@attribute _foreign numeric
+@attribute _notes numeric
+@attribute _yen numeric
+@attribute _estimate numeric
+@attribute _portugal numeric
+@attribute _calif numeric
+@attribute _africa numeric
+@attribute _sept numeric
+@attribute _mths numeric
+@attribute _earnings numeric
+@attribute _italy numeric
+@attribute _weekly numeric
+@attribute _programs numeric
+@attribute _beintroduced numeric
+@attribute _pasta numeric
+@attribute _srw numeric
+@attribute _cigra numeric
+@attribute _addedthe numeric
+@attribute _melnikov numeric
+@attribute _growersand numeric
+@attribute _saidsales numeric
+@attribute _theussr numeric
+@attribute _thearea numeric
+@attribute _becausethey numeric
+@attribute _pctaverage numeric
+@attribute _committeeapproved numeric
+@attribute _atbetween numeric
+@attribute _grassley numeric
+@attribute _ofbarley numeric
+@attribute _authorizations numeric
+@attribute _injure numeric
+@attribute _sweeteners numeric
+@attribute _acresof numeric
+@attribute _cst numeric
+@attribute _thehigh numeric
+@attribute _breakdown numeric
+@attribute _eep numeric
+@attribute _ports numeric
+@attribute _sugarcane numeric
+@attribute _barge numeric
+@attribute _theamount numeric
+@attribute _toaround numeric
+@attribute _injury numeric
+@attribute _flooding numeric
+@attribute _acquire numeric
+@attribute _bonds numeric
+@attribute _freight numeric
+@attribute _south numeric
+@attribute _july numeric
+@attribute _previous numeric
+@attribute _subsidized numeric
+@attribute _users numeric
+@attribute _accordingto numeric
+@attribute _cftc numeric
+@attribute _high numeric
+@attribute _bulk numeric
+@attribute _expected numeric
+@attribute _gas numeric
+@attribute _coupon numeric
+@attribute _reports numeric
+@attribute _group numeric
+@attribute _decision numeric
+@attribute _payable numeric
+@attribute _luis numeric
+@attribute _intothe numeric
+@attribute _morocco numeric
+@attribute _soil numeric
+@attribute _marketed numeric
+@attribute _dated numeric
+@attribute _maximum numeric
+@attribute _reach numeric
+@attribute _rep numeric
+@attribute _acquisition numeric
+@attribute _annually numeric
+@attribute _asked numeric
+@attribute _subsidize numeric
+@attribute _injurious numeric
+@attribute _grazing numeric
+@attribute _commoditycertificates numeric
+@attribute _thecrop numeric
+@attribute _epac numeric
+@attribute _willlikely numeric
+@attribute corn {no,yes}
+
+@data
+
+
+Classifier Model
+FilteredClassifier using weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 211961626 on data filtered through weka.filters.supervised.instance.SpreadSubsample -M 2.0 -X 0.0 -S 1931914116
+
+Filtered Header
+@relation 'corn-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R1094,4731,2740,2032,4908,5037,130,7588,5606,4278,1766,1718,1307,4910,479,4999,1152,4279,678,4275,2062,946,8099,3037,45,3837,4077,2933,4265,4188,1096,1327,1153,7180,3402,463,4730,1721,3551,3543,1523,3636,1167,6568,1291,2258,2944,1793,46,4381,3678,6982,6072,6070,304,4868,6149,7544,1928,5130,6380,2106,3539,2251,2033,1765,1643,833,7927,8148,5789,5534,1027,8285,1423,4508,3945,4732,4520,4283,129,44,4758,4656,1110,1490,4440,1238,3074,5410,2695,6291,3950,2512,2078,3547,3620,1504,7209,7116,6075,7420,4571,4154,143,793-794,4438,661,2782,297,2687,4276,4170,7712,3089,3668,936,3403,5907,5583,4169,7463,7739,7028,4126,1534,2107,889,7643,6774,4250,1874,3667,1869,5013,7433,944,470,1794,1723,5830,7730,6849,1198,1353,6820,6349,5486,5814,6449,6246,6336,6841,7806,6847,5853,6758,837,4006,2810,2632,4007,2722,2975,3125,937,1642,2555,5685,4112,935,6403,303,7039,6315,3713,1956,3265,6233,4150,1416,3600,4111,6824,3404,4092,796,5071,1410,4480,4762,2404,8064,8119,5977,5827,7440,7882,6701,5016,3714,3148,1778,1309,2276,2934,4284,2374,2950,2371,4747,4562,736,542,588,7058,6479,5301,4355,791,1330,795,549,4189,5214,347,717,5763,7432,6567,5241,7992,6857,5235,5839,6521,7291,5837,5801,5794,5734,6470,5796,5746,7347,7600,6197,6099,6789,6084,7545,6354,5332,6331,6323,7388,6071,7834,6384,5673,5688,6679,6673,7203,5328,6385,5603,5608,6069,6261,8183,7008,8033,5148,8106,8047,1832,6058,7042,5487,6148,4171,2129,2296,2312,2361,1650,3635,4618,3506,2546,4525,1924,6780,3601,4906,2468,1422,4567,4153,131,725,4334,4393,1014,3745,7652,3295,3065,3069,2421,4377,3665,2705,1329,773,340,448,7682,7623,7715,5594,3414,3928,4566,2128,1815,765,3517,6048,6405,7983,1890,3076,5123,1641,3443,702,106,4125,2991,1512,2434,5018,3553,5531,7130,7640,5705,5195,6815,6368,7465,7907,7795,5504,7143,5727,5437,6358,6975,5458,6551,7732,5186,5863,7832,627,1544,3442,7707,478,7794,7948,6555,1866,38,586,1927,4267,2501,3501,4439,4909,5166,798,2149,667,1697,1971,1122,3841,2059,1250,3296,6741,2384,2970,7579,6785,1212,2804,3694,3824,42,249,329,7699,6554,6361,5732,7810,6076,8250,8302-weka.filters.supervised.instance.SpreadSubsample-M2.0-X0.0-S1931914116'
+
+@attribute _corn numeric
+@attribute _tonnes numeric
+@attribute _maize numeric
+@attribute _grain numeric
+@attribute _usda numeric
+@attribute _wheat numeric
+@attribute _agriculture numeric
+@attribute _sorghum numeric
+@attribute _bushel numeric
+@attribute _soybean numeric
+@attribute _farmers numeric
+@attribute _export numeric
+@attribute _department numeric
+@attribute _ussr numeric
+@attribute _barley numeric
+@attribute _washington numeric
+@attribute _crop numeric
+@attribute _soybeans numeric
+@attribute _bushels numeric
+@attribute _soviet numeric
+@attribute _growers numeric
+@attribute _company numeric
+@attribute _unknown numeric
+@attribute _net numeric
+@attribute _acreage numeric
+@attribute _report numeric
+@attribute _season numeric
+@attribute _mlntonnes numeric
+@attribute _sources numeric
+@attribute _shr numeric
+@attribute _corp numeric
+@attribute _destinations numeric
+@attribute _crops numeric
+@attribute _pik numeric
+@attribute _planted numeric
+@attribute _bank numeric
+@attribute _tonne numeric
+@attribute _exporters numeric
+@attribute _program numeric
+@attribute _production numeric
+@attribute _ec numeric
+@attribute _qtr numeric
+@attribute _cts numeric
+@attribute _inspections numeric
+@attribute _delivery numeric
+@attribute _imports numeric
+@attribute _moisture numeric
+@attribute _feed numeric
+@attribute _acres numeric
+@attribute _stock numeric
+@attribute _ranged numeric
+@attribute _ofcorn numeric
+@attribute _enrollment numeric
+@attribute _enrolled numeric
+@attribute _argentine numeric
+@attribute _union numeric
+@attribute _farmer numeric
+@attribute _signup numeric
+@attribute _french numeric
+@attribute _york numeric
+@attribute _guesses numeric
+@attribute _harvest numeric
+@attribute _producers numeric
+@attribute _import numeric
+@attribute _grains numeric
+@attribute _farm numeric
+@attribute _estimates numeric
+@attribute _chicago numeric
+@attribute _thous numeric
+@attribute _villanueva numeric
+@attribute _cordoba numeric
+@attribute _belt numeric
+@attribute _conservation numeric
+@attribute _yellow numeric
+@attribute _dlrs numeric
+@attribute _switched numeric
+@attribute _revs numeric
+@attribute _tonnesof numeric
+@attribute _taiwan numeric
+@attribute _spain numeric
+@attribute _agricultural numeric
+@attribute _acre numeric
+@attribute _trade numeric
+@attribute _thesoviet numeric
+@attribute _cotton numeric
+@attribute _dry numeric
+@attribute _subsidy numeric
+@attribute _debt numeric
+@attribute _note numeric
+@attribute _ascs numeric
+@attribute _loss numeric
+@attribute _fructose numeric
+@attribute _rice numeric
+@attribute _kansas numeric
+@attribute _gulf numeric
+@attribute _profit numeric
+@attribute _purchases numeric
+@attribute _duty numeric
+@attribute _postedcounty numeric
+@attribute _pampa numeric
+@attribute _entre numeric
+@attribute _rios numeric
+@attribute _tenders numeric
+@attribute _shares numeric
+@attribute _aires numeric
+@attribute _cereal numeric
+@attribute _cereals numeric
+@attribute _subsidies numeric
+@attribute _buenos numeric
+@attribute _marketing numeric
+@attribute _areas numeric
+@attribute _london numeric
+@attribute _soviets numeric
+@attribute _shipments numeric
+@attribute _sunflower numeric
+@attribute _oats numeric
+@attribute _rains numeric
+@attribute _commodity numeric
+@attribute _planting numeric
+@attribute _deficiency numeric
+@attribute _bread numeric
+@attribute _shipment numeric
+@attribute _saidprivate numeric
+@attribute _syrup numeric
+@attribute _ofsoybeans numeric
+@attribute _september numeric
+@attribute _ecus numeric
+@attribute _harvested numeric
+@attribute _coarse numeric
+@attribute _stabilization numeric
+@attribute _manuel numeric
+@attribute _soft numeric
+@attribute _fob numeric
+@attribute _rainfall numeric
+@attribute _flour numeric
+@attribute _weather numeric
+@attribute _roll numeric
+@attribute _community numeric
+@attribute _banks numeric
+@attribute _feedgrains numeric
+@attribute _exports numeric
+@attribute _countervailing numeric
+@attribute _sweetener numeric
+@attribute _mlnhectares numeric
+@attribute _damage numeric
+@attribute _difference numeric
+@attribute _mge numeric
+@attribute _grainsagreement numeric
+@attribute _bargefreight numeric
+@attribute _corrientes numeric
+@attribute _hfcs numeric
+@attribute _formosa numeric
+@attribute _grainagreement numeric
+@attribute _misiones numeric
+@attribute _theconservation numeric
+@attribute _mlnbushels numeric
+@attribute _cropland numeric
+@attribute _maizeimporters numeric
+@attribute _china numeric
+@attribute _ruling numeric
+@attribute _meal numeric
+@attribute _licences numeric
+@attribute _rumors numeric
+@attribute _lyng numeric
+@attribute _moscow numeric
+@attribute _official numeric
+@attribute _common numeric
+@attribute _estimated numeric
+@attribute _land numeric
+@attribute _certs numeric
+@attribute _senate numeric
+@attribute _commodities numeric
+@attribute _harvesting numeric
+@attribute _argentina numeric
+@attribute _ofu numeric
+@attribute _generic numeric
+@attribute _rebate numeric
+@attribute _futures numeric
+@attribute _paris numeric
+@attribute _fordelivery numeric
+@attribute _share numeric
+@attribute _dividend numeric
+@attribute _province numeric
+@attribute _sen numeric
+@attribute _midwest numeric
+@attribute _plantings numeric
+@attribute _securities numeric
+@attribute _certificates numeric
+@attribute _winter numeric
+@attribute _div numeric
+@attribute _supplies numeric
+@attribute _traders numeric
+@attribute _iowa numeric
+@attribute _tribunal numeric
+@attribute _upholds numeric
+@attribute _dole numeric
+@attribute _counselor numeric
+@attribute _rouen numeric
+@attribute _therains numeric
+@attribute _licencesto numeric
+@attribute _week numeric
+@attribute _rebates numeric
+@attribute _oilseed numeric
+@attribute _fe numeric
+@attribute _departmentsaid numeric
+@attribute _includes numeric
+@attribute _mm numeric
+@attribute _spanish numeric
+@attribute _international numeric
+@attribute _money numeric
+@attribute _interior numeric
+@attribute _total numeric
+@attribute _temperatures numeric
+@attribute _cargill numeric
+@attribute _bids numeric
+@attribute _bonus numeric
+@attribute _onic numeric
+@attribute _idled numeric
+@attribute _andconservation numeric
+@attribute _states numeric
+@attribute _cents numeric
+@attribute _detailed numeric
+@attribute _certificate numeric
+@attribute _billion numeric
+@attribute _shrs numeric
+@attribute _administrator numeric
+@attribute _association numeric
+@attribute _canadian numeric
+@attribute _conservationprogram numeric
+@attribute _robertdole numeric
+@attribute _inspectionreport numeric
+@attribute _agrianalysis numeric
+@attribute _tonnefor numeric
+@attribute _mmin numeric
+@attribute _agpm numeric
+@attribute _countyposted numeric
+@attribute _incorn numeric
+@attribute _publica numeric
+@attribute _countrymovement numeric
+@attribute _cornimports numeric
+@attribute _cornexports numeric
+@attribute _commodityoperations numeric
+@attribute _hrw numeric
+@attribute _cornfor numeric
+@attribute _competitiveprices numeric
+@attribute _reducedby numeric
+@attribute _sovietpurchases numeric
+@attribute _finishingloading numeric
+@attribute _evencorn numeric
+@attribute _marketingyear numeric
+@attribute _erodible numeric
+@attribute _signups numeric
+@attribute _grainsupply numeric
+@attribute _andsorghum numeric
+@attribute _governmentpayments numeric
+@attribute _gluten numeric
+@attribute _reportedunder numeric
+@attribute _enrolling numeric
+@attribute _theillinois numeric
+@attribute _gustafson numeric
+@attribute _cereais numeric
+@attribute _chaco numeric
+@attribute _latestexport numeric
+@attribute _lapampa numeric
+@attribute _pooryielding numeric
+@attribute _andrice numeric
+@attribute _hackmann numeric
+@attribute _bureaufederation numeric
+@attribute _bushelsof numeric
+@attribute _enroll numeric
+@attribute _fourthyear numeric
+@attribute _weekdrying numeric
+@attribute _ofmaize numeric
+@attribute _totrade numeric
+@attribute _abastecimento numeric
+@attribute _unpublished numeric
+@attribute _tradetalks numeric
+@attribute _financial numeric
+@attribute _empty numeric
+@attribute _ofwheat numeric
+@attribute _barges numeric
+@attribute _farmbill numeric
+@attribute _shipped numeric
+@attribute _hectares numeric
+@attribute _indiana numeric
+@attribute _industries numeric
+@attribute _intentions numeric
+@attribute _european numeric
+@attribute _qtly numeric
+@attribute _theeuropean numeric
+@attribute _prices numeric
+@attribute _la numeric
+@attribute _talk numeric
+@attribute _free numeric
+@attribute _marginal numeric
+@attribute _provinces numeric
+@attribute _usage numeric
+@attribute _jan numeric
+@attribute _dlr numeric
+@attribute _tender numeric
+@attribute _shareholders numeric
+@attribute _agriculturedepartment numeric
+@attribute _capital numeric
+@attribute _stake numeric
+@attribute _storage numeric
+@attribute _congress numeric
+@attribute _reduced numeric
+@attribute _starch numeric
+@attribute _pay numeric
+@attribute _normal numeric
+@attribute _northern numeric
+@attribute _israel numeric
+@attribute _stg numeric
+@attribute _rain numeric
+@attribute _lower numeric
+@attribute _detail numeric
+@attribute _cbt numeric
+@attribute _assets numeric
+@attribute _bales numeric
+@attribute _stored numeric
+@attribute _specialists numeric
+@attribute _sunflowerseed numeric
+@attribute _bu numeric
+@attribute _plc numeric
+@attribute _reuters numeric
+@attribute _ten numeric
+@attribute _heavy numeric
+@attribute _figures numeric
+@attribute _caused numeric
+@attribute _prior numeric
+@attribute _elevators numeric
+@attribute _harvests numeric
+@attribute _toledo numeric
+@attribute _foreign numeric
+@attribute _notes numeric
+@attribute _yen numeric
+@attribute _estimate numeric
+@attribute _portugal numeric
+@attribute _calif numeric
+@attribute _africa numeric
+@attribute _sept numeric
+@attribute _mths numeric
+@attribute _earnings numeric
+@attribute _italy numeric
+@attribute _weekly numeric
+@attribute _programs numeric
+@attribute _beintroduced numeric
+@attribute _pasta numeric
+@attribute _srw numeric
+@attribute _cigra numeric
+@attribute _addedthe numeric
+@attribute _melnikov numeric
+@attribute _growersand numeric
+@attribute _saidsales numeric
+@attribute _theussr numeric
+@attribute _thearea numeric
+@attribute _becausethey numeric
+@attribute _pctaverage numeric
+@attribute _committeeapproved numeric
+@attribute _atbetween numeric
+@attribute _grassley numeric
+@attribute _ofbarley numeric
+@attribute _authorizations numeric
+@attribute _injure numeric
+@attribute _sweeteners numeric
+@attribute _acresof numeric
+@attribute _cst numeric
+@attribute _thehigh numeric
+@attribute _breakdown numeric
+@attribute _eep numeric
+@attribute _ports numeric
+@attribute _sugarcane numeric
+@attribute _barge numeric
+@attribute _theamount numeric
+@attribute _toaround numeric
+@attribute _injury numeric
+@attribute _flooding numeric
+@attribute _acquire numeric
+@attribute _bonds numeric
+@attribute _freight numeric
+@attribute _south numeric
+@attribute _july numeric
+@attribute _previous numeric
+@attribute _subsidized numeric
+@attribute _users numeric
+@attribute _accordingto numeric
+@attribute _cftc numeric
+@attribute _high numeric
+@attribute _bulk numeric
+@attribute _expected numeric
+@attribute _gas numeric
+@attribute _coupon numeric
+@attribute _reports numeric
+@attribute _group numeric
+@attribute _decision numeric
+@attribute _payable numeric
+@attribute _luis numeric
+@attribute _intothe numeric
+@attribute _morocco numeric
+@attribute _soil numeric
+@attribute _marketed numeric
+@attribute _dated numeric
+@attribute _maximum numeric
+@attribute _reach numeric
+@attribute _rep numeric
+@attribute _acquisition numeric
+@attribute _annually numeric
+@attribute _asked numeric
+@attribute _subsidize numeric
+@attribute _injurious numeric
+@attribute _grazing numeric
+@attribute _commoditycertificates numeric
+@attribute _thecrop numeric
+@attribute _epac numeric
+@attribute _willlikely numeric
+@attribute corn {no,yes}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 211961626 -do-not-check-capabilities
+
+Time taken to build model: 27.43 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.8 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3212               97.3628 %
+Incorrectly Classified Instances        87                2.6372 %
+Kappa statistic                          0.5381
+Mean absolute error                      0.0636
+Root mean squared error                  0.1453
+Relative absolute error                180.1749 %
+Root relative squared error            112.4907 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,974    0,054    0,999      0,974    0,986      0,596    0,995     1,000     no
+                 0,946    0,026    0,387      0,946    0,549      0,596    0,995     0,791     yes
+Weighted Avg.    0,974    0,053    0,989      0,974    0,979      0,596    0,995     0,996     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3159   84 |    a = no
+    3   53 |    b = yes
+

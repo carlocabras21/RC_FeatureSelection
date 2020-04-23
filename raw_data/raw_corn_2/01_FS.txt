@@ -1,0 +1,405 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 166" -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     corn-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598
+Instances:    9598
+Attributes:   8302
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 8302 corn):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.07987       1094 _corn
+ 0.02692       4731 _tonnes
+ 0.02659       2740 _maize
+ 0.02312       2032 _grain
+ 0.02187       4908 _usda
+ 0.02012       5037 _wheat
+ 0.01925        130 _agriculture
+ 0.01437       7588 _sorghum
+ 0.01001       5606 _bushel
+ 0.00958       4278 _soybean
+ 0.00912       1766 _farmers
+ 0.00908       1718 _export
+ 0.00908       1307 _department
+ 0.00875       4910 _ussr
+ 0.00866        479 _barley
+ 0.00821       4999 _washington
+ 0.00769       1152 _crop
+ 0.00759       4279 _soybeans
+ 0.00723        678 _bushels
+ 0.00651       4275 _soviet
+ 0.00605       2062 _growers
+ 0.00568        946 _company
+ 0.00552       8099 _unknown
+ 0.00547       3037 _net
+ 0.0052          45 _acreage
+ 0.00496       3837 _report
+ 0.00492       4077 _season
+ 0.00473       2933 _mlntonnes
+ 0.00469       4265 _sources
+ 0.00466       4188 _shr
+ 0.00449       1096 _corp
+ 0.00439       1327 _destinations
+ 0.00425       1153 _crops
+ 0.00421       7180 _pik
+ 0.00409       3402 _planted
+ 0.00404        463 _bank
+ 0.00389       4730 _tonne
+ 0.00387       1721 _exporters
+ 0.00383       3551 _program
+ 0.00382       3543 _production
+ 0.00382       1523 _ec
+ 0.00382       3636 _qtr
+ 0.00376       1167 _cts
+ 0.00375       6568 _inspections
+ 0.00374       1291 _delivery
+ 0.00368       2258 _imports
+ 0.00366       2944 _moisture
+ 0.00366       1793 _feed
+ 0.00362         46 _acres
+ 0.00361       4381 _stock
+ 0.0036        3678 _ranged
+ 0.0036        6982 _ofcorn
+ 0.0036        6072 _enrollment
+ 0.0036        6070 _enrolled
+ 0.00353        304 _argentine
+ 0.0035        4868 _union
+ 0.00338       6149 _farmer
+ 0.00329       7544 _signup
+ 0.00318       1928 _french
+ 0.00317       5130 _york
+ 0.00317       6380 _guesses
+ 0.00316       2106 _harvest
+ 0.00312       3539 _producers
+ 0.00311       2251 _import
+ 0.00307       2033 _grains
+ 0.00303       1765 _farm
+ 0.00302       1643 _estimates
+ 0.00301        833 _chicago
+ 0.00299       7927 _thous
+ 0.00299       8148 _villanueva
+ 0.00299       5789 _cordoba
+ 0.00299       5534 _belt
+ 0.00297       1027 _conservation
+ 0.00293       8285 _yellow
+ 0.0029        1423 _dlrs
+ 0.00289       4508 _switched
+ 0.00289       3945 _revs
+ 0.00287       4732 _tonnesof
+ 0.00284       4520 _taiwan
+ 0.00284       4283 _spain
+ 0.00277        129 _agricultural
+ 0.00276         44 _acre
+ 0.00274       4758 _trade
+ 0.00274       4656 _thesoviet
+ 0.00273       1110 _cotton
+ 0.00271       1490 _dry
+ 0.00267       4440 _subsidy
+ 0.00266       1238 _debt
+ 0.00265       3074 _note
+ 0.0026        5410 _ascs
+ 0.0026        2695 _loss
+ 0.00259       6291 _fructose
+ 0.00256       3950 _rice
+ 0.00251       2512 _kansas
+ 0.00249       2078 _gulf
+ 0.00248       3547 _profit
+ 0.00243       3620 _purchases
+ 0.0024        1504 _duty
+ 0.00239       7209 _postedcounty
+ 0.00239       7116 _pampa
+ 0.00239       6075 _entre
+ 0.00239       7420 _rios
+ 0.00239       4571 _tenders
+ 0.00238       4154 _shares
+ 0.00236        143 _aires
+ 0.00235        793 _cereal
+ 0.00235        794 _cereals
+ 0.00233       4438 _subsidies
+ 0.00232        661 _buenos
+ 0.00232       2782 _marketing
+ 0.00231        297 _areas
+ 0.0023        2687 _london
+ 0.00229       4276 _soviets
+ 0.00227       4170 _shipments
+ 0.00227       7712 _sunflower
+ 0.00218       3089 _oats
+ 0.00217       3668 _rains
+ 0.00214        936 _commodity
+ 0.00212       3403 _planting
+ 0.0021        5907 _deficiency
+ 0.00208       5583 _bread
+ 0.00206       4169 _shipment
+ 0.00202       7463 _saidprivate
+ 0.00202       7739 _syrup
+ 0.00202       7028 _ofsoybeans
+ 0.00198       4126 _september
+ 0.00197       1534 _ecus
+ 0.00197       2107 _harvested
+ 0.00197        889 _coarse
+ 0.00197       7643 _stabilization
+ 0.00197       6774 _manuel
+ 0.00195       4250 _soft
+ 0.00193       1874 _fob
+ 0.00191       3667 _rainfall
+ 0.00191       1869 _flour
+ 0.00189       5013 _weather
+ 0.00187       7433 _roll
+ 0.00186        944 _community
+ 0.00185        470 _banks
+ 0.00185       1794 _feedgrains
+ 0.00183       1723 _exports
+ 0.00183       5830 _countervailing
+ 0.00183       7730 _sweetener
+ 0.00183       6849 _mlnhectares
+ 0.00182       1198 _damage
+ 0.0018        1353 _difference
+ 0.00179       6820 _mge
+ 0.00179       6349 _grainsagreement
+ 0.00179       5486 _bargefreight
+ 0.00179       5814 _corrientes
+ 0.00179       6449 _hfcs
+ 0.00179       6246 _formosa
+ 0.00179       6336 _grainagreement
+ 0.00179       6841 _misiones
+ 0.00179       7806 _theconservation
+ 0.00179       6847 _mlnbushels
+ 0.00179       5853 _cropland
+ 0.00179       6758 _maizeimporters
+ 0.00176        837 _china
+ 0.00176       4006 _ruling
+ 0.00175       2810 _meal
+ 0.00174       2632 _licences
+ 0.00174       4007 _rumors
+ 0.00174       2722 _lyng
+ 0.00174       2975 _moscow
+ 0.00172       3125 _official
+
+Selected attributes: 1094,4731,2740,2032,4908,5037,130,7588,5606,4278,1766,1718,1307,4910,479,4999,1152,4279,678,4275,2062,946,8099,3037,45,3837,4077,2933,4265,4188,1096,1327,1153,7180,3402,463,4730,1721,3551,3543,1523,3636,1167,6568,1291,2258,2944,1793,46,4381,3678,6982,6072,6070,304,4868,6149,7544,1928,5130,6380,2106,3539,2251,2033,1765,1643,833,7927,8148,5789,5534,1027,8285,1423,4508,3945,4732,4520,4283,129,44,4758,4656,1110,1490,4440,1238,3074,5410,2695,6291,3950,2512,2078,3547,3620,1504,7209,7116,6075,7420,4571,4154,143,793,794,4438,661,2782,297,2687,4276,4170,7712,3089,3668,936,3403,5907,5583,4169,7463,7739,7028,4126,1534,2107,889,7643,6774,4250,1874,3667,1869,5013,7433,944,470,1794,1723,5830,7730,6849,1198,1353,6820,6349,5486,5814,6449,6246,6336,6841,7806,6847,5853,6758,837,4006,2810,2632,4007,2722,2975,3125 : 166
+
+
+Header of reduced data:
+@relation 'corn-weka.filters.unsupervised.instance.RemoveRange-V-Rfirst-9598-weka.filters.unsupervised.attribute.Remove-V-R1094,4731,2740,2032,4908,5037,130,7588,5606,4278,1766,1718,1307,4910,479,4999,1152,4279,678,4275,2062,946,8099,3037,45,3837,4077,2933,4265,4188,1096,1327,1153,7180,3402,463,4730,1721,3551,3543,1523,3636,1167,6568,1291,2258,2944,1793,46,4381,3678,6982,6072,6070,304,4868,6149,7544,1928,5130,6380,2106,3539,2251,2033,1765,1643,833,7927,8148,5789,5534,1027,8285,1423,4508,3945,4732,4520,4283,129,44,4758,4656,1110,1490,4440,1238,3074,5410,2695,6291,3950,2512,2078,3547,3620,1504,7209,7116,6075,7420,4571,4154,143,793-794,4438,661,2782,297,2687,4276,4170,7712,3089,3668,936,3403,5907,5583,4169,7463,7739,7028,4126,1534,2107,889,7643,6774,4250,1874,3667,1869,5013,7433,944,470,1794,1723,5830,7730,6849,1198,1353,6820,6349,5486,5814,6449,6246,6336,6841,7806,6847,5853,6758,837,4006,2810,2632,4007,2722,2975,3125,8302'
+
+@attribute _corn numeric
+@attribute _tonnes numeric
+@attribute _maize numeric
+@attribute _grain numeric
+@attribute _usda numeric
+@attribute _wheat numeric
+@attribute _agriculture numeric
+@attribute _sorghum numeric
+@attribute _bushel numeric
+@attribute _soybean numeric
+@attribute _farmers numeric
+@attribute _export numeric
+@attribute _department numeric
+@attribute _ussr numeric
+@attribute _barley numeric
+@attribute _washington numeric
+@attribute _crop numeric
+@attribute _soybeans numeric
+@attribute _bushels numeric
+@attribute _soviet numeric
+@attribute _growers numeric
+@attribute _company numeric
+@attribute _unknown numeric
+@attribute _net numeric
+@attribute _acreage numeric
+@attribute _report numeric
+@attribute _season numeric
+@attribute _mlntonnes numeric
+@attribute _sources numeric
+@attribute _shr numeric
+@attribute _corp numeric
+@attribute _destinations numeric
+@attribute _crops numeric
+@attribute _pik numeric
+@attribute _planted numeric
+@attribute _bank numeric
+@attribute _tonne numeric
+@attribute _exporters numeric
+@attribute _program numeric
+@attribute _production numeric
+@attribute _ec numeric
+@attribute _qtr numeric
+@attribute _cts numeric
+@attribute _inspections numeric
+@attribute _delivery numeric
+@attribute _imports numeric
+@attribute _moisture numeric
+@attribute _feed numeric
+@attribute _acres numeric
+@attribute _stock numeric
+@attribute _ranged numeric
+@attribute _ofcorn numeric
+@attribute _enrollment numeric
+@attribute _enrolled numeric
+@attribute _argentine numeric
+@attribute _union numeric
+@attribute _farmer numeric
+@attribute _signup numeric
+@attribute _french numeric
+@attribute _york numeric
+@attribute _guesses numeric
+@attribute _harvest numeric
+@attribute _producers numeric
+@attribute _import numeric
+@attribute _grains numeric
+@attribute _farm numeric
+@attribute _estimates numeric
+@attribute _chicago numeric
+@attribute _thous numeric
+@attribute _villanueva numeric
+@attribute _cordoba numeric
+@attribute _belt numeric
+@attribute _conservation numeric
+@attribute _yellow numeric
+@attribute _dlrs numeric
+@attribute _switched numeric
+@attribute _revs numeric
+@attribute _tonnesof numeric
+@attribute _taiwan numeric
+@attribute _spain numeric
+@attribute _agricultural numeric
+@attribute _acre numeric
+@attribute _trade numeric
+@attribute _thesoviet numeric
+@attribute _cotton numeric
+@attribute _dry numeric
+@attribute _subsidy numeric
+@attribute _debt numeric
+@attribute _note numeric
+@attribute _ascs numeric
+@attribute _loss numeric
+@attribute _fructose numeric
+@attribute _rice numeric
+@attribute _kansas numeric
+@attribute _gulf numeric
+@attribute _profit numeric
+@attribute _purchases numeric
+@attribute _duty numeric
+@attribute _postedcounty numeric
+@attribute _pampa numeric
+@attribute _entre numeric
+@attribute _rios numeric
+@attribute _tenders numeric
+@attribute _shares numeric
+@attribute _aires numeric
+@attribute _cereal numeric
+@attribute _cereals numeric
+@attribute _subsidies numeric
+@attribute _buenos numeric
+@attribute _marketing numeric
+@attribute _areas numeric
+@attribute _london numeric
+@attribute _soviets numeric
+@attribute _shipments numeric
+@attribute _sunflower numeric
+@attribute _oats numeric
+@attribute _rains numeric
+@attribute _commodity numeric
+@attribute _planting numeric
+@attribute _deficiency numeric
+@attribute _bread numeric
+@attribute _shipment numeric
+@attribute _saidprivate numeric
+@attribute _syrup numeric
+@attribute _ofsoybeans numeric
+@attribute _september numeric
+@attribute _ecus numeric
+@attribute _harvested numeric
+@attribute _coarse numeric
+@attribute _stabilization numeric
+@attribute _manuel numeric
+@attribute _soft numeric
+@attribute _fob numeric
+@attribute _rainfall numeric
+@attribute _flour numeric
+@attribute _weather numeric
+@attribute _roll numeric
+@attribute _community numeric
+@attribute _banks numeric
+@attribute _feedgrains numeric
+@attribute _exports numeric
+@attribute _countervailing numeric
+@attribute _sweetener numeric
+@attribute _mlnhectares numeric
+@attribute _damage numeric
+@attribute _difference numeric
+@attribute _mge numeric
+@attribute _grainsagreement numeric
+@attribute _bargefreight numeric
+@attribute _corrientes numeric
+@attribute _hfcs numeric
+@attribute _formosa numeric
+@attribute _grainagreement numeric
+@attribute _misiones numeric
+@attribute _theconservation numeric
+@attribute _mlnbushels numeric
+@attribute _cropland numeric
+@attribute _maizeimporters numeric
+@attribute _china numeric
+@attribute _ruling numeric
+@attribute _meal numeric
+@attribute _licences numeric
+@attribute _rumors numeric
+@attribute _lyng numeric
+@attribute _moscow numeric
+@attribute _official numeric
+@attribute corn {no,yes}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 36.71 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.57 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3274               99.2422 %
+Incorrectly Classified Instances        25                0.7578 %
+Kappa statistic                          0.7487
+Mean absolute error                      0.0128
+Root mean squared error                  0.0673
+Relative absolute error                 36.2533 %
+Root relative squared error             52.1076 %
+Total Number of Instances             3299     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,998    0,321    0,994      0,998    0,996      0,753    0,999     1,000     no
+                 0,679    0,002    0,844      0,679    0,752      0,753    0,999     0,910     yes
+Weighted Avg.    0,992    0,316    0,992      0,992    0,992      0,753    0,999     0,998     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3236    7 |    a = no
+   18   38 |    b = yes
+
